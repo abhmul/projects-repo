@@ -9,4 +9,4 @@ def mnist():
     train, test = keras.datasets.mnist.load_data()
     train = tf.data.Dataset.from_tensor_slices(train)
     test = tf.data.Dataset.from_tensor_slices(test)
-    return train, test
+    return {"train": train, "test": test}
