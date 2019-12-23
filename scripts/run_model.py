@@ -7,7 +7,7 @@ from ..models import hebbnet
 from ..training import minimization
 
 
-dataset = data.generate_blobs(show=False)
+dataset = data.generate_blobs()
 X, y = [tensor.numpy() for tensor in dataset["train"]]
 
 n_samples = X.shape[0]
