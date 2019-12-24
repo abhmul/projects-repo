@@ -1,1 +1,1 @@
-import minimization  # noqa: F401
+from . import trainers  # noqa: F401

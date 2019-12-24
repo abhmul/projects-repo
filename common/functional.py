@@ -10,4 +10,4 @@ def heaveside(x: tf.Tensor):
 
 
 def sign(x: tf.Tensor):
-    tf.stop_gradient(2 * heaveside(x) - 1)
+    return tf.stop_gradient(2 * heaveside(x) - 1)

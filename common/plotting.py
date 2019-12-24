@@ -10,6 +10,7 @@ def plot_labeled_scatter(X, y):
     :return:
     """
     plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.bwr)
+    return plt
 
 
 def plot_decision_boundary(pred_func, X, y, padding=0.5):
@@ -32,4 +33,4 @@ def plot_decision_boundary(pred_func, X, y, padding=0.5):
     # Plot the contour and training examples
     plt.contourf(xx, yy, Z, alpha=0.1, cmap=plt.cm.bwr)
     plot_labeled_scatter(X, y)
-    plt.show()
+    plt.savefig("projects-repo/fig.png")

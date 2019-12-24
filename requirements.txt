@@ -1,3 +1,5 @@
+scikit-learn
 flake8
 jedi
 black
+rope
