@@ -7,3 +7,7 @@ def binary_to_signed(binary_tensor):
 
 def heaveside(x: tf.Tensor):
     return tf.stop_gradient(tf.cast(tf.greater_equal(x, 0), tf.float32))
+
+
+def sign(x: tf.Tensor):
+    tf.stop_gradient(2 * heaveside(x) - 1)
