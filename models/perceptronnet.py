@@ -1,20 +1,20 @@
 import tensorflow as tf
 from functools import partial
 
-from ..common import assertions, functional
+from ..common import assertions, functional as F
 
 
 class HeavesideLayer(tf.keras.layers.Dense):
     def call(self, x):
         strength = super().call(x)
-        activation = functional.heaveside(strength)
+        activation = F.heaveside(strength)
         return activation, strength
 
 
 class SignLayer(tf.keras.layers.Dense):
     def call(self, x):
         strength = super().call(x)
-        activation = functional.sign(strength)
+        activation = F.sign(strength)
         return activation, strength
 
 
@@ -50,7 +50,13 @@ class PerceptronNet(tf.keras.Model):
         assertions.assert_is_signs(prediction)
         return (label_tensor - prediction) / 2
 
-    def error(self, input_tensor, label_tensor):
-        output = self(input_tensor)
-        prediction = output["activations"][-1]
+    def update(self, input_tensor, label_tensor, learning_rate=1.0):
+        output = self(input_tensor)  # B x 1
+        prediction = output["activations"][-1]  # B x 1
+        error = self.error_vector(prediction, label_tensor)
+
+        # Get the internal labels
+        labels = [label_tensor]
+        for layer in [self.final_layer] + self.hidden_layers:
+            F.sign(layer.kernel)
 
