@@ -113,10 +113,12 @@ class PerceptronNet2(tf.keras.Model):
         final_bias_update = tf.reduce_mean(output_error, axis=0) / avg_activations_size
 
         # Perform the updates
-        tf.assign_add(self.hidden_layer.kernel, learning_rate * hidden_weight_update)
-        tf.assign_add(self.hidden_layer.bias, learning_rate * hidden_bias_update)
-        tf.assign_add(self.final_layer.kernel, learning_rate * final_weight_update)
-        tf.assign_add(self.final_layer.bias, learning_rate * final_bias_update)
+        self.hidden_layer.kernel.assign_add(learning_rate * hidden_weight_update)
+        self.hidden_layer.bias.assign_add(learning_rate * hidden_bias_update)
+        self.final_layer.kernel.assign_add(learning_rate * final_weight_update)
+        self.final_layer.bias.assign_add(learning_rate * final_bias_update)
+
+        return tf.reduce_mean(tf.abs(output_error))
 
 
 class PerceptronNet(tf.keras.Model):
@@ -221,9 +223,7 @@ class PerceptronNet(tf.keras.Model):
         weight_updates = []
         for i in range(num_layers - 1, -1, -1):
             weight_update = self.compute_weight_update(
-                activations[i],  # B x O
-                expecteds[i],  # B x O
-                layer_inputs[i],  # B x I
+                activations[i], expecteds[i], layer_inputs[i]  # B x O  # B x O  # B x I
             )
             weight_updates.append(weight_update)
         weight_updates.reverse()
@@ -250,4 +250,5 @@ class PerceptronNet(tf.keras.Model):
         # print("Final Bias:")
         # print(self.final_layer.bias)
 
-        return self.cost(output["strengths"][-1], label_tensor)
+        # return self.cost(output["strengths"][-1], label_tensor)
+        return tf.reduce_mean(tf.abs(offset))

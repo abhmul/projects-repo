@@ -59,8 +59,16 @@ def generate_xor():
     return {"train": train}
 
 
-def mnist():
-    train, test = keras.datasets.mnist.load_data()
-    train = tf.data.Dataset.from_tensor_slices(train)
-    test = tf.data.Dataset.from_tensor_slices(test)
+def mnist(flatten=False, binarize=None):
+    (Xtr, ytr), (Xte, yte) = keras.datasets.mnist.load_data()
+    Xtr, ytr = Xtr[(ytr == 0) | (ytr == 1)], ytr[(ytr == 0) | (ytr == 1)]
+    if binarize == "binary":
+        Xtr = (Xtr >= 0.5).astype(np.float32)
+    elif binarize == "sign":
+        Xtr = 2 * (Xtr >= 0.5).astype(np.float32) - 1
+    if flatten:
+        Xtr = Xtr.reshape(Xtr.shape[0], -1)
+
+    train = tf.data.Dataset.from_tensor_slices((Xtr, ytr))
+    test = tf.data.Dataset.from_tensor_slices((Xte, yte))
     return {"train": train, "test": test}

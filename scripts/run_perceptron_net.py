@@ -10,12 +10,14 @@ from ..training import trainers
 # dataset = data.generate_xor()
 dataset = data.generate_moons()
 # dataset = data.generate_circles()
+# dataset = data.mnist(flatten=True, binarize="sign")
 
-model = perceptronnet.PerceptronNet(n_hiddens=[100])
+# model = perceptronnet.PerceptronNet(n_hiddens=[10])
+model = perceptronnet.PerceptronNet2(n_hidden=10)
 
 
 trainers.train_model_with_updater_online(
-    dataset["train"], model, learning_rate=0.01, num_iter=1000, batch_size=100
+    dataset["train"], model, learning_rate=0.001, num_iter=1000, batch_size=20
 )
 
 
