@@ -13,7 +13,7 @@ def plot_labeled_scatter(X, y):
     return plt
 
 
-def plot_decision_boundary(pred_func, X, y, padding=0.5):
+def plot_decision_boundary(pred_func, X, y, padding=0.5, save_fname="fig.png"):
     """
     plot the decision boundary
     :param pred_func: function used to predict the label (numpy -> numpy)
@@ -33,4 +33,4 @@ def plot_decision_boundary(pred_func, X, y, padding=0.5):
     # Plot the contour and training examples
     plt.contourf(xx, yy, Z, alpha=0.1, cmap=plt.cm.bwr)
     plot_labeled_scatter(X, y)
-    plt.savefig("projects-repo/fig.png")
+    plt.savefig(save_fname)

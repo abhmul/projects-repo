@@ -38,7 +38,7 @@ class PerceptronNet2(tf.keras.Model):
         for layer in [self.hidden_layer] + [self.final_layer]:
             x, s = layer(x)
             activations.append(x)
-            strengths.append(x)
+            strengths.append(s)
 
         return {"activations": activations, "strengths": strengths}
 

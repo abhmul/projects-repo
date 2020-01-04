@@ -23,6 +23,7 @@ class SphereNet(tf.keras.Model):
         self.regularizer = tf.keras.regularizers.l2(regularization)
 
         layer = ReluLayer if test_with_relu else NormLayer
+        print(layer.__name__)
 
         self.hidden_layers = [
             layer(n_hidden, kernel_regularizer=self.regularizer)
@@ -49,7 +50,7 @@ class SphereNet(tf.keras.Model):
     def pred(self, input_tensor):
         return self(input_tensor)["activations"][-1]
 
-    def loss(self, input_tensor, label_tensor):
+    def loss(self, label_tensor, input_tensor):
         output = self(input_tensor)
         loss = tf.reduce_mean(
             tf.nn.sigmoid_cross_entropy_with_logits(

@@ -1,8 +1,15 @@
 import tensorflow as tf
+from . import assertions
 
 
 def binary_to_signed(binary_tensor):
+    assertions.assert_is_binary(binary_tensor)
     return 2 * binary_tensor - 1
+
+
+def signed_to_binary(signed_tensor):
+    assertions.assert_is_signs(signed_tensor)
+    return (signed_tensor + 1) / 2
 
 
 def heaveside(x: tf.Tensor):

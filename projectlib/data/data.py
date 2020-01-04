@@ -53,7 +53,7 @@ def generate_circles():
 
 
 def generate_xor():
-    X = np.asarray([[-1, -1], [1, -1], [-1, 1], [1, 1]])
+    X = np.asarray([[0, 0], [1, 0], [0, 1], [1, 1]])
     y = np.asarray([0, 1, 1, 0])
     train = tf.data.Dataset.from_tensor_slices((X, y))
     return {"train": train}
