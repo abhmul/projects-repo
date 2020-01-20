@@ -3,3 +3,8 @@ flake8
 jedi
 black
 rope
+pandas
+numpy
+matplotlib
+scipy
+
