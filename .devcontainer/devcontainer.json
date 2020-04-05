@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or the definition README at
 // https://github.com/microsoft/vscode-dev-containers/tree/master/containers/docker-existing-dockerfile
 {
-	"name": "Tensorflow",
+	"name": "my-projects",
 
 	// Sets the run context to one level up instead of the .devcontainer folder.
 	"context": "..",
@@ -19,11 +19,13 @@
 	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
 	"runArgs": [
 		"--gpus=all",
-		// "-u", "1000:1000"  // idk how to run $(id -u) here
+		"-u", "1000:1000"  // idk how to run $(id -u) here
 	],
 
-	// Uncomment the next line to use Docker from inside the container. See https://aka.ms/vscode-remote/samples/docker-in-docker for details.
-	// "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
+	"mounts": [ 
+		"source=/media/abhijeet/Data/,target=/data,type=bind",
+		"source=/home/abhijeet/dev/,target=/workspaces/dev,type=bind"
+	 ],
 
 	// Use 'settings' to set *default* container specific settings.json values on container create. 
 	// You can edit these settings after create using File > Preferences > Settings > Remote.
@@ -38,8 +40,12 @@
 	// your server accepts connections from all interfaces (0.0.0.0 or '*'), not just localhost.
 	// "appPort": [],
 
+	"remoteEnv": {
+		"PATH": "${containerEnv:PATH}:/workspaces/dev/TeXDown",
+	},
+
 	// Uncomment the next line to run commands after the container is created - for example installing git.
-	// "postCreateCommand": "sudo apt-get update && sudo apt-get install -y git",
+	// "postCreateCommand": "",
 
 	// Add the IDs of extensions you want installed when the container is created in the array below.
 	"extensions": []
