@@ -1,3 +1,4 @@
+import numpy as np
 import tensorflow as tf
 from . import assertions
 
@@ -18,3 +19,7 @@ def heaveside(x: tf.Tensor):
 
 def sign(x: tf.Tensor):
     return tf.stop_gradient(2 * heaveside(x) - 1)
+
+
+def np_unravel(flat_idxs, shape):
+    return np.stack(np.unravel_index(flat_idxs, shape), axis=-1)

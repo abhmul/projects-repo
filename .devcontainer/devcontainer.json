@@ -45,11 +45,15 @@
 	},
 
 	// Uncomment the next line to run commands after the container is created - for example installing git.
-	// "postCreateCommand": "",
+	"postCreateCommand": "pwd && ln -s .bash_aliases $HOME/.bash_aliases",
 
 	// Add the IDs of extensions you want installed when the container is created in the array below.
 	"extensions": [
 		"ms-python.python",
-		"tomoki1207.pdf"
+		"tomoki1207.pdf",
+		"goessner.mdmath",
+		"davidanson.vscode-markdownlint",
+		"shd101wyy.markdown-preview-enhanced",
+		"yzhang.markdown-all-in-one"
 	]
 }
