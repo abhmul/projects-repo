@@ -2,14 +2,15 @@
 	email = abhmul@gmail.com
 	name = jetm
 [alias]
-	a = !git add -a
+	a = !git add -A
 	u = !git add -u
 	c = !git commit -m
 	ac = !git a && git c
 	uc = !git u && git c
-	p = !git push --set-upstream origin $(git rev-parse — abbrev-ref HEAD)
-	acp = !f(){git ac $1 && git p} && f
-	ucp = !f(){git uc $1 && git p} && f
+	p = !git push -u origin HEAD
+	pu = !git stash && git pull -r && git stash pop
+	acp = "! f() { git pu && git ac $1 && git p; } ; f"
+	ucp = "! f() { git pu && git uc $1 && git p; } ; f"
 
 
 
