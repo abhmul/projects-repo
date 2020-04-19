@@ -45,7 +45,7 @@
 	},
 
 	// Uncomment the next line to run commands after the container is created - for example installing git.
-	"postCreateCommand": "pwd && ln -s .bash_aliases $HOME/.bash_aliases",
+	"postCreateCommand": "pwd && cp .bash_aliases $HOME/.bash_aliases",
 
 	// Add the IDs of extensions you want installed when the container is created in the array below.
 	"extensions": [

@@ -1,0 +1,72 @@
+% Start of header.
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\newcommand{\I}[0]{\mathbb{I}}
+\newcommand{\Q}[0]{\mathbb{Q}}
+\newcommand{\Z}[0]{\mathbb{Z}}
+\newcommand{\C}[0]{\mathbb{C}}
+\newcommand{\F}[0]{\mathbb{F}}
+\newcommand{\R}[0]{\mathbb{R}}
+\newcommand{\N}[0]{\mathbb{N}}
+\newcommand{\unif}[0]{\mathcal{U}}
+\newcommand{\Tor}[0]{\operatorname{Tor}}
+\newcommand{\ra}[0]{\rightarrow}
+\newcommand{\rr}[0]{\Rightarrow}
+\newcommand{\llrr}[0]{\Leftrightarrow}
+\newcommand{\subq}[0]{\subseteq}
+\newcommand{\sub}[0]{\subset}
+\newcommand{\nsubq}[0]{\not\subseteq}
+\newcommand{\nsub}[0]{\not\subset}
+\newcommand{\sep}[0]{\hbox{ }}
+\newcommand{\inv}[0]{^{\raisebox{.2ex,$\scriptscriptstyle-1$}}}
+\newcommand{\thnew}[0]{^{\text{th}}}
+\newcommand{\ifnew}[0]{\text{ if }}
+\newcommand{\elsenew}[0]{\text{ else }}
+\newcommand{\for}[0]{\text{ for }}
+
+\setlength{\jot}{8pt}
+% End of header
+% Start of body.
+
+\begin{document}
+
+\section{Expected value of kth element of an ordered sequence of elements from some interval}
+
+\subsection{Question:}
+
+Let each ordered sequence of $n$ unique elements $X_1, \dots, X_n$ from the interval $(a, b)$ be equally probable. What is the expected value of the element $X_k$?
+
+\subsection{Answer:}
+
+Consider random variables $Y_1, \dots, Y_n$ sampled from a uniform  distribution over $(a, b)$ such that no two $Y_i$ are equal. First, we show that any ordered sequence made from $Y_1, \dots, Y_n$ is equally probable.
+
+Let $X_1 = Y_{i_1}, \dots, X_n = Y_{i_n}$ be the ordered sequence made from our random variables $Y_1, \dots, Y_n$. Then we see the probability density function, $f$, at a specific random sequence is
+
+$$f_X([X_1, \dots, X_n]) = \sum_{Y_1, \dots, Y_n \in \text{ Permuations}(X_1, \dots, X_n)} f_{Y_1, \dots, Y_n}(Y_1, \dots, Y_n) $$
+$$= \sum_{Y_1, \dots, Y_n \in \text{ Permuations}(X_1, \dots, X_n)} f_{Y_1}(Y_1)\cdots f_{Y_n}(Y_n)$$
+
+Note that the value of a uniform probability density does not change if we introduce a finite number of holes (as the integral over the pdf does not change in value), thus:
+
+$$
+f_{Y_i}(Y_i) = 
+\begin{cases}
+\frac{1}{b-a},  & \text{if $Y_i \in (a, b)$ and $Y_i \neq Y_j$ for $j \neq i$} \\
+0, & \text{otherwise}
+\end{cases}
+$$
+
+\textbf{NOTE}: \emph{I think I can rewrite it this way, because all I'm doing is reorganizing the points of the composite $Y$ pdf into groups that produce the same ordered sequence. So when I integrate over the pdf of the ordered sequences, it's integrating over the same region as the composite $Y$ pdf.} \textbf{But the multiplier of $n!$ can't be right or the pdf for $f_X$ will integrate to greater than 1!}
+
+Therefore we can rewrite $f_X$:
+
+$$f_X([X_1, \dots, X_n]) = \sum_{Y_1, \dots, Y_n \in \text{ Permuations}(X_1, \dots, X_n)}  \frac{1}{(b-a)^n}$$
+$$=\frac{n!}{(b-a)^n}$$
+\end{document}
+% End of body.
