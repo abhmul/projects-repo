@@ -151,3 +151,5 @@ Reflecting on the inverse relationship between the size of $\epsilon$ and the si
 **8**:
 
 ## 2.3 The Algebraic and Order Limit Theorems
+
+test changes
