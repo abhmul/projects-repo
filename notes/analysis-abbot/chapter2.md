@@ -24,11 +24,11 @@ $$
 |a_n - a| = |a_n - 0| = |a_n| = |\frac{1}{\sqrt{n}}| = \frac{1}{\sqrt{n}}
 $$
 Choose $N > \frac{1}{\epsilon^2}$. Note that 
-$$ n \geq N > \frac{1}{\epsilon^2} \Rightarrow \frac{1}{n} \leq \frac{1}{N} \leq \epsilon^2 \Rightarrow \frac{1}{\sqrt{n}} \leq \frac{1}{\sqrt{N}} \leq \epsilon $$
+$$ n \geq N > \frac{1}{\epsilon^2} \Rightarrow \frac{1}{n} \leq \frac{1}{N} < \epsilon^2 \Rightarrow \frac{1}{\sqrt{n}} \leq \frac{1}{\sqrt{N}} < \epsilon $$
 
 Since $a_n = |a_n - 0|$, then
-$$ |a_n - 0| \leq \epsilon $$
-$\blacksquare$l
+$$ |a_n - 0| < \epsilon $$
+$\blacksquare$
 
 **Example**: Show that
 $$ \lim \Big( \frac{n+1}{n}\Big) = 1$$
