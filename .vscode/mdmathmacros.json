@@ -20,5 +20,6 @@
     "\\thnew": "^{\\text{th}}",
     "\\ifnew": "\\text{ if }",
     "\\elsenew": "\\text{ else }",
-    "\\for": "\\text{ for }}"
+    "\\for": "\\text{ for }}",
+    "\\eps": "\\epsilon"
 }
