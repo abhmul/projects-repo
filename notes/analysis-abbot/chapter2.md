@@ -151,3 +151,75 @@ Reflecting on the inverse relationship between the size of $\epsilon$ and the si
 **8**:
 
 ## 2.3 The Algebraic and Order Limit Theorems
+
+**Definition 2.3.1**: A sequence $(x_n)$ is *bounded* if there exists a number $M > 0$ such that $|x_n| \leq M$ for all $n \in \N$. 
+
+- Note that if a subseqeuence excluding the first $n$ elements is bounded by $M$, then the whole sequence is bounded. We can take the bound to be $\max (|x_1|,\dots, |x_n|, M)$.
+
+**Theorem 2.3.2**: Every convergent sequence is bounded.
+
+*Proof*: Name our convergent sequence $(x_n)$. By definition of convergence, $\forall \epsilon > 0$, $\exists N \in \N$ such that if $n >  N$ then $|x_n - x| < \epsilon$ for some $x \in \R$. Consider $\epsilon = 1$. Let $N \in \N$ be such that if $n > N$, $|x_n - x| < 1$. Note that
+
+$$|x_n - x| < 1$$
+$$\Rightarrow |x_n - x| + |x| < 1 + |x|$$
+$$\Rightarrow |x_n - x + x| < 1 + |x|  \text{ (by triangle inequality) }$$
+$$\Rightarrow |x_n| < 1 + |x|$$
+
+
+Now consider
+
+$$
+M = \max (|x_1|, \dots, |x_N|, 1 + |x|)
+$$
+
+By construction, $M \geq x_i$ for all $i \in \N$. $\blacksquare$
+
+**Theorem 2.3.3 (Algebraic Limit Theorem)**: Let $\lim a_n = a$ and $\lim b_n = b$. Then,
+
+1. $\lim (ca_n) = ca$, $\forall c \in \R$
+2. $\lim (a_n + b_n) = a + b$
+3. $\lim(a_nb_n) = ab$ 
+4. $\lim(a_n / b_n) = a / b$
+
+1. *Proof*: We know that $\lim(a_n) = a$. By definition of limit, this means that $\forall \epsilon > 0$, $\exists N \in \N$ s.t. $|a_n - a| < \epsilon$ for any $n > N$. Now consider the sequence $(ca_n)$. First, for the case $c \neq 0$, We will show that it converges to $ca$. Let $\epsilon' > 0$. Choose $N \in \N$ such that for $n > N$
+
+$$|a_n - a| < \frac{\epsilon'}{|c|}$$
+$$\Rightarrow |c||a_n - a| < \epsilon'$$
+$$\Rightarrow |ca_n - ca| < \epsilon'$$
+
+Thus for $n > N$, $ca_n \in (ca - \epsilon', ca + \epsilon')$. By definition of convergence, $ca_n \rightarrow ca$. 
+
+Now consider the case where $c = 0$. This means $(ca_n)$ reduces to the sequence $(0, 0, 0, 0, \dots)$. To show this converges to $0$, consider $\epsilon' > 0$ and choose $N = 1$. Then consider for $n > N$:
+
+$$|ca_n - 0| < \epsilon'$$
+$$|0 - 0| < \epsilon'$$
+$$0 < \epsilon'$$
+
+Which is true by construction of $\epsilon'$. Thus the sequence $(0, 0, 0, 0, \dots)$ converges to $0$. $\blacksquare$
+
+$\blacksquare$
+
+1. *Proof*: We know that $\lim(a_n) = a$. By definition of limit, this means that $\forall \epsilon_a > 0$, $\exists N_a \in \N$ s.t. $|a_n - a| < \epsilon_a$ for any $n > N_a$. We also know that $\lim(b_n) = b$. By definition of limit, this means that $\forall \epsilon_b > 0$, $\exists N_b \in \N$ s.t. $|b_n - b| < \epsilon_b$ for any $n > N_b$. Let $\epsilon' > 0$ and $\epsilon_a = \epsilon_b = \frac{\epsilon'}{2}$ (this means $\epsilon' = \epsilon_a + \epsilon_b$). Choose $N = \max(N_a, N_b)$ such that for $n > N$:
+
+$$|a_n - a| + |b_n - b| < \epsilon'$$
+$$\Rightarrow |a_n - a + b_n - b| < \epsilon'$$
+$$\Rightarrow |(a_n + b_n) - (a + b)| < \epsilon'$$
+
+Thus for $n > N$, $a_n + b_n \in (a + b - \epsilon', a + b - \epsilon'$. By definition of convergence, $(a_n + b_n) \rightarrow a + b$. $\blacksquare$
+
+3. *Proof*: We know that $\lim(a_n) = a$. By definition of limit, this means that $\forall \epsilon_a > 0$, $\exists N_a \in \N$ s.t. $|a_n - a| < \epsilon_a$ for any $n > N_a$. We also know that $\lim(b_n) = b$. By definition of limit, this means that $\forall \epsilon_b > 0$, $\exists N_b \in \N$ s.t. $|b_n - b| < \epsilon_b$ for any $n > N_b$. Let $\epsilon' > 0$ and choose
+
+$$\epsilon_a = \min (\frac{\epsilon'}{3b}, \frac{\epsilon'}{3 \epsilon_b})$$
+$$\epsilon_b = \min (\frac{\epsilon'}{3a}, \frac{\epsilon'}{3 \epsilon_a})$$
+
+(that way $\epsilon' \geq a\epsilon_b + b\epsilon_a + \epsilon_a \epsilon_b$). Choose $N = \max(N_a, N_b)$ such that for $n > N$:
+
+$$b|a_n - a| + a|b_n - b| + |a_n - a||b_n - b| < \epsilon'$$
+$$\Rightarrow |a_nb - ab| + |ab_n - ab| + |(a_n - a)b_n - (a_n - a)b| < \epsilon'$$
+$$\Rightarrow |a_nb - ab + ab_n - ab + a_nb_n - ab_n - a_nb + ab| < \epsilon'$$
+$$\Rightarrow |a_nb_n + a_nb - a_nb + ab_n - ab_n - ab - ab + ab| < \epsilon'$$
+$$\Rightarrow |a_nb_n - ab| < \epsilon'$$
+
+Thus for $n > N$, $a_nb_n \in (ab - \epsilon', ab + \epsilon')$. By definition of convergence, $(a_nb_n) \rightarrow ab$. $\blacksquare$
+
+4. *Proof*: First we show that $\lim 1 / b_n \rightarrow 1 / b$. We know that $\lim(b_n) = b$. By definition of limit, this means that $\forall \epsilon_b > 0$, $\exists N_b \in \N$ s.t. $|b_n - b| < \epsilon_b$ for any $n > N_b$. 
