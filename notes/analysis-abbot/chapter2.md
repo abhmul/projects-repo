@@ -181,6 +181,8 @@ By construction, $M \geq x_i$ for all $i \in \N$. $\blacksquare$
 3. $\lim(a_nb_n) = ab$ 
 4. $\lim(a_n / b_n) = a / b$
 
+**Note:** Proofs for (3) and (4) on my notes are a little more complicated than in Abbot. See book for simpler proofs.
+
 1. *Proof*: We know that $\lim(a_n) = a$. By definition of limit, this means that $\forall \epsilon > 0$, $\exists N \in \N$ s.t. $|a_n - a| < \epsilon$ for any $n > N$. Now consider the sequence $(ca_n)$. First, for the case $c \neq 0$, We will show that it converges to $ca$. Let $\epsilon' > 0$. Choose $N \in \N$ such that for $n > N$
 
 $$|a_n - a| < \frac{\epsilon'}{|c|}$$
@@ -199,20 +201,20 @@ Which is true by construction of $\epsilon'$. Thus the sequence $(0, 0, 0, 0, \d
 
 $\blacksquare$
 
-1. *Proof*: We know that $\lim(a_n) = a$. By definition of limit, this means that $\forall \epsilon_a > 0$, $\exists N_a \in \N$ s.t. $|a_n - a| < \epsilon_a$ for any $n > N_a$. We also know that $\lim(b_n) = b$. By definition of limit, this means that $\forall \epsilon_b > 0$, $\exists N_b \in \N$ s.t. $|b_n - b| < \epsilon_b$ for any $n > N_b$. Let $\epsilon' > 0$ and $\epsilon_a = \epsilon_b = \frac{\epsilon'}{2}$ (this means $\epsilon' = \epsilon_a + \epsilon_b$). Choose $N = \max(N_a, N_b)$ such that for $n > N$:
+2. *Proof*: We know that $\lim(a_n) = a$. By definition of limit, this means that $\forall \epsilon_a > 0$, $\exists N_a \in \N$ s.t. $|a_n - a| < \epsilon_a$ for any $n > N_a$. We also know that $\lim(b_n) = b$. By definition of limit, this means that $\forall \epsilon_b > 0$, $\exists N_b \in \N$ s.t. $|b_n - b| < \epsilon_b$ for any $n > N_b$. Let $\epsilon' > 0$ and $\epsilon_a = \epsilon_b = \frac{\epsilon'}{2}$ (this means $\epsilon' = \epsilon_a + \epsilon_b$). Choose $N = \max(N_a, N_b)$ such that for $n > N$:
 
 $$|a_n - a| + |b_n - b| < \epsilon'$$
 $$\Rightarrow |a_n - a + b_n - b| < \epsilon'$$
 $$\Rightarrow |(a_n + b_n) - (a + b)| < \epsilon'$$
 
-Thus for $n > N$, $a_n + b_n \in (a + b - \epsilon', a + b - \epsilon'$. By definition of convergence, $(a_n + b_n) \rightarrow a + b$. $\blacksquare$
+Thus for $n > N$, $a_n + b_n \in (a + b - \epsilon', a + b - \epsilon')$. By definition of convergence, $(a_n + b_n) \rightarrow a + b$. $\blacksquare$
 
 3. *Proof*: We know that $\lim(a_n) = a$. By definition of limit, this means that $\forall \epsilon_a > 0$, $\exists N_a \in \N$ s.t. $|a_n - a| < \epsilon_a$ for any $n > N_a$. We also know that $\lim(b_n) = b$. By definition of limit, this means that $\forall \epsilon_b > 0$, $\exists N_b \in \N$ s.t. $|b_n - b| < \epsilon_b$ for any $n > N_b$. Let $\epsilon' > 0$ and choose
 
-$$\epsilon_a = \min (\frac{\epsilon'}{3b}, \frac{\epsilon'}{3 \epsilon_b})$$
+$$\epsilon_a =\frac{\epsilon'}{3b}$$
 $$\epsilon_b = \min (\frac{\epsilon'}{3a}, \frac{\epsilon'}{3 \epsilon_a})$$
 
-(that way $\epsilon' \geq a\epsilon_b + b\epsilon_a + \epsilon_a \epsilon_b$). Choose $N = \max(N_a, N_b)$ such that for $n > N$:
+(that way $a\epsilon_b + b\epsilon_a + \epsilon_a \epsilon_b \leq \frac{\epsilon'}{3} + \frac{\epsilon'}{3} + \frac{\epsilon'}{3} = \epsilon'$).**We will handle the case where $a=0$ (and WLOG $b=0$) in exercise  2.3.7**. Choose $N = \max(N_a, N_b)$ such that for $n > N$:
 
 $$b|a_n - a| + a|b_n - b| + |a_n - a||b_n - b| < \epsilon'$$
 $$\Rightarrow |a_nb - ab| + |ab_n - ab| + |(a_n - a)b_n - (a_n - a)b| < \epsilon'$$
@@ -222,4 +224,38 @@ $$\Rightarrow |a_nb_n - ab| < \epsilon'$$
 
 Thus for $n > N$, $a_nb_n \in (ab - \epsilon', ab + \epsilon')$. By definition of convergence, $(a_nb_n) \rightarrow ab$. $\blacksquare$
 
-4. *Proof*: First we show that $\lim 1 / b_n \rightarrow 1 / b$. We know that $\lim(b_n) = b$. By definition of limit, this means that $\forall \epsilon_b > 0$, $\exists N_b \in \N$ s.t. $|b_n - b| < \epsilon_b$ for any $n > N_b$. 
+1. *Proof*: First we show that $\lim 1 / b_n \rightarrow 1 / b$. We know that $\lim(b_n) = b$. By definition of limit, this means that $\forall \epsilon_b > 0$, $\exists N_b \in \N$ s.t. $|b_n - b| < \epsilon_b$ for any $n > N_b$. Now consider
+
+$$ |\frac{1}{b_n} - \frac{1}{b}|$$
+$$= |\frac{b - b_n}{b_n b}|$$
+$$\tag{1} = \frac{1}{|b||b_n|}|b - b_n|$$
+
+Now choose $|b| > \epsilon_b > 0$ and let $n > N \in \N$ s.t. $|b - b_n| < \epsilon_b$. By definition of convergence, all $b_n \in (b - \epsilon_b, b + \epsilon_b)$ for $n > N$. This means we can construct the lower bound on $|b_n|$:
+
+$$ 0 < |b| - \epsilon_b < |b_n| < |b| + \epsilon_b$$
+
+Substituting into (1) we get
+
+$$ |\frac{1}{b_n} - \frac{1}{b}| < \frac{1}{|b|(|b| - \epsilon_b)}\epsilon_b$$
+
+Now choose $\epsilon' > 0$ and $\epsilon_b$ s.t. $\epsilon' = \frac{1}{|b|(|b| - \epsilon_b)}\epsilon_b$. To verify that a valid $\epsilon_b > 0$ exists for all choices of $\epsilon'$, we can solve the above equality for $\epsilon_b$
+
+$$ \epsilon' = \frac{\epsilon_b}{|b|(|b| - \epsilon_b)}$$
+$$ \Rightarrow |b|(|b| - \epsilon_b)\epsilon' = \epsilon_b$$
+$$ \Rightarrow |b|^2\epsilon' - |b|\epsilon_b\epsilon' = \epsilon_b$$
+$$ \Rightarrow |b|^2\epsilon' = \epsilon_b + |b|\epsilon_b\epsilon'$$
+$$ \Rightarrow |b|^2\epsilon' = \epsilon_b(1 + |b|\epsilon')$$
+$$ \Rightarrow \frac{|b|^2\epsilon'}{1 + |b|\epsilon'} = \epsilon_b$$
+
+As all the terms on the left are positive, we're guaranteed to find an $\epsilon_b$ that works for any given $\epsilon' > 0$. Thus, for $n > N \in \N$ such that:
+
+$$|b_n - b| <  \frac{|b|^2\epsilon'}{1 + |b|\epsilon'}$$
+
+Our work above shows that
+
+$$ |\frac{1}{b_n} - \frac{1}{b}| < \epsilon'$$
+
+and $(1 / b_n) \rightarrow 1/b$. Now consider $\lim a_n / b_n = a_n * 1/b_n$. Using part (3) of the Algebraic Limit Theorem, we know $(a_n / b_n) \rightarrow a/b$. $\blacksquare$
+
+
+From here on out, I'll use the phrase for $x(n) > 0$ $\forall n$, "$x(n)$ can be made **arbitrarily small**" to mean that $\forall \epsilon > 0$, $\exist N \in \N$ s.t. for all $n \geq N$, $x(n) < \epsilon$.
