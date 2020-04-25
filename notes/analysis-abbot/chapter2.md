@@ -174,6 +174,8 @@ $$
 
 By construction, $M \geq x_i$ for all $i \in \N$. $\blacksquare$
 
+**The below theorem shows that, given sequences and the fact that their individual limits exist, we can compute the limit of their algebraic compbinations intuitively.**
+
 **Theorem 2.3.3 (Algebraic Limit Theorem)**: Let $\lim a_n = a$ and $\lim b_n = b$. Then,
 
 1. $\lim (ca_n) = ca$, $\forall c \in \R$
@@ -257,5 +259,63 @@ $$ |\frac{1}{b_n} - \frac{1}{b}| < \epsilon'$$
 
 and $(1 / b_n) \rightarrow 1/b$. Now consider $\lim a_n / b_n = a_n * 1/b_n$. Using part (3) of the Algebraic Limit Theorem, we know $(a_n / b_n) \rightarrow a/b$. $\blacksquare$
 
-
 From here on out, I'll use the phrase for $x(n) > 0$ $\forall n$, "$x(n)$ can be made **arbitrarily small**" to mean that $\forall \epsilon > 0$, $\exist N \in \N$ s.t. for all $n \geq N$, $x(n) < \epsilon$.
+
+**The below theorem shows that the limit behaves intuitively under non-strict orderings.**
+
+**Theorem 2.3.4 (Order Limit Theorem)**: Assume $\lim a_n = a$ and $\lim b_n = b$.
+
+1. If $a_n \geq 0$ for all $n \in \N$ then $a \geq 0$.
+2. If $a_n \leq b_n$ for all $n \in \N$, then $a \leq b$.
+3. If there exists $c \in \R$ for which $c \leq b_n$ for all $n \in \N$, then $c \leq b$. Similarly, if $a_n \leq c$ for all $n \in \N$.
+
+$$ $$
+
+1. *Proof*: We know $\lim a_n = a$, so $|a_n - a|$ can be arbitrarily small. Assume that $a < 0$. As $|a_n - a|$ can be arbitrarily small, choose $\epsilon = \frac{|a|}{2}$. Thus for sufficiently large $n$,
+
+$$ a_n < a + \frac{|a|}{2} = \frac{a}{2} < 0 \Rightarrow\Leftarrow$$
+
+$\blacksquare$
+
+2. *Proof*: We know $\lim a_n = a$ and $\lim b_n = b$, so $|a_n - a|$ and $|b_n - b|$ can be arbitrarily small. We also know that $a_n \leq b_n$. Note that
+
+$$ a_n \leq b_n \Rightarrow c_n = b_n - a_n \geq 0 $$
+
+By the *Algebraic Limit Theorem*, we know that $\lim (b_n - a_n) = b - a$. By part (1) of the *Order Limit Theorem*, we know 
+
+$$b - a \geq 0 \Rightarrow a \leq b$$
+
+$\blacksquare$
+
+3. We know $\lim b_n = b$, so $|b_n - b|$ can be arbitrarily small. We know there exists $c \in \R$ for which $c \leq b_n$ for all $n \in \N$. Note that,
+
+$$ c \leq b_n \Rightarrow b_n - c \geq 0 $$
+
+By the *Algebraic Limit Theorem*, we know
+
+$$ \lim (b_n - c) = b - c $$
+
+(the above fact is clear when you note that a repeating sequence $(c_n = c) \rightarrow c$ because $|c_n - c| = 0 < \epsilon$). By part (1) of the *Order Limit Theorem*:
+
+$$b_n - c \geq 0 \Rightarrow b - c \geq 0 \Rightarrow b \geq c $$
+
+Now examine $(a_n)$. We know $\lim a_n = a$, so $|a_n - a|$ can be arbitrarily small. We know there exists $c \in \R$ for which $c \geq a_n$ for all $n \in \N$. Note that,
+
+$$ c \geq a_n \Rightarrow c - a_n \geq 0 $$
+
+By the *Algebraic Limit Theorem*, we know
+
+$$ \lim (c - a_n) = c - a $$
+
+$$c - a_n \geq 0 \Rightarrow c - a \geq 0 \Rightarrow c \geq a$$
+
+$\blacksquare$
+
+**Notes**:
+
+- Proof (3) is basically an expansion of letting $a_n = c$ or $b_n = c$ and applying (2)
+
+- Though the theorem takes as given the ordering is true for all elements of our sequences, it will also apply if the ordering assumption is satisfied after some $N \in \N$. That's because a sequence's limit is equal to that of a tail subsequence.
+
+
+

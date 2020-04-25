@@ -34,4 +34,12 @@
 			"*Proof*: "
 		]
 	},
+
+	"Contradiction": {
+		"scope": "markdown",
+		"prefix": "contra",
+		"body": [
+			"\\Rightarrow\\Leftarrow"
+		]
+	}
 }
