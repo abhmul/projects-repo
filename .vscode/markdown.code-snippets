@@ -51,6 +51,14 @@
 		]
 	},
 
+	"Limit Inequality": {
+		"scope": "markdown",
+		"prefix": "lnq",
+		"body": [
+			"$$|$q - l| < \\epsilon $$\n$0"
+		]
+	},
+
 	"QED": {
 		"scope": "markdown",
 		"prefix": "qed",

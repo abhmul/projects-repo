@@ -404,7 +404,60 @@ $$ y_n = \frac{x_1 + x_2 + x_3 + \cdots x_n}{n} $$
 
 also converges to the limit. Give an example to show that is possible for the sequence $(y_n)$ of averages to converge even if $(x_n)$ does not.
 
-*Proof*: 
+*Proof*: We know that $\lim x_n = l \in \R$. Consider the sequence $(y_n = \frac{x_1 + x_2 + x_3 + \cdots x_n}{n})$. Consider:
+
+$$ |y_n - l| = |\frac{x_1 + x_2 + x_3 + \cdots x_n}{n} - l| = |\frac{x_1 - l}{n} + \frac{x_2 - l}{n} + \cdots + \frac{x_n - l}{n}|$$
+
+Consider $\epsilon > 0$. As $(x_n)$ is a convergent sequence, $\exist N \in \N$ s.t. for $n > N$
+
+$$\tag{1} |x_n - l| < \frac{\epsilon}{2}$$
+
+Now consider $|y_n - l|$ for $n > N$:
+
+$$ |y_n - l| = |\frac{x_1 + x_2 + x_3 + \cdots x_n}{n} - l| = |\frac{x_1 + \cdots + x_N - Nl}{n} + \frac{x_{N+1} +  \cdots + x_n - (n - N)l}{n}|$$
+
+We know $(x_n)$ is a bounded seqeuence because it converges. Let $M \geq |x_n|$ $\forall n \in \N$ be an upper bound for $(x_n)$. This means
+
+$$ |y_n - l| = |\frac{x_1 + \cdots + x_N - Nl}{n} + \frac{x_{N+1} +  \cdots + x_n - (n - N)l}{n}|$$
+$$ \leq |\frac{NM - Nl}{n} + \frac{x_{N+1} +  \cdots + x_n - (n - N)l}{n}|$$
+$$ \leq |\frac{NM - Nl}{n}| + |\frac{x_{N+1} - l}{n}| + \cdots + |\frac{x_n - l}{n}|$$
+
+Remember that we chose $N$ to be such that for $n > N$ $x_n$ is within $\frac{\epsilon}{2}$ of $l$ (i.e. equation (1)). This further refines our inequality:
+
+$$|y_n - l| \leq |\frac{NM - Nl}{n}| + |\frac{\epsilon}{2n}| + \cdots + |\frac{\epsilon}{2n}|$$
+
+Noting that $\epsilon$ is positive, we can drop the absolute values and clean up:
+
+$$|y_n - l| \leq N\frac{|M - l|}{n} + \frac{(n - N)\epsilon}{2n}$$
+
+Now we can solve for an $n$ s.t. $|y_n - l| < \epsilon$:
+
+$$|y_n - l| \leq N\frac{|M - l|}{n} + \frac{(n - N)\epsilon}{2n} < \epsilon$$
+$$\Rightarrow 2N|M - l| + n\epsilon - N\epsilon < 2n\epsilon$$
+$$\Rightarrow 2N|M - l| - N\epsilon < 2n\epsilon - n\epsilon$$
+$$\Rightarrow 2N|M - l| - N\epsilon < n\epsilon$$
+$$\Rightarrow \frac{2N|M - l| - N\epsilon}{\epsilon} < n$$
+
+As $\epsilon > 0$, the term on the left of the inequality is always defined. Thus if we chooose $N' > \frac{2N|M - l| - N\epsilon}{\epsilon}$ then
+
+$$|y_n - l| < \epsilon$$
+
+$\blacksquare$
+
+*Example of Cesaro Mean that converges but undlerying sequence does not*: Consider the sequence $(x_n) = (1, 0, 1, 0, \dots)$. As we can produce no $N \in \N$ s.t. for $n \geq N$
+
+$$ |x_n - l| < \frac{1}{2} $$
+
+for any $l \in \R$. However, the sequence of *Cesaro Means* is $(y_n) = (\frac{\lfloor \frac{n+1}{2} \rfloor}{n})$. Let $\epsilon > 0$. Consider
+
+$$|\frac{\lfloor \frac{n+1}{2} \rfloor}{n} - \frac{1}{2}| $$
+$$\leq |\frac{\frac{n+1}{2}}{n} - \frac{1}{2}| $$
+$$= |\frac{1}{2} + \frac{1}{2n} - \frac{1}{2}| $$
+$$= |\frac{1}{2n}| $$
+$$= \frac{1}{2n} $$
+
+If we choose $N > \frac{1}{2\epsilon}$, then $|y_n - \frac{1}{2}| < \epsilon$. $\blacksquare$
+
 
 **Test Exercises**: 2.3.7, 2.3.8, 2.3.12
 
