@@ -41,5 +41,39 @@
 		"body": [
 			"\\Rightarrow\\Leftarrow"
 		]
+	},
+
+	"Limit range": {
+		"scope": "markdown",
+		"prefix": "lrng",
+		"body": [
+			"\\in (l - \\epsilon, l + \\epsilon)"
+		]
+	},
+
+	"QED": {
+		"scope": "markdown",
+		"prefix": "qed",
+		"body": [
+			"$\\blacksquare$"
+		]
+	},
+
+	"xn": {
+		"scope": "markdown",
+		"prefix": "xn",
+		"body": [
+			"$(x_n)$"
+		]
+	},
+
+	"yn": {
+		"scope": "markdown",
+		"prefix": "yn",
+		"body": [
+			"$(y_n)$"
+		]
 	}
+
+
 }

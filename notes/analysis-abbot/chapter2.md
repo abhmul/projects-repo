@@ -259,7 +259,11 @@ $$ |\frac{1}{b_n} - \frac{1}{b}| < \epsilon'$$
 
 and $(1 / b_n) \rightarrow 1/b$. Now consider $\lim a_n / b_n = a_n * 1/b_n$. Using part (3) of the Algebraic Limit Theorem, we know $(a_n / b_n) \rightarrow a/b$. $\blacksquare$
 
-From here on out, I'll use the phrase for $x(n) > 0$ $\forall n$, "$x(n)$ can be made **arbitrarily small**" to mean that $\forall \epsilon > 0$, $\exist N \in \N$ s.t. for all $n \geq N$, $x(n) < \epsilon$.
+From here on out, I'll use the phrase
+
+1. For $x(n) > 0$ $\forall n$: "$x(n)$ can be made **arbitrarily small**" to mean that $\forall \epsilon > 0$, $\exist N \in \N$ s.t. for all $n \geq N$, $x(n) < \epsilon$.
+2. For $x(n)$: "$x(n)$ can be made **arbitrarily close** to $l$" to mean that $\forall \epsilon > 0$, $\exist N \in \N$ s.t. for all $n \geq N$, $|x(n) - l| < \epsilon$.
+3. For $x(n)$: "Proposition of $x(n)$ is true for **sufficiently large** $n$" to mean that $\exist N \in \N$ s.t. for all $n \geq N$, proposition of $x(n)$ is true.
 
 **The below theorem shows that the limit behaves intuitively under non-strict orderings.**
 
@@ -317,5 +321,90 @@ $\blacksquare$
 
 - Though the theorem takes as given the ordering is true for all elements of our sequences, it will also apply if the ordering assumption is satisfied after some $N \in \N$. That's because a sequence's limit is equal to that of a tail subsequence.
 
+**Train Exercises**: 2.3.3, 2.3.5, 2.3.11
 
+**2.3.3 (Squeeze Theorem)**: Show that if $x_n \leq y_n \leq z_n$ for all $n \in \N$, and if $\lim x_n = \lim z_n = l$, then $\lim y_n = l$ as well.
+
+*Proof*: We know that $\lim x_n = \lim z_n = l$. So for $\epsilon > 0$ and sufficiently large $n \in \N$ we have
+
+$$ |x_n - l| < \epsilon \text{ and } |z_n - l| < \epsilon$$
+
+This means that
+
+$$ x_n \in (l - \epsilon, l + \epsilon)$$
+$$ \Leftrightarrow l - \epsilon < x_n < l + \epsilon $$
+
+and
+
+$$ z_n \in (l - \epsilon, l + \epsilon)$$
+$$ \Leftrightarrow l - \epsilon < z_n < l + \epsilon $$
+
+We also know that $x_n \leq y_n \leq z_n$ $\forall n \in \N$, so for sufficiently large $n \in \N$ we have
+
+$$ l - \epsilon < x_n \leq y_n \leq z_n < l + \epsilon $$
+$$ \Leftrightarrow y_n \in (l - \epsilon, l + \epsilon)$$
+
+Thus, $(y_n)$ also converges to $l$.
+
+**2.3.5**: Let $(x_n)$ and $(y_n)$ be given, and define $(z_n)$ to be the "shuffled" sequence $(x_1, y_1, x_2, y_2, \dots)$. Prove that $(z_n)$ is convergent if and only if $(x_n)$ and $(y_n)$ are both convergent with $\lim x_n = \lim y_n = l$
+
+*Proof*: ($\Leftarrow$): We know that $\lim x_n = \lim y_n = l$. This means for $\epsilon > 0$,  $\exist N_x \in \N$ s.t. for $n \geq N_x$:
+
+$$ x_n \in (l - \epsilon, l + \epsilon)$$
+
+Likewise, $\exist N_y \in \N$ s.t. for $n \geq N_y$:
+
+$$ y_n \in (l - \epsilon, l + \epsilon)$$
+
+Let $M = 2 \max (N_x, N_y)$. Then for $m \geq M$ we have:
+
+$$ m \geq 2 \max (N_x, N_y) \geq 2N_x \geq 2N_x - 1$$
+$$\Rightarrow \frac{m+1}{2} \geq N_x$$
+
+and
+
+$$ m \geq 2 \max (N_x, N_y) \geq 2N_y$$
+$$\Rightarrow \frac{m}{2} \geq N_y$$
+
+Thus,
+
+$$z_m = \left\{\begin{array}{lr}
+        x_{\frac{m + 1}{2}}, & \text{if } m \text{ is odd} \\
+        y_{\frac{m}{2}}, & \text{if } m \text{ is even}
+        \end{array}\right\} \in (l - \epsilon, l + \epsilon)$$
+
+and $(z_m) \rightarrow l$.
+
+($\Rightarrow$): We know that $(z_n)$ is convergent. Let $\lim z_n = l$. This means for $\epsilon > 0$, $\exist N \in \N$ s.t. for $n > N$:
+
+$$ z_n \in (l - \epsilon, l + \epsilon)$$
+
+We also know by definition of $(z_n)$ that:
+
+$$z_n = \left\{\begin{array}{lr}
+        x_{\frac{n + 1}{2}}, & \text{if } m \text{ is odd} \\
+        y_{\frac{n}{2}}, & \text{if } m \text{ is even}
+        \end{array}\right\}$$
+
+Choose $M_x = \frac{N + 1}{2}$. Note that $z_N = x_{M_x}$. Note that for $m > M_x$ and $m = 2n - 1$:
+
+$$ m > M_x \Rightarrow 2n - 1 > 2N - 1 \Rightarrow n > N $$
+$$ \Rightarrow x_m = z_{2m - 1} \in (l - \epsilon, l + \epsilon)$$
+
+Thus, $(x_m) \rightarrow l$. Likewise choose $M_y = \frac{N}{2}$. Note that for $m > M_y$ and $m = 2n$:
+
+$$ m > M_y \Rightarrow 2n > 2N \Rightarrow n > N $$
+$$ \Rightarrow y_m = z_{2m} \in (l - \epsilon, l + \epsilon)$$
+
+Thus, $\lim x_m = \lim y_m = l$. $\blacksquare$
+
+**2.3.11 (Cesaro Means)** Show that if $(x_n)$ is a convergent sequence, then the sequence given by the averages
+
+$$ y_n = \frac{x_1 + x_2 + x_3 + \cdots x_n}{n} $$
+
+also converges to the limit. Give an example to show that is possible for the sequence $(y_n)$ of averages to converge even if $(x_n)$ does not.
+
+*Proof*: 
+
+**Test Exercises**: 2.3.7, 2.3.8, 2.3.12
 
