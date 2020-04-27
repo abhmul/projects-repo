@@ -451,13 +451,16 @@ $$ |x_n - l| < \frac{1}{2} $$
 for any $l \in \R$. However, the sequence of *Cesaro Means* is $(y_n) = (\frac{\lfloor \frac{n+1}{2} \rfloor}{n})$. Let $\epsilon > 0$. Consider
 
 $$|\frac{\lfloor \frac{n+1}{2} \rfloor}{n} - \frac{1}{2}| $$
-$$\leq |\frac{\frac{n+1}{2}}{n} - \frac{1}{2}| $$
+
+And since $\frac{\lfloor \frac{n+1}{2} \rfloor}{n} \geq \frac{1}{2}$:
+
+
+$$|\frac{\lfloor \frac{n+1}{2} \rfloor}{n} - \frac{1}{2}|  \leq |\frac{\frac{n+1}{2}}{n} - \frac{1}{2}| $$
 $$= |\frac{1}{2} + \frac{1}{2n} - \frac{1}{2}| $$
 $$= |\frac{1}{2n}| $$
 $$= \frac{1}{2n} $$
 
 If we choose $N > \frac{1}{2\epsilon}$, then $|y_n - \frac{1}{2}| < \epsilon$. $\blacksquare$
-
 
 **Test Exercises**: 2.3.7, 2.3.8, 2.3.12
 
