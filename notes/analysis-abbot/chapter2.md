@@ -464,3 +464,28 @@ If we choose $N > \frac{1}{2\epsilon}$, then $|y_n - \frac{1}{2}| < \epsilon$. $
 
 **Test Exercises**: 2.3.7, 2.3.8, 2.3.12
 
+
+## 2.4 The Monotone Convergence Theorem and a First Look at the Infinite Series
+
+**Definition 2.4.1**: A sequence $(a_n)$ is *increasing* if $a_n \leq a_{n+1}$ for all $n \in \N$ and *decreasing* if $a_n \geq a_{n+1}$ for all $n \in \N$. A sequence is *monotone* if it is either increasing or decreasing.
+
+**Theorem 2.4.2 (Monotone Convergence Theorem)**: If a sequence is monotone and bounded, then it converges.
+
+*Proof*: Let $(a_n)$ be a monotone and bounded sequence.
+
+1. $(a_n)$ is increasing: By the *Axiom of Completeness* and given that $(a_n)$ is bounded, choose $\sup_{m \in \N} a_m$ as the least upper bound of $(a_n)$. Let $\epsilon > 0$. Consider
+
+$$\tag{1} | a_n -  \sup_{m \in \N} a_m | < \epsilon$$
+
+Note that $\exist n \in \N$ such that (1) is true since if none existed, then $\sup_{m \in \N} a_m - \epsilon < \sup_{m \in \N} a_m$ would be a smaller upper bound. Next, note that given $N \in \N$ such that (1) is true, (1) is also true for $n \geq N$ as $a_n \geq a_N$ ($(a_n)$ is increasing). Thus $\forall \epsilon > 0$ $\exist N \in \N$ such that for $n \geq N$, $| a_n -  \sup_{m \in \N} a_m | < \epsilon$. Therefore, $(a_n)$ converges to $ \sup_{m \in \N} a_m$.
+
+2. $(a_n)$ is decreasing: By the definition of bounded sequence, $a_n \in [-M, M]$ $\forall n \in \N$. Thus, by the *Axiom of Completeness*, $\inf_{m \in \N} a_m$ exists. Consider
+
+$$\tag{2} | a_n -  \inf_{m \in \N} a_m | < \epsilon$$
+
+Note that $\exist n \in \N$ such that (2) is true since if none existed, then $\inf_{m \in \N} a_m + \epsilon > \inf_{m \in \N} a_m$ would be a larger lower bound. Next, note that given $N \in \N$ such that (2) is true, (2) is also true for $n \geq N$ as $a_n \leq a_N$ ($(a_n)$ is decreasing). Thus $\forall \epsilon > 0$ $\exist N \in \N$ such that for $n \geq N$, $| a_n -  \inf_{m \in \N} a_m | < \epsilon$. Therefore, $(a_n)$ converges to $ \inf_{m \in \N} a_m$. $\blacksquare$
+
+**Definition 2.4.3**: Let $(b_n)$ be a sequence. An *infinite series* is a formal expression of the form
+
+$$ \sum_{n=1}^{\infty} b_n = b_1 + b_2 + b_3 + \cdots$$
+
