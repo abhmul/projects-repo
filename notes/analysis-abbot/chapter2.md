@@ -559,8 +559,36 @@ Thus, $(s_m)$ is not bounded. Because convergent sequences are bounded, the *har
 
 **Theorem 2.4.6 (Cauchy Condensation Test)**: Suppose $(b_n)$ is decreasing and satisfies $b_n \geq 0$ $\forall n \in \N$. Then, the series $\sum_{n=1}^{\infty} b_n$ converges $\Leftrightarrow$ the series
 
-$$ \sum_{n=1}^{\infty} 2^n b_{2n} = b_1 + 2b_2 + 4b_4 + 8b_8 + \cdots$$
+$$ \sum_{n=0}^{\infty} 2^n b_{2^n} = b_1 + 2b_2 + 4b_4 + 8b_8 + \cdots$$
 
 converges.
 
-*Proof*: ($\Leftarrow$) Assume $\sum_{n=1}^{\infty} 2^n b_{2n}$ converges.
+*Proof*: ($\Leftarrow$) Assume $\sum_{n=0}^{\infty} 2^n b_{2^n}$ converges. Note that as it converges it is a bounded sequence. Also note that it's partial sums $r_k$ are greater than or equal to the corresponding partial sums of $\sum_{n=1}^{2^{k+1 - 1}} b_n = s_{2^{k+1 - 1}}$. This can be seen by noting that $(b_n)$ is decreasing, so $b_{n-1} \geq b_n$:
+
+$$ r_k =  \sum_{n=0}^{k} 2^n b_{2^n}$$
+$$= \sum_{n=0}^{k} \sum_{i=2^n}^{2^{n+1}-1} b_{2^n}$$
+$$\geq \sum_{n=0}^{k} \sum_{i=2^n}^{2^{n+1}-1} b_i$$
+$$= \sum_{n=1}^{2^{k+1 - 1}} b_n = s_{2^{k+1 - 1}}$$
+
+Thus, the sequence of partial sums $(s_{2^{k+1 - 1}})$ must also be bounded. As this sequence is made up of the sum of nonnegative numbers, it is also increasing. By the *Monotone Convergence Theorem*, $(s_{2^k})$ converges.
+
+($\Rightarrow$) Assume the sequence of partial sums $(s_{2^k} = \sum_{n=1}^{2^k} b_n)$ converges. Note that as it converges it is a bounded sequence. Also note that it's partial sums $s_{2^k}$ are greater than or equal to the partial sums of $l_k = \sum_{n=0}^{k} 2^n b_{2^{n+1}}$. This can be seen by noting that $(b_n)$ is decreasing, so $b_{n-1} \geq b_n$:
+
+$$ s_{2^k} = \sum_{n=1}^{2^k} b_n $$
+$$ = \sum_{n=0}^{k} \sum_{i=2^n}^{2^{n+1}-1} b_i $$
+$$ \geq \sum_{n=0}^{k} \sum_{i=2^n}^{2^{n+1}-1} b_{2^{n+1}} $$
+$$ = \sum_{n=0}^{k} 2^n b_{2^{n+1}} $$
+$$ = l_k $$
+
+As the sequence of partial sums $(l_k)$ is bounded and increasing (it is the sum of nonnegative terms), by the *Monotone Convergence Theorem*, $(l_k)$ converges. Now note that:
+
+$$l_k = \sum_{n=0}^{k} 2^n b_{2^{n+1}}$$
+$$\Rightarrow 2l_k = \sum_{n=0}^{k} 2^{n+1} b_{2^{n+1}}$$
+$$\Rightarrow b_1 + 2l_k = b_1 + \sum_{n=0}^{k} 2^{n+1} b_{2^{n+1}} = \sum_{n=0}^{k+1} 2^n b_{2^n} = r_{k+1}$$
+
+Thus, by the *Algebraic Limit Theorem*, the seqeunce of partial sums $(r_k)$ converges. $\blacksquare$
+
+
+**Corollary 2.4.7**: The series $\sum_{n=1}^{\infty} 1 / n^p$ converges $\Leftrightarrow$ $p > 1$.
+
+We'll prove this in *2.7* when we have more understanding of geometric series.

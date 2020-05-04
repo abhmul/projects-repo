@@ -37,6 +37,16 @@
 		]
 	},
 
+	"corolarry": {
+		"scope": "markdown",
+		"prefix": "cor",
+		"body": [
+			"**Corollary $1**: $0",
+			"",
+			"*Proof*: "
+		]
+	},
+
 
 	"Proof": {
 		"scope": "markdown",
