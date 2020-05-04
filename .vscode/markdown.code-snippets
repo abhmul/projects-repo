@@ -27,6 +27,17 @@
 		]
 	},
 
+	"Example": {
+		"scope": "markdown",
+		"prefix": "ex",
+		"body": [
+			"**Example $1**: $0",
+			"",
+			"*Proof*: "
+		]
+	},
+
+
 	"Proof": {
 		"scope": "markdown",
 		"prefix": "prf",
@@ -80,6 +91,22 @@
 		"prefix": "yn",
 		"body": [
 			"$(y_n)$"
+		]
+	},
+
+	"infsum": {
+		"scope": "markdown",
+		"prefix": "infsum",
+		"body": [
+			"\\sum_{n=1}^{\\infty}"
+		]
+	},
+
+	"big": {
+		"scope": "markdown",
+		"prefix": "big",
+		"body": [
+			"\\Big( $0 \\Big)"
 		]
 	}
 

@@ -489,3 +489,78 @@ Note that $\exist n \in \N$ such that (2) is true since if none existed, then $\
 
 $$ \sum_{n=1}^{\infty} b_n = b_1 + b_2 + b_3 + \cdots$$
 
+Define the corresponding *sequence of partial sums* $(s_m)$ by
+
+$$ s_m = b_1 + b_2 + \cdots + b_m $$.
+
+The series $\sum_{n=1}^{\infty} b_n$ *converges* to $B$ if $(s_m)$ converges to $B$. We then write $\sum_{n=1}^{\infty} b_n = B$.
+
+**Example 2.4.4**: Show that $\sum_{n=1}^{\infty} \frac{1}{n^2}$ converges.
+
+*Proof*: First note that all terms in the sum are positive. Thus the sequence of partial sums
+
+$$ s_m = \frac{1}{1} + \frac{1}{4}  + \cdots + \frac{1}{m^2}$$
+
+is increasing. But does it have an upper bound? Consider
+
+$$ s_m = \frac{1}{1} + \frac{1}{4}  + \cdots + \frac{1}{m^2}$$
+$$ = 1 + \Big(\frac{1}{2^2} + \frac{1}{3^2}\Big) + \Big( \frac{1}{4^2} + \frac{1}{5^2} + \frac{1}{6^2} + \frac{1}{7^2} \Big) + \cdots \Big( \cdots + \frac{1}{(m-1)^2} + \frac{1}{m^2}$$
+$$ < 1 + \Big(\frac{1}{2^2} + \frac{1}{2^2}\Big) + \Big( \frac{1}{4^2} + \frac{1}{4^2} + \frac{1}{4^2} + \frac{1}{4^2} \Big) + \cdots \Big( \cdots + \frac{1}{(2^{\lfloor \lg m \rfloor})^2} + \frac{1}{(2^{\lfloor \lg m \rfloor})^2}$$
+$$ = 1 + \frac{2}{2^2} + \frac{4}{4^2} + \frac{8}{8^2} + \cdots + \frac{2^{\lfloor \lg m \rfloor}}{(2^{\lfloor \lg m \rfloor})^2} $$
+$$ = 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots + \frac{1}{2^{\lfloor \lg m \rfloor}} $$
+$$ < 2 $$
+
+The final inequality can be shown by using induction to show that:
+
+$$ \sum_{i=0}^n \frac{1}{2^i} = 2 - \frac{1}{2^n} $$
+
+*Base Case ($n = 0$)*: $\frac{1}{2^0} = 1 = 2 - \frac{1}{2^0}$
+*Inductive step (assume for $k < n$, show for $n$)*: 
+
+$$ \sum_{i=0}^n \frac{1}{2^i} = \sum_{i=0}^{n-1} \frac{1}{2^i} + \frac{1}{2^n} $$
+$$ = 2 - \frac{1}{2^{n-1}} +  \frac{1}{2^n}$$
+$$ = 2 - \frac{2}{2^n} +  \frac{1}{2^n}$$
+$$ = 2 - \frac{1}{2^n}$$
+
+Thus, since $(s_m)$ is monotone increasing and bounded by $2$, by the *Monotone Convergence Theorem*, $\sum_{n=1}^{\infty} \frac{1}{n^2}$ converges to a limit less than $2$. $\blacksquare$
+
+**Note**: The book does it differently by
+
+$$ \frac{1}{n^2} = \frac{1}{n \dot n} < \frac{1}{n(n-1)} = \Big(\frac{n}{n(n-1)} - \frac{n-1}{n(n-1)} \Big) =  \Big(\frac{1}{n-1} - \frac{1}{n} \Big)$$
+
+then proceeds to cancel terms out.
+
+**Example 2.4.5 (Harmonic Series)**: Consider the *harmonic series*
+
+$$ \sum_{n=1}^{\infty} \frac{1}{n} $$
+
+*Proof*: First note that all terms in the sum are positive. Thus the sequence of partial sums
+
+$$ s_m = \frac{1}{1} + \frac{1}{2}  + \cdots + \frac{1}{m}$$
+
+is monotone increasing. But is the sequence bounded? Consider
+
+$$ s_m = \frac{1}{1} + \frac{1}{2}  + \cdots + \frac{1}{m}$$
+$$ = \frac{1}{1} + \frac{1}{2} + \Big( \frac{1}{3} + \frac{1}{4} \Big) + \Big( \frac{1}{5} + \frac{1}{6} + \frac{1}{7} + \frac{1}{8} \Big)  + \cdots + \Big( \frac{1}{2^{\lceil \lg m \rceil - 1} + 1} + \cdots \frac{1}{m} \Big) $$
+$$ > \frac{1}{1} + \frac{1}{2} + \Big( \frac{1}{4} + \frac{1}{4} \Big) + \Big( \frac{1}{8} + \frac{1}{8} + \frac{1}{8} + \frac{1}{8} \Big)  + \cdots + \Big( \frac{1}{2^{\lceil \lg m \rceil}} + \cdots \frac{1}{2^{\lceil \lg m \rceil}} \Big) $$
+$$ = 1 + \frac{1}{2} + \Big( \frac{1}{4} + \frac{1}{4} \Big) + \Big( \frac{1}{8} + \frac{1}{8} + \frac{1}{8} + \frac{1}{8} \Big)  + \cdots + \Big( \frac{1}{2^{\lceil \lg m \rceil}} + \cdots \frac{1}{2^{\lceil \lg m \rceil}} \Big) $$
+$$ > 1 + (\lceil \lg m \rceil - 1) \frac{1}{2} $$
+$$ > 1 + (\lg m - 1) \frac{1}{2} $$
+
+Note that for any $x \in \R$ we can find an $m \in \N$ s.t. $ 1 + (\lg m - 1) \frac{1}{2} > x$:
+
+$$ m > 2^{2(x - 1) + 1}$$
+$$\Rightarrow \lg m > 2(x - 1) + 1$$
+$$\Rightarrow \lg m - 1 > 2(x - 1)$$
+$$\Rightarrow (\lg m - 1) \frac{1}{2} > x - 1$$
+$$\Rightarrow 1 + (\lg m - 1) \frac{1}{2} > x $$
+
+Thus, $(s_m)$ is not bounded. Because convergent sequences are bounded, the *harmonic series* does not converge. $\blacksquare$
+
+**Theorem 2.4.6 (Cauchy Condensation Test)**: Suppose $(b_n)$ is decreasing and satisfies $b_n \geq 0$ $\forall n \in \N$. Then, the series $\sum_{n=1}^{\infty} b_n$ converges $\Leftrightarrow$ the series
+
+$$ \sum_{n=1}^{\infty} 2^n b_{2n} = b_1 + 2b_2 + 4b_4 + 8b_8 + \cdots$$
+
+converges.
+
+*Proof*: ($\Leftarrow$) Assume $\sum_{n=1}^{\infty} 2^n b_{2n}$ converges.
