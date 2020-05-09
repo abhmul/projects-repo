@@ -21,6 +21,7 @@ alias config='vim ~/.config/i3/config'
 # computer management
 alias keys='xev | grep -A2 --line-buffered "^KeyRelease" | sed -n "/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p"'
 alias logs='gedit /var/log/syslog'
+alias v='uname -a && lsb_release -a'
 
 # help
 alias h='function hdi(){ howdoi $* -c -n 5; }; hdi'
@@ -61,19 +62,21 @@ prepare() {
 alias test='mkdir -p $HOME/test && cd $HOME/test'
 alias t='test'
 dkinit() {
+	test
 	if [[ ! -f ./Dockerfile ]]
 	then
                 echo "FROM alpine:latest" > Dockerfile
 	fi
 }
 dktest-edit() {
-	test && \
 	dkinit && \
 	vim Dockerfile
 }
-dktest() {
-	test && \
+dkbuild() {
 	dkinit && \
-	docker build . -t test:latest && \
+	docker build . -t test:latest
+}
+dktest() {
+	dkbuild && \
 	docker run -it test:latest /bin/sh
 }

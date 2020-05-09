@@ -462,8 +462,6 @@ $$= \frac{1}{2n} $$
 
 If we choose $N > \frac{1}{2\epsilon}$, then $|y_n - \frac{1}{2}| < \epsilon$. $\blacksquare$
 
-**Test Exercises**: 2.3.7, 2.3.8, 2.3.12
-
 
 ## 2.4 The Monotone Convergence Theorem and a First Look at the Infinite Series
 
@@ -491,7 +489,7 @@ $$ \sum_{n=1}^{\infty} b_n = b_1 + b_2 + b_3 + \cdots$$
 
 Define the corresponding *sequence of partial sums* $(s_m)$ by
 
-$$ s_m = b_1 + b_2 + \cdots + b_m $$.
+$$ s_m = b_1 + b_2 + \cdots + b_m $$
 
 The series $\sum_{n=1}^{\infty} b_n$ *converges* to $B$ if $(s_m)$ converges to $B$. We then write $\sum_{n=1}^{\infty} b_n = B$.
 
@@ -501,22 +499,7 @@ The series $\sum_{n=1}^{\infty} b_n$ *converges* to $B$ if $(s_m)$ converges to 
 
 $$ s_m = \frac{1}{1} + \frac{1}{4}  + \cdots + \frac{1}{m^2}$$
 
-is increasing. But does it have an upper bound? Consider
-
-$$ s_m = \frac{1}{1} + \frac{1}{4}  + \cdots + \frac{1}{m^2}$$
-$$ = 1 + \Big(\frac{1}{2^2} + \frac{1}{3^2}\Big) + \Big( \frac{1}{4^2} + \frac{1}{5^2} + \frac{1}{6^2} + \frac{1}{7^2} \Big) + \cdots \Big( \cdots + \frac{1}{(m-1)^2} + \frac{1}{m^2}$$
-$$ < 1 + \Big(\frac{1}{2^2} + \frac{1}{2^2}\Big) + \Big( \frac{1}{4^2} + \frac{1}{4^2} + \frac{1}{4^2} + \frac{1}{4^2} \Big) + \cdots \Big( \cdots + \frac{1}{(2^{\lfloor \lg m \rfloor})^2} + \frac{1}{(2^{\lfloor \lg m \rfloor})^2}$$
-$$ = 1 + \frac{2}{2^2} + \frac{4}{4^2} + \frac{8}{8^2} + \cdots + \frac{2^{\lfloor \lg m \rfloor}}{(2^{\lfloor \lg m \rfloor})^2} $$
-$$ = 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots + \frac{1}{2^{\lfloor \lg m \rfloor}} $$
-$$ < 2 $$
-
-The final inequality can be shown by using induction to show that:
-
-$$ \sum_{i=0}^n \frac{1}{2^i} = 2 - \frac{1}{2^n} $$
-
-*Base Case ($n = 0$)*: $\frac{1}{2^0} = 1 = 2 - \frac{1}{2^0}$
-*Inductive step (assume for $k < n$, show for $n$)*: 
-
+is increasing. B2. 
 $$ \sum_{i=0}^n \frac{1}{2^i} = \sum_{i=0}^{n-1} \frac{1}{2^i} + \frac{1}{2^n} $$
 $$ = 2 - \frac{1}{2^{n-1}} +  \frac{1}{2^n}$$
 $$ = 2 - \frac{2}{2^n} +  \frac{1}{2^n}$$
@@ -592,3 +575,106 @@ Thus, by the *Algebraic Limit Theorem*, the seqeunce of partial sums $(r_k)$ con
 **Corollary 2.4.7**: The series $\sum_{n=1}^{\infty} 1 / n^p$ converges $\Leftrightarrow$ $p > 1$.
 
 We'll prove this in *2.7* when we have more understanding of geometric series.
+
+
+**Exercises**
+
+**2.4.3**:
+(a) *Prove that the Infinite Sequence defined by $y_1 = 1$ and $y_{n+1} = 4 - \frac{1}{y_n}$ is a Convergent Sequence.*
+
+*Proof*: We'll show by induction that $(y_n)$ is an increasing bounded sequence 
+
+i. *Base Case*: $4 \geq y_2 = 3 \geq y_1 = 1$
+ii. *Inductive Step*: We know that $\forall 1 < i < n \in \N$, $4 \geq y_i \geq y_{i-1}$. Consider
+
+$$ y_n = 4 - \frac{1}{y_{n-1}}$$
+$$ \leq 4 - \frac{1}{4} $$
+$$ \leq 3.75 \leq 4 $$
+
+And
+
+$$ y_n = 4 - \frac{1}{y_{n-1}} $$
+$$ \geq 4 - \frac{1}{y_{n-2}} $$
+$$ \geq y_{n-1} $$
+
+Thus, by induction, $(y_n)$ is increasing and bounded from above by 4. As $y_1 = 1$ and the sequence is increasing, we know the sequence is also bounded from below by $1$. As $(y_n)$ is increasing and bounded, it is a convergent sequence. $\blacksquare$
+
+(b) *Now that we know $\lim y_n$ exists, explain why $\lim y_{n + 1}$ must also exist and equal the same value.*
+
+*Proof*: A sequence produced from another missing  finite number of elements has the same convergence properties. Thus $\lim y_n = \lim y_{n+1}$ as $(y_{n+1})$ is only missing the first element of $(y_n)$. $\blacksquare$
+
+(c) *Take the limit of each side of the Recursive Equation in part (a) of this exercise to explicitly compute $\lim y_n$.*
+
+*Solution*: Let $\lim y_n = y$
+
+$$y = \lim y_{n+1} = \lim \Big( 4 - \frac{1}{y_n} \Big) $$
+$$ = \lim \Big( 4 - \frac{1}{y_n} \Big) $$
+$$= \Big( 4 - \frac{1}{\lim y_n} \Big) \text{ by the Algebraic Limit Theorem}$$
+$$= \Big( 4 - \frac{1}{y} \Big)$$
+$$\Rightarrow y^2 - 4y + 1= 0$$
+$$\Rightarrow y = 2 \pm \sqrt{3} \approx 0.268 \text{ or } 3.73$$
+
+As $y_1 = 1$ and $(y_n)$ is increasing, we conclude that $y = 2 + \sqrt{3}$.
+
+
+**2.4.5 (Calculating Square Roots)** *Let $x_1 = 2$ and define*
+
+$$ x_{n+1} = \frac{1}{2} \Big( x_n + \frac{2}{x_n} \Big) $$
+
+(a) *Show that $x_n^2$ is always greater than 2, and then use this to prove that $x_n - x_{n+1} \geq 0$. Conclude that $\lim x_n = \sqrt{2}$*
+
+*Proof:* First we will show $x_n^2 > 2$ by induction
+
+1. *Base case*: $x_1^2 = 4 > 2$
+2. *Inductive Step*: $x_1^2, \cdots, x_{n-1}^2 > 2$. Consider
+
+$$ x_{n} = \frac{1}{2} \Big( x_{n-1} + \frac{2}{x_{n-1}} \Big) $$
+$$ \Rightarrow 2x_{n}x_{n-1} = x_{n-1}^2 + 2$$
+$$ \Rightarrow  0 = x_{n-1}^2 - 2x_{n}x_{n-1}  + 2 $$
+$$ \Rightarrow  x_{n-1} = \frac{2x_{n}}{2} \pm \frac{\sqrt{4x_{n}^2 - 8}}{2} = x_{n} \pm \sqrt{x_n^2 - 2} > \sqrt{2}$$
+
+For the above statement to be true, $x_n^2 > 2$. Thus, by induction, $x_n^2 > 2 \forall n \in \N$.
+
+Note that since all terms of the recurrence are positive, we can conclude $x_n > \sqrt{2}$. Now consider
+
+$$ x_{n+1} - \frac{1}{2} x_n = \frac{1}{x_n} < \frac{1}{\sqrt{2}}$$
+$$\Rightarrow x_{n+1} - x_n < \frac{1}{\sqrt{2}} - \frac{1}{2} x_n < \frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}$$
+$$ \Rightarrow x_{n+1} - x_n < 0$$
+
+Thus, $x_n \geq x_{n+1}$ and the seqeunce is decreasing. By the *Monotone convergence Theorem*, this sequence converges. Now solving for the limit:
+
+$$ x = \lim x_{n+1} = \lim \frac{1}{2} \Big( x_n + \frac{2}{x_n} \Big) $$
+$$ = \frac{1}{2} \Big( \lim x_n + \frac{2}{\lim x_n} \Big) \text{ by the Algebraic Limit Theorem}$$
+$$ = \frac{1}{2} \Big( x + \frac{2}{x} \Big) $$
+$$ \Rightarrow x = \frac{1}{2} \Big( x + \frac{2}{x} \Big) $$
+$$ \Rightarrow 2x^2 = x^2 + 2$$
+$$ \Rightarrow x^2 - 2 = 0 $$
+$$ \Rightarrow x = \pm \sqrt{2} $$
+
+As $x_n \geq 0$, we can conclude $x = \sqrt{2}$. $\blacksquare$
+
+(b) *Modify the sequence $(x_n)$ so that it converges to $\sqrt{c}$.*
+
+*Solution*: Consider
+
+$$ x^2 - c = 0 $$
+$$ \Rightarrow 2x^2 = x^2 + c $$
+$$ \Rightarrow x = \frac{1}{2} \Big( x + \frac{c}{x} \Big) $$
+
+Using the same structure of proof as part (a), we see the sequence $x_1 = c$, 
+
+$$ x_{n+1} = \frac{1}{2} \Big( x_n + \frac{c}{x_n} \Big) $$
+
+converges to $\sqrt{c}$. $\blacksquare$
+
+
+
+
+
+
+
+
+
+
+
+**Test Exercises**: 2.3.7, 2.3.8, 2.3.12, 2.4.6, 2.5.6
