@@ -1,3 +1,8 @@
+# Resources
+
+1. https://tfhub.dev/google/ - for finding pretrained models and embeddings
+2. https://github.com/tensorflow/datasets - for finding datasets to test on
+
 # Structure
 
 ## lib
