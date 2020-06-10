@@ -4,6 +4,9 @@ alias search='sudo apt-cache search'
 alias autoremove='sudo apt autoremove'
 alias remove='sudo apt remove'
 alias install='sudo apt install'
+alias i='install'
+alias snapstall='sudo snap install'
+alias si='snapstall'
 
 # bash management
 alias refresh='exec bash'
@@ -17,6 +20,7 @@ alias prof='bash_profile'
 
 # i3 management
 alias config='vim ~/.config/i3/config'
+alias startup='vim ~/.scripts/startup.sh'
 
 # computer management
 alias keys='xev | grep -A2 --line-buffered "^KeyRelease" | sed -n "/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p"'
