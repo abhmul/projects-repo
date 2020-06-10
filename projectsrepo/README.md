@@ -26,6 +26,6 @@ TODO: Should I merge all utils files into a single utils file?
 
 These are executable code files that potentially take in command line arguments. They can depend on code from `lib`. **Scripts** shoujd not depend on each other. If they need to, then the dependee code should be moved into `lib`.
 
-# Notebooks
+## Notebooks
 
 Similar to `scripts`, but jupyter notebooks instead executable code files.
