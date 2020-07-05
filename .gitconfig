@@ -9,9 +9,11 @@
 	ac = !git a && git c
 	uc = !git u && git c
 	p = !git push -u origin HEAD
-	pu = !git stash && git pull -r && git stash pop
+	fr = !git stash && git pull -r && git stash pop
+	frp = !git fr && git p -f
 	acp = "! f() { git ac \"$1\" && git p; } ; f"
 	ucp = "! f() { git uc \"$1\" && git p; } ; f"
+	up = "! f() { git ac \"$1\" && git frp; } ; f"
 
 
 

@@ -36,6 +36,10 @@ alias gitconfig='vim ~/.gitconfig'
 alias gitaliases='gitconfig'
 alias ga='gitaliases'
 
+# obsidian
+alias o='cd ~/Documents/obsidian/vault'
+alias osync='o && g up'
+
 
 # docker
 alias dkps='docker ps --format "ID: {{.ID}} ~ Nm: {{.Names}} ~ Sts: {{.Status}} ~ Img: {{.Image}}"'
