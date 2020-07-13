@@ -8,5 +8,6 @@ if __name__ == "__main__":
     print(f"Find:\n{find_regex}")
     replace_string = input("Replace String (use \\n for backrefs): ")
     print(f"Replace:\n{replace_string}")
+    
     result = re.sub(find_regex, replace_string, original_string)
     print(f"Result:\n{result}")
