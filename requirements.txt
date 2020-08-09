@@ -11,3 +11,7 @@ howdoi
 plotly
 tensorflow-datasets
 
+# allergy-tracker
+pyiqvia
+
+
