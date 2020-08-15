@@ -1,3 +1,7 @@
+# language
+coconut
+
+# general
 scikit-learn
 flake8
 jedi

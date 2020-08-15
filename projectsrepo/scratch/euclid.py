@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# __coconut_hash__ = 0x2ed24fbc
+# __coconut_hash__ = 0xbd3a1b11
 
 # Compiled with Coconut version 1.4.3 [Ernest Scribbler]
 
@@ -648,50 +648,30 @@ _coconut_MatchError, _coconut_count, _coconut_enumerate, _coconut_makedata, _coc
 
 # Compiled Coconut: -----------------------------------------------------------
 
-#!/opt/anaconda3/envs/main/bin/coconut-run
-import argparse
-import asyncio
-import csv
-from pyiqvia import Client
+@_coconut_tco
+def euclid(a, b):
+    while True:
+        q = a // b
+        r = a - q * b
+        _coconut_match_to = r
+        _coconut_case_check_0 = False
+        if _coconut_match_to == 0:
+            _coconut_case_check_0 = True
+        if _coconut_case_check_0:
+            return b
+        if not _coconut_case_check_0:
+            _coconut_case_check_0 = True
+            if _coconut_case_check_0:
+                try:
+                    _coconut_is_recursive = euclid is _coconut_recursive_func_0
+                except _coconut.NameError:
+                    _coconut_is_recursive = False
+                if _coconut_is_recursive:
+                    a, b = b, r
+                    continue
+                else:
+                    return _coconut_tail_call(euclid, b, r)
 
 
-parser = argparse.ArgumentParser()
-parser.add_argument('zipcode', help="current zipcode for data")
-parser.add_argument('-s' '--start_date', default='', help="earliest date to record")
-parser.add_argument('-l' '--latest_date', default='', help="inclusive latest date to record")
-
-
-async def historic(client: 'Client') -> 'tuple':
-    allergies = await client.allergens.historic
-    asthma = await client.asthma.historic
-    disease = await client.disease.historic
-    return (allergies, asthma, disease)
-
-def parse_date_range(start, latest):
-    return
-
-
-def allergies_to_csv(allergy_results, date_range):
-    """
-    Schema:
-    {
-        'ForecastDate': '2020-08-08T00:00:00-04:00',
-        'Location': {
-            'City': 'GUALALA',
-            'DisplayLocation': 'Gualala, CA',
-            'State': 'CA',
-            'ZIP': '95445',
-            'periods': [{'Index': 3.9, 'Period': '2020-07-10T05:30:33'}, ...]
-        },
-        'Type': 'pollen'
-    }
-
-    date_range is inclusive
-    """
-    periods = allergy['Location']['periods']
-
-
-if __name__ == "__main__":
-    args = parser.parse_args()
-    client = Client(args.zipcode)
-    allergies, asthma, disease = historic(client)
+        return None
+_coconut_recursive_func_0 = euclid
