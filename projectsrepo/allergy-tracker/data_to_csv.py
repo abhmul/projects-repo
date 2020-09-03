@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# __coconut_hash__ = 0x1a16d69
+# __coconut_hash__ = 0x5fabe705
 
 # Compiled with Coconut version 1.4.3 [Ernest Scribbler]
 
@@ -648,7 +648,6 @@ _coconut_MatchError, _coconut_count, _coconut_enumerate, _coconut_makedata, _coc
 
 # Compiled Coconut: -----------------------------------------------------------
 
-#!/opt/anaconda3/envs/main/bin/coconut-run
 import argparse
 import asyncio
 import csv
@@ -662,9 +661,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument('zipcode', help="current zipcode for data")
 parser.add_argument('-s', '--start_date', default=None, help="earliest date to record")
 parser.add_argument('-l', '--latest_date', default=None, help="inclusive latest date to record")
-parser.add_argument('--allergy_csv', default=Path(__file__).absolute().parent / "allergy_index.csv")
-parser.add_argument('--asthma_csv', default=Path(__file__).absolute().parent / "asthma_index.csv")
-parser.add_argument('--disease_csv', default=Path(__file__).absolute().parent / "disease_index.csv")
+parser.add_argument('--allergy_csv', type=Path, default=Path(__file__).absolute().parent / "allergy_index.csv")
+parser.add_argument('--asthma_csv', type=Path, default=Path(__file__).absolute().parent / "asthma_index.csv")
+parser.add_argument('--disease_csv', type=Path, default=Path(__file__).absolute().parent / "disease_index.csv")
 
 # Utils
 @_coconut_tco

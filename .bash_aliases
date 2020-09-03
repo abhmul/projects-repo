@@ -40,22 +40,37 @@ alias gitconfig='vim ~/.gitconfig'
 alias gitaliases='gitconfig'
 alias ga='gitaliases'
 
+# sync-documents
+export DRIVE_PATH=$HOME/gdrive
+export SYNC_DOCUMENTS=$DRIVE_PATH/sync-documents
+sync-documents() {
+	if [[ ! -d $SYNC_DOCUMENTS ]]
+	then
+		mkdir -p $DRIVE_PATH && \
+		cd $DRIVE_PATH && \
+		drive init && \
+		drive pull sync-documents
+	fi
+	cd $SYNC_DOCUMENTS
+}
+alias sd='sync-documents'
+
 # obsidian
 export VAULT_NAME='obsidian-vault'
-export OBSIDIAN=$HOME/Documents/
+export OBSIDIAN_HOME=$HOME/Documents/
+export VAULT_PATH=$OBSIDIAN_HOME/$VAULT_NAME
 ovault() {
-        if [[ ! -d $OBSIDIAN/$VAULT_NAME ]]
+        if [[ ! -d $VAULT_PATH 	]]
         then
-                mkdir -p $OBSIDIAN && \
-                cd $OBSIDIAN && \
+                mkdir -p $OBSIDIAN_HOME && \
+                cd $OBSIDIAN_HOME && \
                 git clone https://github.com/abhmul/$VAULT_NAME.git
         fi
-        cd $OBSIDIAN/$VAULT_NAME
+        cd $VAULT_PATH
 }
 
 alias o='ovault'
 alias osync='o && g up'
-
 
 # docker
 alias dkps='docker ps --format "ID: {{.ID}} ~ Nm: {{.Names}} ~ Sts: {{.Status}} ~ Img: {{.Image}}"'

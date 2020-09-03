@@ -1,22 +1,9 @@
-# language
-coconut
-
 # general
-python-dateutil
-scikit-learn
-flake8
-jedi
-black
-rope
-pandas
-numpy
-matplotlib
-scipy
 howdoi
-plotly
 tensorflow-datasets
 
 # allergy-tracker
 pyiqvia
+
 
 
