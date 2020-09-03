@@ -2,6 +2,7 @@
 coconut
 
 # general
+python-dateutil
 scikit-learn
 flake8
 jedi

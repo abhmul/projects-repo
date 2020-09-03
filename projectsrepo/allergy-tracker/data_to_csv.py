@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# __coconut_hash__ = 0x2ed24fbc
+# __coconut_hash__ = 0x1a16d69
 
 # Compiled with Coconut version 1.4.3 [Ernest Scribbler]
 
@@ -652,28 +652,44 @@ _coconut_MatchError, _coconut_count, _coconut_enumerate, _coconut_makedata, _coc
 import argparse
 import asyncio
 import csv
+from datetime import datetime
+from dateutil.parser import isoparse
 from pyiqvia import Client
-
+import pandas as pd
+from pathlib import Path
 
 parser = argparse.ArgumentParser()
 parser.add_argument('zipcode', help="current zipcode for data")
-parser.add_argument('-s' '--start_date', default='', help="earliest date to record")
-parser.add_argument('-l' '--latest_date', default='', help="inclusive latest date to record")
+parser.add_argument('-s', '--start_date', default=None, help="earliest date to record")
+parser.add_argument('-l', '--latest_date', default=None, help="inclusive latest date to record")
+parser.add_argument('--allergy_csv', default=Path(__file__).absolute().parent / "allergy_index.csv")
+parser.add_argument('--asthma_csv', default=Path(__file__).absolute().parent / "asthma_index.csv")
+parser.add_argument('--disease_csv', default=Path(__file__).absolute().parent / "disease_index.csv")
 
+# Utils
+@_coconut_tco
+def remove_keys(removable_keys, d):
+    return _coconut_tail_call((lambda keys: {k: d[k] for k in keys}), filter(lambda k: k not in removable_keys, d))
 
+# Script
 async def historic(client: 'Client') -> 'tuple':
-    allergies = await client.allergens.historic
-    asthma = await client.asthma.historic
-    disease = await client.disease.historic
+    allergies = await client.allergens.historic()
+    asthma = await client.asthma.historic()
+    disease = await client.disease.historic()
+
     return (allergies, asthma, disease)
 
-def parse_date_range(start, latest):
-    return
+def parse_date_range(str_daterange):
+    start, latest = str_daterange
+    start_datetime = (lambda date: isoparse(('0001-01-01' if date is None else date)))(start)  # default to first day of CE
+    latest_datetime = (lambda date: isoparse((str)((datetime.today() if date is None else date))))(latest)
 
+    return start_datetime, latest_datetime
 
-def allergies_to_csv(allergy_results, date_range):
+@_coconut_tco
+def extract_data(request_results, date_range) -> 'pd.DataFrame':
     """
-    Schema:
+    Allergy Schema:
     {
         'ForecastDate': '2020-08-08T00:00:00-04:00',
         'Location': {
@@ -685,13 +701,114 @@ def allergies_to_csv(allergy_results, date_range):
         },
         'Type': 'pollen'
     }
+    
+    Asthma Schema:
+    {
+        'ForecastDate': '2020-09-03T00:00:00-04:00',
+        'Location': {
+            'City': 'GUALALA',
+            'DisplayLocation': 'Gualala, CA',
+            'State': 'CA',
+            'ZIP': '95445',
+            'periods': [{
+                'Idx': '2.6',
+                'Index': 2.6,
+                'Period': '2020-08-05T05:45:01.113'}, ... ]
+            },
+        'Type': 'asthma'
+    }
+
+    Disease Schema:
+    {
+        'ForecastDate': '2020-09-03T00:00:00-04:00',
+        'Location': {
+            'City': 'GUALALA',
+            'DisplayLocation': 'Gualala, CA',
+            'State': 'CA',
+            'ZIP': '95445',
+            'periods': [{
+                'Description': 'Low levels of respiratory illness '
+                                          'may affect a very small percentage '
+                                          'of the population.',
+                'Idx': '1.8',
+                'Index': 1.8,
+                'Level': 'Low',
+                'LevelColor': '#c7effc',
+                'Period': '2020-08-06T00:00:00'}, ... ]
+            },
+        'Type': 'cold'
+    }
 
     date_range is inclusive
     """
-    periods = allergy['Location']['periods']
+    data_type = request_results['Type']
+    location, zipcode = request_results['Location']['DisplayLocation'], request_results['Location']['ZIP']
+    periods = request_results['Location']['periods']
+    start_datetime, latest_datetime = date_range
+
+    request_data = (map(lambda row: {**remove_keys(['Idx', 'LevelColor'], row), 'Location': location, 'Zipcode': zipcode, 'Type': data_type}, sorted(filter(lambda row: latest_datetime >= isoparse(row['Period']) >= start_datetime, periods), key=lambda row: row['Period'])))
+
+    return _coconut_tail_call(pd.DataFrame(request_data).set_index, ['Period', 'Type'])
+
+@_coconut_tco
+def join_csv(new_df: 'pd.DataFrame', csv_file: 'Path') -> 'pd.DataFrame':
+    old_df = pd.read_csv(csv_file).set_index(['Period', 'Type'])
+
+    return _coconut_tail_call(pd.concat([old_df[~old_df.index.isin(new_df.index)], new_df]).sort_index)
+
+
+def df_to_csv(df: 'pd.DataFrame', csv_file: 'Path') -> 'None':
+    @_coconut_mark_as_match
+    def out_df(*_coconut_match_to_args, **_coconut_match_to_kwargs):
+        _coconut_match_check = False
+        _coconut_FunctionMatchError = _coconut_get_function_match_error()
+        if (_coconut.len(_coconut_match_to_args) <= 1) and (_coconut.sum((_coconut.len(_coconut_match_to_args) > 0, "csv_file" in _coconut_match_to_kwargs)) == 1):
+            _coconut_match_temp_0 = _coconut_match_to_args[0] if _coconut.len(_coconut_match_to_args) > 0 else _coconut_match_to_kwargs.pop("csv_file")
+            if not _coconut_match_to_kwargs:
+                csv_file = _coconut_match_temp_0
+                _coconut_match_check = True
+        if _coconut_match_check and not (not csv_file.is_file()):
+            _coconut_match_check = False
+        if not _coconut_match_check:
+            _coconut_match_val_repr = _coconut.repr(_coconut_match_to_args)
+            _coconut_match_err = _coconut_FunctionMatchError("pattern-matching failed for " "'def out_df(csv_file if not csv_file.is_file()) = df'" " in " + (_coconut_match_val_repr if _coconut.len(_coconut_match_val_repr) <= 500 else _coconut_match_val_repr[:500] + "..."))
+            _coconut_match_err.pattern = 'def out_df(csv_file if not csv_file.is_file()) = df'
+            _coconut_match_err.value = _coconut_match_to_args
+            raise _coconut_match_err
+
+        return df
+    @_coconut_addpattern(out_df)
+    @_coconut_tco
+    @_coconut_mark_as_match
+    def out_df(*_coconut_match_to_args, **_coconut_match_to_kwargs):
+        _coconut_match_check = False
+        _coconut_FunctionMatchError = _coconut_get_function_match_error()
+        if (_coconut.len(_coconut_match_to_args) <= 1) and (_coconut.sum((_coconut.len(_coconut_match_to_args) > 0, "csv_file" in _coconut_match_to_kwargs)) == 1):
+            _coconut_match_temp_0 = _coconut_match_to_args[0] if _coconut.len(_coconut_match_to_args) > 0 else _coconut_match_to_kwargs.pop("csv_file")
+            if not _coconut_match_to_kwargs:
+                csv_file = _coconut_match_temp_0
+                _coconut_match_check = True
+        if _coconut_match_check and not (csv_file.is_file()):
+            _coconut_match_check = False
+        if not _coconut_match_check:
+            _coconut_match_val_repr = _coconut.repr(_coconut_match_to_args)
+            _coconut_match_err = _coconut_FunctionMatchError("pattern-matching failed for " "'addpattern def out_df(csv_file if csv_file.is_file()):'" " in " + (_coconut_match_val_repr if _coconut.len(_coconut_match_val_repr) <= 500 else _coconut_match_val_repr[:500] + "..."))
+            _coconut_match_err.pattern = 'addpattern def out_df(csv_file if csv_file.is_file()):'
+            _coconut_match_err.value = _coconut_match_to_args
+            raise _coconut_match_err
+
+        (print)("Merging new data with existing data for " + str(csv_file))
+        return _coconut_tail_call(join_csv, df, csv_file)
+
+    out_df(csv_file).to_csv(csv_file)
 
 
 if __name__ == "__main__":
     args = parser.parse_args()
     client = Client(args.zipcode)
-    allergies, asthma, disease = historic(client)
+    allergies, asthma, disease = asyncio.run(historic(client))
+    date_range = (parse_date_range)((args.start_date, args.latest_date))
+
+    df_to_csv(extract_data(allergies, date_range=date_range), csv_file=args.allergy_csv)
+    df_to_csv(extract_data(asthma, date_range=date_range), csv_file=args.asthma_csv)
+    df_to_csv(extract_data(disease, date_range=date_range), csv_file=args.disease_csv)

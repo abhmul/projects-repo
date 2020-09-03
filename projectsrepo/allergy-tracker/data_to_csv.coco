@@ -3,6 +3,7 @@ import argparse
 import asyncio
 import csv
 from datetime import datetime
+from dateutil.parser import isoparse
 from pyiqvia import Client
 import pandas as pd
 from pathlib import Path
@@ -28,8 +29,8 @@ async def historic(client: Client) -> tuple:
 
 def parse_date_range(str_daterange):
     start, latest = str_daterange
-    start_datetime = start |> datetime.fromisoformat(_ ?? '0001-01-01')  # default to first day of CE
-    latest_datetime = latest |> datetime.fromisoformat(_ ?? datetime.today() |> str)
+    start_datetime = start |> date -> isoparse(date ?? '0001-01-01')  # default to first day of CE
+    latest_datetime = latest |> date -> isoparse(date ?? datetime.today() |> str)
 
     return start_datetime, latest_datetime
 
@@ -87,31 +88,32 @@ def extract_data(request_results, date_range) -> pd.DataFrame:
 
     date_range is inclusive
     """
+    data_type = request_results['Type']
     location, zipcode = request_results['Location']['DisplayLocation'], request_results['Location']['ZIP']
     periods = request_results['Location']['periods']
     start_datetime, latest_datetime = date_range
-    (request_data = periods
-        |> filter$(row -> latest_datetime >= row['Period'] >= start_datetime)
-        |> sorted$(key=row -> row['Period'])
-        |> map$(row -> {**remove_keys(['Idx', 'LevelColor'], row), 'Location': location, 'Zipcode': zipcode}))
 
-    return pd.DataFrame(request_data).set_index(['Period'])
+    request_data = (periods
+     |> filter$(row -> latest_datetime >= isoparse(row['Period']) >= start_datetime)
+     |> sorted$(key=row -> row['Period'])
+     |> map$(row -> {**remove_keys(['Idx', 'LevelColor'], row), 'Location': location, 'Zipcode': zipcode, 'Type': data_type}))
+
+    return pd.DataFrame(request_data).set_index(['Period', 'Type'])
 
 def join_csv(new_df: pd.DataFrame, csv_file: Path) -> pd.DataFrame:
-    old_df = pd.read_csv(csv_file).set_index(['Period'])
+    old_df = pd.read_csv(csv_file).set_index(['Period', 'Type'])
 
-    return old_df.merge(new_df, how='outer', on='Period')
+    return pd.concat([old_df[~old_df.index.isin(new_df.index)], new_df]).sort_index()
+
 
 def df_to_csv(df: pd.DataFrame, csv_file: Path) -> None:
-    def out_df(csv_file if not csv_file.is_file()) -> pd.DataFrame= df
-    addpattern def out_df(csv_file if csv_file.is_file()) -> pd.DataFrame:
+    def out_df(csv_file if not csv_file.is_file()) = df
+    addpattern def out_df(csv_file if csv_file.is_file()):
         "Merging new data with existing data for " + str(csv_file) |> print
         return join_csv(df, csv_file)
     
     out_df(csv_file).to_csv(csv_file)
     
-
-
 
 if __name__ == "__main__":
     args = parser.parse_args()
