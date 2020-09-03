@@ -27,6 +27,10 @@ alias keys='xev | grep -A2 --line-buffered "^KeyRelease" | sed -n "/keycode /s/^
 alias logs='gedit /var/log/syslog'
 alias v='uname -a && lsb_release -a'
 
+# setup
+alias us='cd $HOME/ubuntu-setup'
+alias dus='cd $HOME/dev/ubuntu-setup'
+
 # help
 alias h='function hdi(){ howdoi $* -c -n 5; }; hdi'
 
@@ -37,7 +41,19 @@ alias gitaliases='gitconfig'
 alias ga='gitaliases'
 
 # obsidian
-alias o='cd ~/Documents/obsidian/vault'
+export VAULT_NAME='obsidian-vault'
+export OBSIDIAN=$HOME/Documents/
+ovault() {
+        if [[ ! -d $OBSIDIAN/$VAULT_NAME ]]
+        then
+                mkdir -p $OBSIDIAN && \
+                cd $OBSIDIAN && \
+                git clone https://github.com/abhmul/$VAULT_NAME.git
+        fi
+        cd $OBSIDIAN/$VAULT_NAME
+}
+
+alias o='ovault'
 alias osync='o && g up'
 
 
@@ -51,7 +67,7 @@ export PROJECTS_NAME='projects-repo'
 export DEV=$HOME/dev
 export PROJECTS=$DEV/$PROJECTS_NAME
 projects() {
-	if [[ ! -d $DEV/$PROJECTS_NAME ]]
+	if [[ ! -d $PROJECTS ]]
 	then
 		mkdir -p $DEV && \
 		cd $DEV && \
@@ -86,5 +102,5 @@ dkbuild() {
 }
 dktest() {
 	dkbuild && \
-	docker run -it test:latest /bin/sh
+	docker run -it test:latest /bin/bash
 }
