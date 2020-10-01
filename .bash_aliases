@@ -34,6 +34,9 @@ alias dus='cd $HOME/dev/ubuntu-setup'
 # help
 alias h='function hdi(){ howdoi $* -c -n 5; }; hdi'
 
+# list
+alias l='ls -alh'
+
 # git
 alias g='git'
 alias gitconfig='vim ~/.gitconfig'
@@ -87,6 +90,7 @@ projects() {
 		mkdir -p $DEV && \
 		cd $DEV && \
 		git clone https://github.com/abhmul/$PROJECTS_NAME.git
+		conda env create -f environment.yml
 	fi
 	cd $PROJECTS
 	prepare
@@ -95,6 +99,7 @@ alias p='projects'
 prepare() {
 	cp $HOME/.bash_aliases $PROJECTS && \
 	cp $HOME/.gitconfig $PROJECTS
+	conda activate projects
 }
 
 # scratch

@@ -3,6 +3,7 @@ from collections import defaultdict
 import heapq
 import argparse
 import pickle
+import traceback
 
 parser = argparse.ArgumentParser()
 parser.add_argument("items", nargs="+")
@@ -33,14 +34,20 @@ def compare(a, b):
         return 0
     else:
         print("Invalid selection, please select again")
-        compare(a, b)
+        return compare(a, b)
 
 
 def heapsort(iterable, key=lambda x: x):
     h = []
     for value in iterable:
         heapq.heappush(h, (key(value), value))
-    return [heapq.heappop(h)[1] for i in range(len(h))]
+        print(f"Heap: {[item[1] for item in h]}\n")
+    res = []
+    for i in range(len(h)):
+        res.append(heapq.heappop(h)[1])
+        print(f"Heap: {[item[1] for item in h]}")
+        print(f"Result: {res}\n")
+    return res
 
 
 def compute_rank(sorted_list, key=lambda x: x):
@@ -90,7 +97,8 @@ if __name__ == "__main__":
     try:
         key = cmp_to_key(comparator)
         ranked_items = compute_rank(heapsort(args.items, key=key), key=key)
-    except KeyboardInterrupt:
+    except:
+        traceback.print_exc()
         close_program()
 
     for rank, item in ranked_items:
