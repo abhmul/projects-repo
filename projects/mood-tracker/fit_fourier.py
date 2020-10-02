@@ -7,6 +7,8 @@ from pprint import pprint
 import math
 from pathlib import Path
 
+from projects.projectslib.py_utils import range2
+
 parser = argparse.ArgumentParser()
 parser.add_argument(
     "data",
@@ -18,13 +20,23 @@ parser.add_argument("-s", "--start", default=None, help="start date of selection
 parser.add_argument("-e", "--end", default=None, help="end date of selection")
 parser.add_argument("-d", "--degree", type=int, default=3, help="degree of model")
 parser.add_argument(
-    "--degree_list", nargs="+", type=int, default=[], help="list of degrees for model"
+    "--degrees", nargs="+", type=float, default=[], help="list of degrees for model"
+)
+parser.add_argument(
+    "--relative_degree", action="store_true", help="list of degrees for model"
+)
+parser.add_argument(
+    "--periods",
+    nargs="+",
+    type=float,
+    default=[],
+    help="list of frequencies for model.",
 )
 
 bp2_to_numeric = {"D": 0, "D?": 0.25, "H?": 0.75, "H": 1.0}
 
-PREDICT = "bp2_classification"
-PREDICT_RANGE = (0.0, 1.0)
+PREDICT = "general"
+PREDICT_RANGE = (0.0, 10.0)
 
 
 def in_range(start, end):
@@ -54,16 +66,7 @@ def extract_data(df):
     return df
 
 
-def compile_wavelet(i, ai, bi, data_size, tau=1):
-    def wavelet(x):
-        return ai * cos(i * 2 * math.pi / (tau * data_size) * x) + bi * sin(
-            i * 2 * math.pi / (tau * data_size) * x
-        )
-
-    return wavelet
-
-
-def fourier_series(x, data_size, tau=1, degree_list=tuple()):
+def fourier_series(x, period_list):
     """
     Returns a symbolic fourier series of order `n`.
 
@@ -73,21 +76,30 @@ def fourier_series(x, data_size, tau=1, degree_list=tuple()):
     """
     # Make the parameter objects for all the terms
     (a0,) = parameters("a0")
-    cos_a = parameters(",".join(["a{}".format(i) for i in degree_list]))
-    sin_b = parameters(",".join(["b{}".format(i) for i in degree_list]))
+    cos_a = parameters(",".join(["a{}".format(i) for i in range2(len(period_list))]))
+    sin_b = parameters(",".join(["b{}".format(i) for i in range2(len(period_list))]))
     # Construct the series
+    print(period_list)
     series = a0 + sum(
-        ai * cos(i * 2 * math.pi / (tau * data_size) * x)
-        + bi * sin(i * 2 * math.pi / (tau * data_size) * x)
-        for (i, ai, bi) in zip(degree_list, cos_a, sin_b)
+        ai * cos(2 * math.pi / tau * x) + bi * sin(2 * math.pi / tau * x)
+        for (tau, ai, bi) in zip(period_list, cos_a, sin_b)
     )
     return series
 
 
-def compile_model(degree_list, data_size):
+def build_period_list(n=None, degree_list=tuple(), period_list=tuple(), data_size=1):
+    if period_list:
+        return [data_size * p for p in period_list]
+    if degree_list:
+        return [data_size * 1 / d for d in degree_list]
+    if n is not None:
+        return [data_size * 1 / i for i in range2(n)]
+
+
+def compile_model(period_list):
     x, y = variables("x, y")
     # (w,) = parameters("w")
-    model_dict = {y: fourier_series(x, data_size, tau=1, degree_list=degree_list)}
+    model_dict = {y: fourier_series(x, period_list)}
 
     print("\nModel:")
     print("==============")
@@ -121,8 +133,8 @@ def extract_parameters(fit_result):
     num_a = (len(fit_result._popt) - 1) // 2
     a = fit_result._popt[1 : num_a + 1]
     b = fit_result._popt[num_a + 1 :]
-    a = zip([f"a{i}" for i in range(1, len(a) + 1)], a)
-    b = zip([f"b{i}" for i in range(1, len(b) + 1)], b)
+    a = zip([f"a{i}" for i in range2(len(a))], a)
+    b = zip([f"b{i}" for i in range2(len(b))], b)
     return list(a) + list(b)
 
 
@@ -131,8 +143,15 @@ if __name__ == "__main__":
 
     mood_data = load_data(args.data, date_range=(args.start, args.end))
     mood_data = extract_data(mood_data)
-    degrees = args.degree_list if args.degree_list else range(1, args.degree + 1)
-    model_dict = compile_model(degrees, max(mood_data.index))
+    data_size = max(mood_data.index) if args.relative_degree else 1
+    print(data_size)
+    period_list = build_period_list(
+        n=args.degree,
+        degree_list=args.degrees,
+        period_list=args.periods,
+        data_size=data_size,
+    )
+    model_dict = compile_model(period_list)
 
     xdata, ydata = mood_data.index.values, mood_data[PREDICT].values
     fit, fit_result = fit_model(model_dict, xdata, ydata)
@@ -155,4 +174,4 @@ if __name__ == "__main__":
     )
     date_forecast = pd.date_range(mood_data["date"].iloc[0], periods=len(xforecast))
     out = pd.DataFrame({"date": date_forecast, "prediction": yprediction})
-    out[::-1].to_csv(args.data.parent / "bp2_pred.csv", index=False)
+    out[::-1].to_csv(args.data.parent / "mood_pred.csv", index=False)
