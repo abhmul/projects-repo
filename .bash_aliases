@@ -1,3 +1,5 @@
+alias sudo='sudo '
+
 # package management
 alias up='sudo apt update && sudo apt upgrade && sudo snap refresh'
 alias search='sudo apt-cache search'
@@ -77,8 +79,8 @@ alias osync='o && g up'
 
 # docker
 alias dkps='docker ps --format "ID: {{.ID}} ~ Nm: {{.Names}} ~ Sts: {{.Status}} ~ Img: {{.Image}}"'
-alias docker-smi='docker run --gpus all --rm nvidia/cuda nvidia-smi'
-alias tensorflow='docker run --gpus all -v $HOME:$HOME -u $(id -u):$(id -g) -it tensorflow/tensorflow:latest-gpu-py3-jupyter bash'
+alias docker-smi='sudo docker run --gpus all --rm nvidia/cuda nvidia-smi'
+alias tensorflow='sudo docker run --gpus all -v $HOME:$HOME -u $(id -u):$(id -g) -it tensorflow/tensorflow:latest-gpu-py3-jupyter bash'
 
 # projects
 export PROJECTS_NAME='projects-repo'
@@ -118,9 +120,9 @@ dktest-edit() {
 }
 dkbuild() {
 	dkinit && \
-	docker build . -t test:latest
+	sudo docker build . -t test:latest
 }
 dktest() {
 	dkbuild && \
-	docker run -it test:latest /bin/bash
+	sudo docker run -it test:latest /bin/sh
 }

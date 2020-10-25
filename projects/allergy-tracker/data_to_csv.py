@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# __coconut_hash__ = 0x5fabe705
+# __coconut_hash__ = 0x5fa936f3
 
 # Compiled with Coconut version 1.4.3 [Ernest Scribbler]
 
@@ -660,7 +660,7 @@ from pathlib import Path
 parser = argparse.ArgumentParser()
 parser.add_argument('zipcode', help="current zipcode for data")
 parser.add_argument('-s', '--start_date', default=None, help="earliest date to record")
-parser.add_argument('-l', '--latest_date', default=None, help="inclusive latest date to record")
+parser.add_argument('-l', '--latest_date', default=None, help="exclusive latest date to record")
 parser.add_argument('--allergy_csv', type=Path, default=Path(__file__).absolute().parent / "allergy_index.csv")
 parser.add_argument('--asthma_csv', type=Path, default=Path(__file__).absolute().parent / "asthma_index.csv")
 parser.add_argument('--disease_csv', type=Path, default=Path(__file__).absolute().parent / "disease_index.csv")
@@ -738,14 +738,14 @@ def extract_data(request_results, date_range) -> 'pd.DataFrame':
         'Type': 'cold'
     }
 
-    date_range is inclusive
+    date_range is exclusive on right end
     """
     data_type = request_results['Type']
     location, zipcode = request_results['Location']['DisplayLocation'], request_results['Location']['ZIP']
     periods = request_results['Location']['periods']
     start_datetime, latest_datetime = date_range
 
-    request_data = (map(lambda row: {**remove_keys(['Idx', 'LevelColor'], row), 'Location': location, 'Zipcode': zipcode, 'Type': data_type}, sorted(filter(lambda row: latest_datetime >= isoparse(row['Period']) >= start_datetime, periods), key=lambda row: row['Period'])))
+    request_data = (map(lambda row: {**remove_keys(['Idx', 'LevelColor'], row), 'Location': location, 'Zipcode': zipcode, 'Type': data_type}, sorted(filter(lambda row: latest_datetime > isoparse(row['Period']) >= start_datetime, periods), key=lambda row: row['Period'])))
 
     return _coconut_tail_call(pd.DataFrame(request_data).set_index, ['Period', 'Type'])
 

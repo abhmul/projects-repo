@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:latest-gpu-py3-jupyter
+FROM conda/miniconda3:latest
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
@@ -11,8 +11,13 @@ ARG USER_GID=$USER_UID
 # Uncomment the following COPY line and the corresponding lines in the `RUN` command if you wish to
 # include your requirements in the image itself. It is suggested that you only do this if your
 # requirements rarely (if ever) change.
-COPY requirements.txt /tmp/pip-tmp/
+COPY environment.yml /tmp/conda-tmp/
 COPY .bash_aliases /tmp/bash/
+
+# Update Python environment based on environment.yml
+RUN conda env create -f environment.yml \
+    && rm -rf /tmp/conda-tmp \
+    && echo "conda activate projects" >> ~/.bashrc
 
 # Configure apt and install packages
 RUN apt-get update \
@@ -26,10 +31,6 @@ RUN apt-get update \
     #
     # Add tex support
     && apt-get -y install texlive \
-    #
-    # Update Python environment based on requirements.txt
-    && pip --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
-    && rm -rf /tmp/pip-tmp \
     #
     # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
     && groupadd --gid $USER_GID $USERNAME \
@@ -49,3 +50,4 @@ RUN apt-get update \
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=
+
