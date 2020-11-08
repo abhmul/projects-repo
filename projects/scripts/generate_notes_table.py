@@ -1,6 +1,8 @@
 import argparse
 
-from projects.projectslib.py_utils import relative_date_range, print_items
+import pyperclip
+
+from projects.projectslib.py_utils import relative_date_range
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-s", "--start", type=int, default=0)
@@ -15,5 +17,8 @@ if __name__ == "__main__":
     dates = list(relative_date_range(args.start, args.end, args.step))
     dates.reverse()
     col_seps = [[DELIMITER] * len(dates)] * (args.columns - 1)
-    table = ["".join(map(str, row)) for row in zip(dates, *col_seps)]
-    print_items(table)
+    table = "\n".join(["".join(map(str, row)) for row in zip(dates, *col_seps)])
+    pyperclip.copy(table)
+    print(table)
+
+    print("\nAlso copied to clipboard!")
