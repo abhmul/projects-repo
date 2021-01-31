@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 
 setup(
-    name="ProjectsRepo",
+    name="pyprojects",
     version="0.0.1",
     description="Repository for all my experiments",
     author="Abhijeet Mulgund",

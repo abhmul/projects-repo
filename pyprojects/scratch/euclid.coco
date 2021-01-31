@@ -1,0 +1,7 @@
+def euclid(a, b):
+    q = a // b
+    r = a - q * b
+    "a: {a}, b: {b}, q: {q}, r: {r}".format(a=a, b=b, q=q. r=r) |> print
+    case r:
+        match 0: return b
+        match _: return euclid(b, r)
