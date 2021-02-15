@@ -55,8 +55,9 @@ CONTRIBUTION_LIMIT <- 6e3
 FUND_LIMIT <- 7e3
 INTEREST_RATE <- 1.08
 INCOME <- 1e5
-N.i <- 60 - 22
-N.r <- 100 - 60
+START_INVEST_AGE <- 22
+START_RETIREMENT_AGE <- 60
+DEATH_AGE <- 100
 manipulate(plot(1:5, cex=size), size = slider(0.5,10,step=0.5))
 generate_plot <- function(fund_limit, interest_rate, income, start_invest_age, start_retirement_age, death_age) {
   traditional_deposit <- 0:CONTRIBUTION_LIMIT
@@ -70,5 +71,10 @@ generate_plot <- function(fund_limit, interest_rate, income, start_invest_age, s
 }
 
 manipulate(
-  generate_plot(fund_limit=f.l, interest_rate=r, income=I, start_invest_age=s.i, start_retirement_age = s.r, death_age = e.r),
-  f.l=slider(0, 2e4), r=slider(0.5, 2.0), I=slider(0, 1e6), s.i=slider(18, 59), s.r=slider(60, 99), e.r=slider(70, 120))
+  generate_plot(fund_limit=fund_limit, interest_rate=interest_rate, income=income, start_invest_age=start_invest_age, start_retirement_age = start_retirement_age, death_age = death_age),
+  fund_limit=slider(0, 2e4, initial = FUND_LIMIT), 
+  interest_rate=slider(0.5, 2.0, initial = INTEREST_RATE), 
+  income=slider(0, 1e6, initial = INCOME), 
+  start_invest_age=slider(18, 59, initial = START_INVEST_AGE), 
+  start_retirement_age=slider(60, 99, initial = START_RETIREMENT_AGE), 
+  death_age=slider(70, 120, initial=DEATH_AGE))
