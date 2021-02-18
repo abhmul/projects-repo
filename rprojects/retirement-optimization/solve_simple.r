@@ -60,7 +60,7 @@ START_RETIREMENT_AGE <- 60
 DEATH_AGE <- 100
 manipulate(plot(1:5, cex=size), size = slider(0.5,10,step=0.5))
 generate_plot <- function(fund_limit, interest_rate, income, start_invest_age, start_retirement_age, death_age) {
-  traditional_deposit <- 0:CONTRIBUTION_LIMIT
+  traditional_deposit <- 0:min(CONTRIBUTION_LIMIT, fund_limit)
   n.i <- start_retirement_age - start_invest_age
   n.r <- death_age - start_retirement_age
   withdrawals <- objective(traditional_deposit, fund_limit, CONTRIBUTION_LIMIT, interest_rate, income, n.i, n.r)
