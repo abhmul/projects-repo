@@ -1,9 +1,0 @@
-# general
-howdoi
-tensorflow-datasets
-
-# allergy-tracker
-pyiqvia
-
-
-
