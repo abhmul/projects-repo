@@ -39,7 +39,7 @@ def minimize_binary_label(dataset, model, optimizer, num_iter=100, batch_size=20
             with tf.GradientTape() as tape:
                 loss_val = model.loss(labels, inputs)
                 # loss_dict = model.loss(labels, inputs)
-                # iter_switch = (i // 10) % 2
+                iter_switch = (i // 10) % 2
                 # loss_val = (
                 #     loss_dict["loss_final"] if iter_switch else loss_dict["loss_hidden"]
                 # )

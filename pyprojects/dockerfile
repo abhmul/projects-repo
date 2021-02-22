@@ -1,18 +1,22 @@
-FROM tensorflow/tensorflow:latest-gpu-py3-jupyter
+FROM conda/miniconda3:latest
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Or your actual UID, GID on Linux if not the default 1000
-ARG USERNAME=vscode
+ARG USERNAME=abhmul
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
 # Uncomment the following COPY line and the corresponding lines in the `RUN` command if you wish to
 # include your requirements in the image itself. It is suggested that you only do this if your
 # requirements rarely (if ever) change.
-COPY requirements.txt /tmp/pip-tmp/
-# COPY ../.bash_aliases /tmp/bash/
+COPY environment.yml /tmp/conda-tmp/
+
+# Update Python environment based on environment.yml
+RUN conda env create -f /tmp/conda-tmp/environment.yml \
+    && rm -rf /tmp/conda-tmp \
+    && echo "conda activate pyprojects" >> ~/.bashrc
 
 # Configure apt and install packages
 RUN apt-get update \
@@ -23,17 +27,6 @@ RUN apt-get update \
     #   
     # Add vim
     && apt-get -y install vim \
-    #
-    # Add tex support
-    && apt-get -y install texlive \
-    #
-    # Update Python environment based on requirements.txt
-    && pip --disable-pip-version-check --no-cache-dir install -r /tmp/pip-tmp/requirements.txt \
-    && rm -rf /tmp/pip-tmp \
-    #
-    # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
-    && groupadd --gid $USER_GID $USERNAME \
-    && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
     # [Optional] Uncomment the next three lines to add sudo support
     && apt-get install -y sudo \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
@@ -42,10 +35,14 @@ RUN apt-get update \
     # Clean up
     && apt-get autoremove -y \
     && apt-get clean -y \
-    && rm -rf /var/lib/apt/lists/* \
-    #
-    # Copy bash stuff over
-    && cp -a /tmp/bash/. $HOME/ 
+    && rm -rf /var/lib/apt/lists/*
+
+RUN useradd -r -u ${USER_UID} -g ${USERNAME} ${USERNAME}}
+USER ${USERNAME}
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=
+
+# Make RUN commands use the new environment:
+# SHELL ["conda", "run", "-n", "pyprojects", "/bin/bash", "-c"]
+# ENTRYPOINT ["conda", "run", "-n", "pyprojects", "/bin/bash", "-c"]
