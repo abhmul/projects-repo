@@ -2,7 +2,7 @@ import argparse
 
 import pyperclip
 
-from projects.projectslib.py_utils import relative_date_range
+from pyprojects.projectslib.py_utils import relative_date_range
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-s", "--start", type=int, default=0)
