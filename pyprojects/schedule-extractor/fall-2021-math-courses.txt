@@ -1,0 +1,420 @@
+MATH 417
+Complex Analysis with Applications
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade C or better in MATH 210. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+41062	LCD	11:00 AM - 11:50 AM	MWF	306	2AH	Coskun, I		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+41063	LCD	11:00 AM - 11:50 AM	MWF	306	2AH	Coskun, I		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+MATH 435
+Foundations of Number Theory
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 215. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+13712	LCD	12:00 PM - 12:50 PM	MWF	306	2AH	Cojocaru, A		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+20443	LCD	12:00 PM - 12:50 PM	MWF	306	2AH	Cojocaru, A		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+MATH 480
+Applied Differential Equations
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 220. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+36866	LCD	09:00 AM - 09:50 AM	MWF	306	2AH	Nicholls, D		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+36867	LCD	09:00 AM - 09:50 AM	MWF	306	2AH	Nicholls, D		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+MATH 496
+Independent Study
+1 TO 4 hours. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the instructor and the department. This course counts toward the limited number of independent study hours accepted toward the degree and the major.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+44245	C1	ARRANGED				Einstein, E		
+44217	C2	ARRANGED				Dai, M		
+26085	CNF	ARRANGED				Antieau, B		
+Instructor Approval Required
+17249	CNF	ARRANGED				Bona, J		
+Instructor Approval Required
+17242	CNF	ARRANGED				Coskun, I		
+Instructor Approval Required
+44164	CNF	ARRANGED				Dai, M		
+Instructor Approval Required
+31127	CNF	ARRANGED				Dumas, D		
+Instructor Approval Required
+17254	CNF	ARRANGED				Furman, A		
+Instructor Approval Required
+24293	CNF	ARRANGED				Groves, D		
+Instructor Approval Required
+17246	CNF	ARRANGED				Jones, N		
+Instructor Approval Required
+17245	CNF	ARRANGED				Kashcheyeva, O		
+Instructor Approval Required
+17248	CNF	ARRANGED				Kauffman, L		
+Instructor Approval Required
+27181	CNF	ARRANGED				Kobotis, E		
+Instructor Approval Required
+17247	CNF	ARRANGED				Lesieutre, J		
+Instructor Approval Required
+26086	CNF	ARRANGED				Lukina, O		
+Instructor Approval Required
+27632	CNF	ARRANGED				Mohajer, A		
+Instructor Approval Required
+17250	CNF	ARRANGED				Nenciu, I		
+Departmental Approval Required
+17244	CNF	ARRANGED				Nicholls, D		
+Instructor Approval Required
+40695	CNF	ARRANGED				Ouyang, C		
+Instructor Approval Required
+17252	CNF	ARRANGED				Protsak, V		
+Instructor Approval Required
+27578	CNF	ARRANGED				Ross, J		
+Instructor Approval Required
+22265	CNF	ARRANGED				Shvydkoy, R		
+Departmental Approval Required
+17255	CNF	ARRANGED				Sparber, C		
+Instructor Approval Required
+31149	CNF	ARRANGED				Takloo-Bighash, R		
+Instructor Approval Required
+17251	CNF	ARRANGED				Tucker, K		
+Instructor Approval Required
+39164	CNF	ARRANGED				Zhang, W		
+Instructor Approval Required
+MATH 506
+Model Theory I
+4 hours. Same as PHIL 567. Prerequisite(s): MATH 502 or PHIL 562.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+39212	LCD	10:00 AM - 10:50 AM	MWF	304	2BH			Mixed in-person & online instr
+MATH 511
+Descriptive Set Theory
+4 hours. Recommended background: MATH 445 or MATH 504 or MATH 533 or MATH 539.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+46088	LCD	02:00 PM - 02:50 PM	MWF	300	2TH	Calderoni, F		Mixed in-person & online instr
+4 hours
+MATH 514
+Number Theory I
+4 hours.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+42674	LCD	11:00 AM - 11:50 AM	MWF	300	2TH	Cojocaru, A		Mixed in-person & online instr
+MATH 516
+Second Course in Abstract Algebra I
+4 hours. Prerequisite(s): MATH 330 and MATH 425.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+13724	LCD	10:00 AM - 10:50 AM	MWF	307	2AH	Bakker, B		Mixed in-person & online instr
+MATH 533
+Real Analysis I
+4 hours. Prerequisite(s): MATH 411 or MATH 414 or the equivalent.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+42669	LCD	01:00 PM - 01:50 PM	MWF	216	2TH	Furman, A		Mixed in-person & online instr
+MATH 539
+Functional Analysis I
+4 hours. Prerequisite(s): MATH 533.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+37062	LCD	12:00 PM - 12:50 PM	MWF	310	2AH	Bona, J		Mixed in-person & online instr
+MATH 547
+Algebraic Topology I
+4 hours. Prerequisite(s): MATH 330 and MATH 445.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+39216	LCD	02:00 PM - 02:50 PM	MWF	107	2LH	Groves, D		Mixed in-person & online instr
+MATH 552
+Algebraic Geometry I
+4 hours.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+31610	LCD	12:00 PM - 12:50 PM	MWF	303	2AH	Coskun, I		Mixed in-person & online instr
+MATH 569
+Advanced Topics in Geometric and Differential Topology
+4 hours. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+38308	LCD	01:00 PM - 01:50 PM	MWF	300	2TH	Whyte, K		Mixed in-person & online instr
+MATH 571
+Advanced Topics in Algebraic Geometry
+4 hours. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+38742	LCD	02:00 PM - 02:50 PM	MWF	101	2LH	Bakker, B		Mixed in-person & online instr
+MATH 580
+Mathematics of Fluid Mechanics
+4 hours. Prerequisite(s): Grade of C or better in MATH 410 and grade of C or better in MATH 417 and grade of C or better in MATH 481.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+40613	LCD	01:00 PM - 01:50 PM	MWF	320	2LH	Shvydkoy, R		Mixed in-person & online instr
+4 hours
+MATH 584
+Applied Stochastic Models
+4 hours. Prerequisite(s): MATH 417 and MATH 481 and STAT 401, or consent of the instructor.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+41073	LCD	12:00 PM - 12:50 PM	MWF	300	2TH	Ouyang, C		Mixed in-person & online instr
+MATH 585
+Ordinary Differential Equations
+4 hours. Prerequisite(s): MATH 313 or MATH 480 or approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+37428	LCD	10:00 AM - 10:50 AM	MWF	300	2TH	Shvydkoy, R		Mixed in-person & online instr
+MATH 589
+Teaching and Presentation of Mathematics
+2 hours. No graduation credit awarded for students enrolled in the Master of Science in the Teaching of Mathematics degree program. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+32552	LCD	03:00 PM - 03:50 PM	MW	205	2GH	Shipley, B		Mixed in-person & online instr
+MATH 590
+Advanced Topics in Applied Mathematics
+4 hours. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+46089	LCD	11:00 AM - 11:50 AM	MWF	301	2TH	Tobasco, I		Mixed in-person & online instr
+4 hours
+MATH 593
+Graduate Student Seminar
+1 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department. Instructor Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+44156	C1	ARRANGED						
+13755	CNF	ARRANGED						
+MATH 594
+Internship in Mathematics
+0 TO 8 hours. Satisfactory/Unsatisfactory grading only. May be repeated to a maximum of 8 hours. Only 4 credit hours count toward the 32 credit hours required for the M.S. in MISI degree. Does not count toward the 12 credit hours of 500-level courses requirement. Prerequisite(s): Completion of the core courses in the degree program in which the student is enrolled and approval of the internship program by the graduate adviser and the graduate studies committee. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+39165	PR	ARRANGED						
+MATH 595
+Research Seminar
+1 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department. Instructor Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+39000	CNF	ARRANGED						
+43208	CNF	ARRANGED						
+MATH 596
+Independent Study
+1 TO 4 hours. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the instructor and the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+45905	C2	ARRANGED				Bakker, B		
+44230	C5	ARRANGED				Van Limbeek, W		
+45906	C7	ARRANGED				Gepner, D		
+44232	C8	ARRANGED				Tobasco, I		
+17274	CNF	ARRANGED						
+Instructor Approval Required
+24261	CNF	ARRANGED						
+Instructor Approval Required
+26042	CNF	ARRANGED						
+Instructor Approval Required
+36890	CNF	ARRANGED						
+Instructor Approval Required
+41526	CNF	ARRANGED						
+Instructor Approval Required
+36918	CNF	ARRANGED				Abramov, R		
+Instructor Approval Required
+17281	CNF	ARRANGED				Antieau, B		
+Instructor Approval Required
+39108	CNF	ARRANGED				Awanou, G		
+Instructor Approval Required
+17265	CNF	ARRANGED				Baldwin, J		
+Instructor Approval Required
+22247	CNF	ARRANGED				Bona, J		On Campus
+Instructor Approval Required
+27634	CNF	ARRANGED				Cappetta, R		
+Instructor Approval Required
+17278	CNF	ARRANGED				Cheskidov, A		
+Instructor Approval Required
+17256	CNF	ARRANGED				Cojocaru, A		
+Instructor Approval Required
+17261	CNF	ARRANGED				Coskun, I		
+Instructor Approval Required
+38756	CNF	ARRANGED				Culler, M		
+Instructor Approval Required
+17269	CNF	ARRANGED				Dai, M		
+Instructor Approval Required
+17271	CNF	ARRANGED				Dumas, D		
+Instructor Approval Required
+17258	CNF	ARRANGED				Ein, L		
+Instructor Approval Required
+40681	CNF	ARRANGED				Freitag, J		
+Instructor Approval Required
+17259	CNF	ARRANGED				Friedland, S		
+Instructor Approval Required
+25804	CNF	ARRANGED				Furman, A		
+Instructor Approval Required
+17263	CNF	ARRANGED				Gillet, H		
+Instructor Approval Required
+17275	CNF	ARRANGED				Greenblatt, M		
+Instructor Approval Required
+41801	CNF	ARRANGED				Groves, D		
+Instructor Approval Required
+17257	CNF	ARRANGED				Jones, N		
+Instructor Approval Required
+17268	CNF	ARRANGED				Kauffman, L		
+Instructor Approval Required
+26103	CNF	ARRANGED				Kobotis, E		
+Instructor Approval Required
+17272	CNF	ARRANGED				Marker, D		
+Instructor Approval Required
+24260	CNF	ARRANGED				Mubayi, D		
+Instructor Approval Required
+17266	CNF	ARRANGED				Nenciu, I		
+Instructor Approval Required
+26043	CNF	ARRANGED				Nicholls, D		
+Instructor Approval Required
+17267	CNF	ARRANGED				Ouyang, C		
+Instructor Approval Required
+45702	CNF	ARRANGED				Ouyang, C		
+Instructor Approval Required
+17260	CNF	ARRANGED				Reyzin, L		
+Instructor Approval Required
+17273	CNF	ARRANGED				Rosendal, C		
+Instructor Approval Required
+41803	CNF	ARRANGED				Ross, J		
+Instructor Approval Required
+17264	CNF	ARRANGED				Saunders, B		
+Instructor Approval Required
+39160	CNF	ARRANGED				Schaposnik Massolo, L		
+Instructor Approval Required
+17277	CNF	ARRANGED				Shalen, P		
+Instructor Approval Required
+26040	CNF	ARRANGED				Shipley, B		
+Instructor Approval Required
+24259	CNF	ARRANGED				Shvydkoy, R		
+Instructor Approval Required
+36877	CNF	ARRANGED				Sinapova, D		
+Instructor Approval Required
+17279	CNF	ARRANGED				Sparber, C		
+Instructor Approval Required
+27558	CNF	ARRANGED				Superfine, A		
+Instructor Approval Required
+22123	CNF	ARRANGED				Takloo-Bighash, R		
+Instructor Approval Required
+36876	CNF	ARRANGED				Tucker, K		On Campus
+Instructor Approval Required
+17270	CNF	ARRANGED				Van Limbeek, W		
+Instructor Approval Required
+17280	CNF	ARRANGED				Verschelde, J		
+Instructor Approval Required
+36921	CNF	ARRANGED				Whyte, K		
+Instructor Approval Required
+38735	CNF	ARRANGED				Yang, M		
+Instructor Approval Required
+39127	CNF	ARRANGED				Yau, S		
+Instructor Approval Required
+41812	CNF	ARRANGED				Zhang, W		
+Instructor Approval Required
+MATH 598
+Master's Thesis
+0 TO 16 hours. Satisfactory/Unsatisfactory grading only. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+13757	CNF	ARRANGED						
+Instructor Approval Required
+36865	CNF	ARRANGED						
+Instructor Approval Required
+36919	CNF	ARRANGED						
+Instructor Approval Required
+39166	CNF	ARRANGED						
+Instructor Approval Required
+44262	CNF	ARRANGED						
+MATH 599
+Thesis Research
+0 TO 16 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+45907	C3	ARRANGED				Bakker, B		
+44233	C3	ARRANGED				Tobasco, I		
+44231	C7	ARRANGED				Van Limbeek, W		
+45908	C8	ARRANGED				Gepner, D		
+26097	CNF	ARRANGED				Abramov, R		
+Departmental Approval Required
+24199	CNF	ARRANGED				Antieau, B		
+Departmental Approval Required
+22850	CNF	ARRANGED				Awanou, G		
+Departmental Approval Required
+24269	CNF	ARRANGED				Bona, J		
+Departmental Approval Required
+27214	CNF	ARRANGED				Cheskidov, A		
+Departmental Approval Required
+22849	CNF	ARRANGED				Cojocaru, A		
+Departmental Approval Required
+41527	CNF	ARRANGED				Coskun, I		
+Instructor Approval Required
+22860	CNF	ARRANGED				Culler, M		
+Departmental Approval Required
+43165	CNF	ARRANGED				Dai, M		
+24573	CNF	ARRANGED				Dumas, D		
+Departmental Approval Required
+22861	CNF	ARRANGED				Ein, L		
+Departmental Approval Required
+43560	CNF	ARRANGED				Freitag, J		
+Departmental Approval Required
+22847	CNF	ARRANGED				Friedland, S		
+Departmental Approval Required
+22852	CNF	ARRANGED				Furman, A		
+Departmental Approval Required
+22848	CNF	ARRANGED				Gillet, H		
+Departmental Approval Required
+41802	CNF	ARRANGED				Greenblatt, M		
+Departmental Approval Required
+22864	CNF	ARRANGED				Groves, D		
+Departmental Approval Required
+22866	CNF	ARRANGED				Hurder, S		
+Departmental Approval Required
+40680	CNF	ARRANGED				Jones, N		
+Instructor Approval Required
+26039	CNF	ARRANGED				Knessl, C		
+Departmental Approval Required
+39107	CNF	ARRANGED				Libgober, A		
+Instructor Approval Required
+24208	CNF	ARRANGED				Marker, D		
+Departmental Approval Required
+24207	CNF	ARRANGED				Martinez, M		
+Departmental Approval Required
+27221	CNF	ARRANGED				Mubayi, D		
+Departmental Approval Required
+26016	CNF	ARRANGED				Nenciu, I		
+Departmental Approval Required
+43559	CNF	ARRANGED				Nicholls, D		
+45703	CNF	ARRANGED				Ouyang, C		
+36883	CNF	ARRANGED				Reyzin, L		
+Departmental Approval Required
+26035	CNF	ARRANGED				Rosendal, C		
+Departmental Approval Required
+41804	CNF	ARRANGED				Ross, J		
+Instructor Approval Required
+43562	CNF	ARRANGED				Schaposnik Massolo, L		
+22856	CNF	ARRANGED				Shalen, P		
+Departmental Approval Required
+38078	CNF	ARRANGED				Shipley, B		
+Departmental Approval Required
+22858	CNF	ARRANGED				Shvydkoy, R		
+Departmental Approval Required
+38122	CNF	ARRANGED				Sinapova, D		
+Departmental Approval Required
+22854	CNF	ARRANGED				Sparber, C		
+Departmental Approval Required
+27559	CNF	ARRANGED				Superfine, A		
+Departmental Approval Required
+22867	CNF	ARRANGED				Takloo-Bighash, R		
+Departmental Approval Required
+38009	CNF	ARRANGED				Tucker, K		
+Departmental Approval Required
+26075	CNF	ARRANGED				Turan, G		
+Departmental Approval Required
+43561	CNF	ARRANGED				Van Limbeek, W		
+23988	CNF	ARRANGED				Verschelde, J		
+Departmental Approval Required
+37347	CNF	ARRANGED				Wang, J		
+Instructor Approval Required
+22865	CNF	ARRANGED				Whyte, K		
+Departmental Approval Required
+38736	CNF	ARRANGED				Yang, M		
+Instructor Approval Required
+22863	CNF	ARRANGED				Yau, S		
+Departmental Approval Required
+41813	CNF	ARRANGED				Zhang, W		
+Instructor Approval Required

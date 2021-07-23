@@ -1,0 +1,176 @@
+MCS 401
+Computer Algorithms I
+3 OR 4 hours. Same as CS 401. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MCS 360; or Grade of C or better in CS 202.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+35220	LCD	11:00 AM - 12:15 PM	TR	180F	2TBH	Kshemkalyani, A		On Campus
+3 hours Restricted to Undergrad - Chicago.
+35221	LCD	11:00 AM - 12:15 PM	TR	180F	2TBH	Kshemkalyani, A		On Campus
+4 hours Restricted to Mathematics or Computer Science or Teaching of Mathematics or Mathematics (DA) major(s). Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+39069	LCD	12:30 PM - 01:45 PM	TR	180F	2TBH	Kshemkalyani, A		On Campus
+3 hours Restricted to Undergrad - Chicago.
+39070	LCD	12:30 PM - 01:45 PM	TR	180F	2TBH	Kshemkalyani, A		On Campus
+4 hours Restricted to Computer Science or Teaching of Mathematics or Mathematics or Mathematics (DA) major(s). Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+41681	LCD	01:00 PM - 01:50 PM	MWF	180F	2TBH	DasGupta, B		On Campus
+3 hours Restricted to Undergrad - Chicago.
+41682	LCD	01:00 PM - 01:50 PM	MWF	180F	2TBH	DasGupta, B		On Campus
+4 hours Restricted to Computer Science or Teaching of Mathematics or Mathematics or Mathematics (DA) major(s). Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+12374	LCD	02:00 PM - 02:50 PM	MWF	180F	2TBH	Cheng, Y		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago. Departmental Approval Required
+20263	LCD	02:00 PM - 02:50 PM	MWF	180F	2TBH	Cheng, Y		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago. Departmental Approval Required
+12375	LCD	03:30 PM - 04:45 PM	TR	C004	2LCC	Mobasheri, N		On Campus
+3 hours Restricted to Undergrad - Chicago.
+20265	LCD	03:30 PM - 04:45 PM	TR	C004	2LCC	Mobasheri, N		On Campus
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+MCS 415
+Programming Language Design
+3 OR 4 hours. Same as CS 476. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): MCS 360; or CS 341. Restricted to Civil Engineering or Computer Engineering or Computer Science or Electrical Engineering or Engineering Physics or Industrial Engineering or Mechanical Engineering or Chemical Engineering or Bioengineering or Mathematics or Electrical & Computer Engr or Engineering or Engineering Management or Geotechnical Engr & Geosci or Indust Engr & Operations Res or Materials Engineering or Math & Computer Science or Math & Info Sci for Industry or Summer Session or Bioinformatics major(s).
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+42767	LCD	02:00 PM - 02:50 PM	MWF	138	2SES	Mansky, W		On Campus
+3 hours Restricted to Undergrad - Chicago.
+42768	LCD	02:00 PM - 02:50 PM	MWF	138	2SES	Mansky, W		On Campus
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+MCS 423
+Graph Theory
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 215; and Grade of C or better in MATH 310 or Grade of C or better in MATH 320; or consent of the instructor. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+38586	LCD	11:00 AM - 11:50 AM	MWF	204	2TH	Mubayi, D		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+38587	LCD	11:00 AM - 11:50 AM	MWF	204	2TH	Mubayi, D		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+MCS 425
+Codes and Cryptography
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 215; and Grade of C or better in MATH 310 or Grade of C or better in MATH 320; or consent of the instructor. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+39218	LCD	12:00 PM - 12:50 PM	MWF	207	2TH	Cheng, Y		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+39219	LCD	12:00 PM - 12:50 PM	MWF	207	2TH	Cheng, Y		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+MCS 471
+Numerical Analysis
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MCS 260; or grade of C or better in CS 107 or CS 109 or CS 111; or consent of instructor. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+34756	LCD	10:00 AM - 10:50 AM	MWF	306	2AH	Verschelde, J		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+34757	LCD	10:00 AM - 10:50 AM	MWF	306	2AH	Verschelde, J		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+MCS 496
+Independent Study
+1 TO 4 hours. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the instructor and the department. Instructor Approval Required This course counts toward the limted number of independent study hours accepted toward the degree and the major.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+17225	CNF	ARRANGED						
+17226	CNF	ARRANGED						
+17227	CNF	ARRANGED						
+17229	CNF	ARRANGED						
+17230	CNF	ARRANGED						
+17231	CNF	ARRANGED				Reyzin, L		
+17228	CNF	ARRANGED				Shvydkoy, R		
+23973	CNF	ARRANGED				Takloo-Bighash, R		
+17232	CNF	ARRANGED				Turan, G		
+17233	CNF	ARRANGED				Verschelde, J		
+MCS 548
+Mathematical Theory of Artificial Intelligence
+4 hours. Prerequisite(s): MCS 541.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+39221	LCD	01:00 PM - 01:50 PM	MWF	215	2LH	Potukuchi, A		Mixed in-person & online instr
+MCS 549
+Mathematical Foundations of Data Science
+4 hours. Prerequisite(s): MCS 401 and MCS 441; or consent of the instructor.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+43424	LEC	12:00 PM - 12:50 PM	MWF	215	2LH	Reyzin, L		Mixed in-person & online instr
+4 hours
+MCS 573
+Topics in Numerical Analysis of Partial Differential Equations
+4 hours. May be repeated if topics vary. Prerequisite(s): MATH 481 and MCS 471; and consent of the instructor.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+40622	LCD	10:00 AM - 10:50 AM	MWF	300	2LH	Awanou, G		Mixed in-person & online instr
+4 hours
+MCS 583
+Extremal Combinatorics
+4 hours.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+44948	LEC	09:00 AM - 09:50 AM	MWF	300	2LH	Mubayi, D		Mixed in-person & online instr
+MCS 593
+Graduate Student Seminar
+1 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department. Instructor Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+12369	CNF	ARRANGED						
+MCS 595
+Graduate Seminar
+1 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department. Instructor Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+12370	CNF	ARRANGED						
+MCS 596
+Independent Study
+1 TO 4 hours. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the instructor and the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+44234	C4	ARRANGED				Perkins, W		On Campus
+44236	C6	ARRANGED				Cheng, Y		
+17238	CNF	ARRANGED						
+Instructor Approval Required
+17239	CNF	ARRANGED						
+Instructor Approval Required
+26073	CNF	ARRANGED						
+Departmental Approval Required
+17236	CNF	ARRANGED				Friedland, S		
+Instructor Approval Required
+17234	CNF	ARRANGED				Mubayi, D		
+Instructor Approval Required
+25888	CNF	ARRANGED				Nicholls, D		
+Instructor Approval Required
+41805	CNF	ARRANGED				Perkins, W		
+Instructor Approval Required
+17237	CNF	ARRANGED				Reyzin, L		
+Instructor Approval Required
+26074	CNF	ARRANGED				Turan, G		
+Departmental Approval Required
+17240	CNF	ARRANGED				Verschelde, J		
+Instructor Approval Required
+17241	CNF	ARRANGED				Yau, S		
+Instructor Approval Required
+MCS 598
+Master's Thesis
+0 TO 16 hours. Satisfactory/Unsatisfactory grading only. Prerequisite(s): Approval of the department. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+12372	CNF	ARRANGED						
+MCS 599
+Thesis Research
+0 TO 16 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+44237	C4	ARRANGED				Cheng, Y		
+44235	C8	ARRANGED				Perkins, W		
+22831	CNF	ARRANGED						
+Departmental Approval Required
+24283	CNF	ARRANGED						
+Departmental Approval Required
+26036	CNF	ARRANGED				Mubayi, D		
+Departmental Approval Required
+36627	CNF	ARRANGED				Perkins, W		
+Departmental Approval Required
+27222	CNF	ARRANGED				Pless, V		
+Departmental Approval Required
+22840	CNF	ARRANGED				Reyzin, L		
+Departmental Approval Required
+41806	CNF	ARRANGED				Ross, J		
+Instructor Approval Required
+29506	CNF	ARRANGED				Turan, G		
+Departmental Approval Required
+22838	CNF	ARRANGED				Verschelde, J		
+Departmental Approval Required
+22835	CNF	ARRANGED				Yau, S		
+Departmental Approval Required

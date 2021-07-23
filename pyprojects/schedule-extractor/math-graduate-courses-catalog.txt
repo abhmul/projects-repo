@@ -1,0 +1,210 @@
+MATH 410. Advanced Calculus I. 3 or 4 hours.
+
+Functions of several variables, differentials, theorems of partial differentiation. Calculus of vector fields, line and surface integrals, conservative fields, Stokes's and divergence theorems. Cartesian tensors. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 210.
+MATH 411. Advanced Calculus II. 3 or 4 hours.
+
+Implicit and inverse function theorems, transformations, Jacobians. Point-set theory. Sequences, infinite series, convergence tests, uniform convergence. Improper integrals, gamma and beta functions, Laplace transform. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 410.
+MATH 414. Analysis II. 3 or 4 hours.
+
+Riemann-Stieltjes integration. Topology of metric spaces with emphasis on R^n. (Uniform) Continuity of functions on metric spaces. Multi-dimensional differentiation theory. Implicit and Inverse Function Theorem and applications. Introduction to Lebes. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade C or better in MATH 313 and MATH 310, or MATH 320.
+MATH 417. Complex Analysis with Applications. 3 or 4 hours.
+
+Complex numbers, analytic functions, complex integration, Taylor and Laurent series, residue calculus, branch cuts, conformal mapping, argument principle, Rouche's theorem, Poisson integral formula, analytic continuation. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade C or better in MATH 210.
+MATH 419. Models in Applied Mathematics. 3 or 4 hours.
+
+Introduction to mathematical modeling; scaling, graphical methods, optimization, computer simulation, stability, differential equation models, elementary numerical methods, applications in biology, chemistry, engineering and physics. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 220 and grade of C or better in MCS 260.
+MATH 425. Linear Algebra II. 3 or 4 hours.
+
+Canonical forms of a linear transformation, inner product spaces, spectral theorem, principal axis theorem, quadratic forms, special topics such as linear programming. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 320.
+MATH 430. Formal Logic I. 3 or 4 hours.
+
+First order logic, syntax and semantics, completeness-incompleteness. Course Information: 3 undergraduate hours. 4 graduate hours. Credit is not given for MATH 430 if the student has credit for PHIL 416. Prerequisite(s): Grade of C or better in CS 202 or grade of C or better in MCS 261 or grade of C or better in MATH 215.
+MATH 431. Abstract Algebra II. 3 or 4 hours.
+
+Further topics in abstract algebra: Sylow Theorems, Galois Theory, finitely generated modules over a principal ideal domain. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 320 and grade of C or better in MATH 330.
+MATH 435. Foundations of Number Theory. 3 or 4 hours.
+
+Primes, divisibility, congruences, Chinese remainder theorem, primitive roots, quadratic residues, quadratic reciprocity, and Jacobi symbols. The Euclidean algorithm and strategies of computer programming. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 215.
+MATH 436. Number Theory for Applications. 3 or 4 hours.
+
+Primality testing methods of Lehmer, Rumely, Cohen-Lenstra, Atkin. Factorization methods of Gauss, Pollard, Shanks, Lenstra, and quadratic sieve. Computer algorithms involving libraries and nested subroutines. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 435.
+MATH 442. Differential Geometry of Curves and Surfaces. 3 or 4 hours.
+
+Frenet formulas, isoperimetric inequality, local theory of surfaces, Gaussian and mean curvature, geodesics, parallelism, and the Guass-Bonnet theorem. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 320.
+MATH 445. Introduction to Topology I. 3 or 4 hours.
+
+Elements of metric spaces and topological spaces including product and quotient spaces, compactness, connectedness, and completeness. Examples from Euclidean space and function spaces. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 313.
+MATH 446. Introduction to Topology II. 3 or 4 hours.
+
+Topics in topology chosen from the following: advanced point set topology, piecewise linear topology, fundamental group and knots, differential topology, applications to physics and biology. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 445.
+MATH 480. Applied Differential Equations. 3 or 4 hours.
+
+Linear first-order systems. Numerical methods. Nonlinear differential equations and stability. Introduction to partial differential equations. Sturm-Liouville theory. Boundary value problems and Green's functions. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 220.
+MATH 481. Applied Partial Differential Equations. 3 or 4 hours.
+
+Initial value and boundary value problems for second order linear equations. Eiqenfunction expansions and Sturm-Liouville theory. Green's functions. Fourier transform. Characteristics. Laplace transform. Course Information: 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 220.
+MATH 494. Special Topics in Mathematics. 3 or 4 hours.
+
+Course content is announced prior to each term in which it is given. Course Information: 3 undergraduate hours. 4 graduate hours. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+MATH 496. Independent Study. 1-4 hours.
+
+Reading course supervised by a faculty member. Course Information: May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the instructor and the department. Class Schedule Information: This course counts toward the limited number of independent study hours accepted toward the degree and the major.
+MATH 502. Mathematical Logic. 4 hours.
+
+First order logic, completeness and incompleteness theorems, introduction to model theory and computability theory. Course Information: Same as PHIL 562. Prerequisite(s): MATH 430 or consent of the instructor.
+MATH 504. Set Theory. 4 hours.
+
+Naive and axiomatic set theory. Independence of the continuum hypothesis and the axiom of choice. Course Information: Same as PHIL 565. Prerequisite(s): MATH 430 or MATH 502 or PHIL 562.
+MATH 506. Model Theory I. 4 hours.
+
+Elementary embeddings, quantifier elimination, types, saturated and prime models, indiscernibles, Morley's Categoricity Theorem. Course Information: Same as PHIL 567. Prerequisite(s): MATH 502 or PHIL 562.
+MATH 507. Model Theory II. 4 hours.
+
+Stability theory: forking and indpendence, stable groups, geometric stability. Course Information: Same as PHIL 568. Prerequisite(s): MATH 506 or PHIL 567.
+MATH 511. Descriptive Set Theory. 4 hours.
+
+Polish spaces and Baire category; Borel, analytic and coanalytic sets; infinite games and determinacy; coanalytic ranks and scales; dichotomy theorems. Course Information: Recommended background: MATH 445 or MATH 504 or MATH 533 or MATH 539.
+MATH 512. Advanced Topics in Logic. 4 hours.
+
+Advanced topics in modern logic; e.g. large cardinals, infinitary logic, model theory of fields, o-minimality, Borel equivalence relations. Course Information: Same as PHIL 569. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+MATH 514. Number Theory I. 4 hours.
+
+Introduction to classical, algebraic, and analytic, number theory. Euclid's algorithm, unique factorization, quadratic reciprocity, and Gauss sums, quadratic forms, real approximations, arithmetic functions, Diophantine equations.
+MATH 515. Number Theory II. 4 hours.
+
+Introduction to classical, algebraic, and analytic number theory. Algebraic number fields, units, ideals, and P-adic theory. Riemann Zeta-function, Dirichlet's theorem, prime number theorem. Course Information: Prerequisite(s): MATH 514.
+MATH 516. Second Course in Abstract Algebra I. 4 hours.
+
+Structure of groups, Sylow theorems, solvable groups; structure of rings, polynomial rings, projective and injective modules, finitely generated modules over a PID. Course Information: Prerequisite(s): MATH 330 and MATH 425.
+MATH 517. Second Course in Abstract Algebra II. 4 hours.
+
+Rings and algebras, polynomials in several variables, power series rings, tensor products, field extensions, Galois theory, Wedderburn theorems. Course Information: Prerequisite(s): MATH 516.
+MATH 518. Representation Theory. 4 hours.
+
+Major areas of representation theory, including structure of group algebras, Wedderburn theorems, characters and orthogonality relations, idempotents and blocks. Course Information: Prerequisite(s): MATH 517.
+MATH 520. Commutative and Homological Algebra. 4 hours.
+
+Commutative rings; primary decomposition; integral closure; valuations; dimension theory; regular sequences; projective and injective dimension; chain complexes and homology; Ext and Tor; Koszul complex; homological study of regular rings. Course Information: Prerequisite(s): MATH 516 and MATH 517; or consent of the instructor.
+MATH 525. Advanced Topics in Number Theory. 4 hours.
+
+Introduction to topics at the forefront of research in number theory. Topics will vary and may include elliptic curves, automorphic forms, diophantine geometry or sieve methods. Course Information: May be repeated. Prerequisite(s): MATH 515; or consent of the instructor.
+MATH 531. Advanced Topics in Algebra. 4 hours.
+
+Researchlevel topics such as groups and geometries, equivalencies of module categories, representations of Lie-type groups. Course Information: May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+MATH 533. Real Analysis I. 4 hours.
+
+Introduction to real analysis. Lebesgue measure and integration, differ entiation, L-p classes, abstract integration. Course Information: Prerequisite(s): MATH 411 or MATH 414 or the equivalent.
+MATH 534. Real Analysis II. 4 hours.
+
+Continuation of MATH 533. Course Information: Prerequisite(s): MATH 417.
+MATH 535. Complex Analysis I. 4 hours.
+
+Analytic functions as mappings. Cauchy theory. Power Series. Partial fractions. Infinite products. Course Information: Prerequisite(s): MATH 411.
+MATH 536. Complex Analysis II. 4 hours.
+
+Normal families, Riemann mapping theorem. Analytic continuation, Harmonic and subharmonic functions, Picard theorem, selected topics. Course Information: Prerequisite(s): MATH 535.
+MATH 537. Introduction to Harmonic Analysis I. 4 hours.
+
+Fourier transform on L(p) spaces, Wiener's Tauberian theorem, Hilbert transform, Paley Wiener theory. Course Information: Prerequisite(s): MATH 533; and MATH 417 or MATH 535.
+MATH 539. Functional Analysis I. 4 hours.
+
+Topological vector spaces, Hilbert spaces, Hahn-Banach theorem, open mapping, uniform boundedness principle, linear operators in a Banach space, compact operators. Course Information: Prerequisite(s): MATH 533.
+MATH 546. Advanced Topics in Analysis. 4 hours.
+
+Subject may vary from semester to semester. Topics include partial differential equations, several complex variables, harmonic analysis and ergodic theory. Course Information: May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+MATH 547. Algebraic Topology I. 4 hours.
+
+The fundamental group and its applications, covering spaces, classification of compact surfaces, introduction to homology, development of singular homology theory, applications of homology. Course Information: Prerequisite(s): MATH 330 and MATH 445.
+MATH 548. Algebraic Topology II. 4 hours.
+
+Cohomology theory, universal coefficient theorems, cohomology products and their applications, orientation and duality for manifolds, homotopy groups and fibrations, the Hurewicz theorem, selected topics. Course Information: Prerequisite(s): MATH 547.
+MATH 549. Differentiable Manifolds I. 4 hours.
+
+Smooth manifolds and maps, tangent and normal bundles, Sard's theorem and transversality, embedding, differential forms, Stokes's theorem, degree theory, vector fields. Course Information: Prerequisite(s): MATH 445; and MATH 310 or MATH 320 or the equivalent.
+MATH 550. Differentiable Manifolds II. 4 hours.
+
+Vector bundles and classifying spaces, lie groups and lie algbras, tensors, Hodge theory, Poincare duality. Topics from elliptic operators, Morse theory, cobordism theory, deRahm theory, characteristic classes. Course Information: Prerequisite(s): MATH 549.
+MATH 551. Riemannian Geometry. 4 hours.
+
+Riemannian metrics and Levi-Civita connections, geodesics and completeness, curvature, first and second variation of arc length, comparison theorems. Course Information: Prerequisite(s): MATH 442 and MATH 549.
+MATH 552. Algebraic Geometry I. 4 hours.
+
+Basic commutative algebra, affine and projective varieties, regular and rational maps, function fields, dimension and smoothness, projective curves, schemes, sheaves, and cohomology, posiive characteristic.
+MATH 553. Algebraic Geometry II. 4 hours.
+
+Divisors and linear systems, differentials, Riemann-Roch theorem for curves, elliptic curves, geometry of curves and surfaces. Course Information: Prerequisite(s): MATH 552.
+MATH 554. Complex Manifolds I. 4 hours.
+
+Holomorphic functions in several variables, Riemann surfaces, Sheaf theory, vector bundles, Stein manifolds, Cartan theorem A and B, Grauert direct image theorem. Course Information: Prerequisite(s): MATH 517 and MATH 535.
+MATH 555. Complex Manifolds II. 4 hours.
+
+Dolbeault Cohomology, Serre duality, Hodge theory, Kadaira vanishing and embedding theorem, Lefschitz theorem, Complex Tori, Kahler manifolds. Course Information: Prerequisite(s): MATH 517 and MATH 535.
+MATH 568. Topics in Algebraic Topology. 4 hours.
+
+Homotopy groups and fibrations. The Serre spectral sequence and its applications. Classifying spaces of classical groups. Characteristic classes of vector bundles. Course Information: May be repeated. Students may register in more than one section per term. Prerequisite(s): MATH 548 or consent of the instructor.
+MATH 569. Advanced Topics in Geometric and Differential Topology. 4 hours.
+
+Topics from areas such as index theory, Lefschetz theory, cyclic theory, KK theory, non-commutative geometry, 3-manifold topology, hyperbolic manifolds, geometric group theory, and knot theory. Course Information: Prerequisite(s): Approval of the department.
+MATH 570. Advanced Topics in Differential Geometry. 4 hours.
+
+Subject may vary from semester to semester. Topics may include eigenvalues in Riemannian geometry, curvature and homology, partial differential relations, harmonic mappings between Riemannian manifolds hyperbolic geometry, arrangement of hyperplanes. Course Information: May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+MATH 571. Advanced Topics in Algebraic Geometry. 4 hours.
+
+Various topics such as algebraic curves, surfaces, higher dimensional geometry, singularities theory, moduli problems, vector bundles, intersection theory, arithematical algebraic geometry, and topologies of algebraic varieties. Course Information: May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+MATH 576. Classical Methods of Partial Differential Equations. 4 hours.
+
+First and second order equations, method of characteristics, weak solutions, distributions, wave, Laplace, Poisson, heat equations, energy methods, regularity problems, Green functions, maximum principles, Sobolev spaces, imbedding theorems. Course Information: Prerequisite(s): MATH 410 and MATH 481 and MATH 533; or consent of instructor.
+MATH 577. Advanced Partial Differential Equations. 4 hours.
+
+Linear elliptic theory, maximum principles, fixed point methods, semigroups and nonlinear dynamics, systems of conservation laws, shocks and waves, parabolic equations, bifurcation, nonlinear elliptic theory. Course Information: Prerequisite(s): MATH 533 and MATH 576 or consent of the instructor.
+MATH 578. Asymptotic Methods. 4 hours.
+
+Asymptotic series, Laplace's method, stationary phase, steepest descent method, Stokes phenomena, uniform expansions, multi-dimensional Laplace integrals, Euler-MacLaurin formula, irregular singular points, WKBJ method. Course Information: Prerequisite(s): MATH 417 and MATH 481; or consent of instructor.
+MATH 580. Mathematics of Fluid Mechanics. 4 hours.
+
+Development of concepts and techniques used in mathematical models of fluid motions. Euler and Navier Stokes equations. Vorticity and vortex motion. Waves and instabilities. Viscous fluids and boundary layers. Asymptotic methods. Course Information: Prerequisite(s): Grade of C or better in MATH 410 and grade of C or better in MATH 417 and grade of C or better in MATH 481.
+MATH 581. Special Topics in Fluid Mechanics. 4 hours.
+
+Geophysical fluids with applications to oceanography and meteorology, astrophysical fluids, magnetohydrodynamics and plasmas. Course Information: Prerequisite(s): Grade of C or better in MATH 580.
+MATH 582. Linear and Nonlinear Waves. 4 hours.
+
+Analysis of partial differential equations describing (non-) linear wave phenomena. In particular, dispersive and hyperbolic equations. Analytical techniques include Fourier transformation and fixed point theorems. Course Information: Prerequisite(s): Graduate standing and MATH 533 and MATH 576 OR MATH 539 or consent of the instructor.
+MATH 584. Applied Stochastic Models. 4 hours.
+
+Applications of stochastic models in chemistry, physics, biology, queueing, filtering, and stochastic control, diffusion approximations, Brownian motion, stochastic calculus, stochastically perturbed dynamical systems, first passage times. Course Information: Prerequisite(s): MATH 417 and MATH 481 and STAT 401, or consent of the instructor.
+MATH 585. Ordinary Differential Equations. 4 hours.
+
+Introduction to ordinary differential equations, existence, uniqueness of solutions, dependence on parameters, autonomous and non-autonomous systems, linear systems, nonlinear systems, periodic solutions, bifurcations, conservative systems. Course Information: Prerequisite(s): MATH 313 or MATH 480 or approval of the department.
+MATH 586. Computational Finance. 4 hours.
+
+Introduction to the mathematics of financial derivatives; options, asset price random walks, Black-Scholes model; partial differential techniques for option valuation, binomial models, numerical methods; exotic options, interest-rate derivatives. Course Information: Prerequisite(s): Grade of C or better in MATH 220 and grade of C or better in STAT 381; or consent of the instructor.
+MATH 589. Teaching and Presentation of Mathematics. 2 hours.
+
+Strategies and techniques for effective teaching in college and for mathematical consulting. Observation and evaluation, classroom management, presenting mathematics in multidisciplinary research teams. Required for teaching assistants in MSCS. Course Information: No graduation credit awarded for students enrolled in the Master of Science in the Teaching of Mathematics degree program.
+MATH 590. Advanced Topics in Applied Mathematics. 4 hours.
+
+Topics from areas such as: elastic scattering, nonlinear problems in chemistry and physics, mathematical biology, stochastic optimal control, geophysical fluid dynamics, stability theory, queueing theory. Course Information: Prerequisite(s): Approval of the department.
+MATH 591. Seminar on Mathematics Curricula. 4 hours.
+
+Examination of research and reports on mathematics curricula. Analysis of research in teaching and learning mathematics. Developments in using technology in mathematics teaching. Course Information: Prerequisite(s): Enrollment in the Doctor of Arts program in mathematics or consent of the instructor.
+MATH 592. Seminar on Mathematics: Philosophy and Methodology. 4 hours.
+
+Problems related to teaching and learning mathematics. Analysis of work of Piaget, Gagne, Bruner, Ausabel, Freudenthal, and others and their relation to mathematics teaching. Course Information: Prerequisite(s): Enrollment in the Doctor of Arts program in mathematics or consent of instructor.
+MATH 593. Graduate Student Seminar. 1 hour.
+
+For graduate students who wish to receive credit for participating in a learning seminar whose weekly time commitment is not sufficient for a reading course. This seminar must be sponsored by a faculty member. Course Information: Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+MATH 594. Internship in Mathematics. 0-8 hours.
+
+Under the direction of a faculty adviser, students work in government or industry on problems related to their major field of interest. At the end of internship, the student must present a seminar on the internship experiences. Course Information: Satisfactory/Unsatisfactory grading only. May be repeated to a maximum of 8 hours. Only 4 credit hours count toward the 32 credit hours required for the M.S. in MISI degree. Does not count toward the 12 credit hours of 500-level courses requirement. Prerequisite(s): Completion of the core courses in the degree program in which the student is enrolled and approval of the internship program by the graduate adviser and the graduate studies committee.
+MATH 595. Research Seminar. 1 hour.
+
+Current developments in research with presentations by faculty, students, and visitors. Course Information: Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+MATH 596. Independent Study. 1-4 hours.
+
+Reading course supervised by a faculty member. Course Information: May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the instructor and the department.
+MATH 598. Master's Thesis. 0-16 hours.
+
+Research work under the supervision of a faculty member leading to the completion of a master's thesis. Course Information: Satisfactory/Unsatisfactory grading only. Prerequisite(s): Approval of the department.
+MATH 599. Thesis Research. 0-16 hours.
+
+Research work under the supervision of a faculty member. Course Information: Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.

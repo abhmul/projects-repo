@@ -1,0 +1,136 @@
+PHYS 402
+Electromagnetism II
+4 hours. Prerequisite(s): PHYS 230 and PHYS 401; or approval of the department. Restricted to Engineering Physics or Physics or Teaching of Physics or Teaching of Chemistry or Biochemistry or Neuroscience or Chemistry or Biological Sciences or Earth & Environmental Sciences or Teaching of Biol Sciences major(s).
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+17042	LEC	03:00 PM - 03:50 PM	M	2284	2SELE	Ogut, S		On Campus
+LEC	03:30 PM - 04:45 PM	TR	2284	2SELE			On Campus
+PHYS 412
+Quantum Mechanics II
+4 hours. Prerequisite(s): PHYS 411; or approval of the department. Restricted to Engineering Physics or Physics or Teaching of Physics or Teaching of Chemistry or Biochemistry or Neuroscience or Chemistry or Biological Sciences or Earth & Environmental Sciences or Teaching of Biol Sciences major(s).
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+17043	LEC	11:00 AM - 12:15 PM	TR	2294	2SELE			On Campus
+LEC	11:00 AM - 11:50 AM	M	2294	2SELE	Schroeder, W		On Campus
+PHYS 441
+Theoretical Mechanics
+4 hours. Prerequisite(s): PHYS 215 and Credit or concurrent registration in PHYS 245; or approval of the department. Restricted to Engineering Physics or Physics or Teaching of Physics or Teaching of Chemistry or Biochemistry or Neuroscience or Chemistry or Biological Sciences or Earth & Environmental Sciences or Teaching of Biol Sciences major(s).
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+17048	LEC	10:00 AM - 11:50 AM	W	B110	2ADS	Evdokimov, O		On Campus
+LEC	10:00 AM - 10:50 AM	MF	B101	2LCB	Evdokimov, O		On Campus
+PHYS 482
+Modern Experimental Physics II
+4 hours. Prerequisite(s): PHYS 481; or approval of the department. Restricted to Engineering Physics or Physics or Teaching of Physics or Teaching of Chemistry or Biochemistry or Neuroscience or Chemistry or Biological Sciences or Earth & Environmental Sciences or Teaching of Biol Sciences major(s). To be properly registered, students must enroll in one Laboratory and one Lecture-Discussion.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+29087	LAB - AB	02:00 PM - 05:50 PM	F	2073	2SELE	Evdokimov, A		On Campus
+29088	LCD - AS	04:00 PM - 05:50 PM	M	2249E	2SELE	Evdokimov, A		On Campus
+Physics Lab Fee $40.00 Flat Fee.
+PHYS 502
+Electrodynamics II
+4 hours. Prerequisite(s): PHYS 501 or consent of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+17055	LEC	03:00 PM - 03:50 PM	M	ARR	2ONL	Stephanov, M		Online Synchronous
+LEC	03:30 PM - 04:45 PM	TR	ARR	2ONL			Online Synchronous
+PHYS 512
+Quantum Mechanics II
+4 hours. Prerequisite(s): PHYS 511 or approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+17056	LEC	11:00 AM - 12:15 PM	TR	D004	2LCD			On Campus
+LEC	11:00 AM - 11:50 AM	M	D004	2LCD	Yee, H		On Campus
+PHYS 534
+Theory of Solids: Semiconductor Physics
+3 hours. Prerequisite(s): PHYS 512 and PHYS 532.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+29974	LEC	12:30 PM - 01:45 PM	TR	ARR	2ONL	Morr, D		Online Synchronous
+PHYS 552
+Elementary Particle Physics II
+3 hours. Prerequisite(s): PHYS 551 or approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+31065	LEC	11:00 AM - 12:15 PM	TR	ARR	2ONL	Cavanaugh, R		Online Synchronous
+PHYS 595
+Graduate Seminar
+1 hours. Satisfactory/Unsatisfactory grading only. May be repeated to a maximum of 6 hours. Students may register in more than one section per term.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+17063	CNF	03:00 PM - 04:45 PM	W	ARR	2ONL	Ansari, A		Online Synchronous
+PHYS 596
+Individual Study
+2 TO 4 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+17064	CNF	ARRANGED				Crabtree, G		
+Departmental Approval Required
+33763	CNF	ARRANGED				Evdokimov, A		
+Departmental Approval Required
+33879	CNF	ARRANGED				Gerber, C		
+Departmental Approval Required
+33991	CNF	ARRANGED				Mills, C		
+33880	CNF	ARRANGED				Ye, Z		
+PHYS 598
+Master's Thesis Research
+0 TO 16 hours. Satisfactory/Unsatisfactory grading only. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+12807	CNF	ARRANGED				Ansari, A		
+12808	CNF	ARRANGED				Aratyn, H		
+12811	CNF	ARRANGED				Campuzano, J		
+12810	CNF	ARRANGED				Cavanaugh, R		
+25445	CNF	ARRANGED				Evdokimov, O		
+12812	CNF	ARRANGED				Gerber, C		
+12813	CNF	ARRANGED				Grein, C		
+12815	CNF	ARRANGED				Hofman, D		
+12816	CNF	ARRANGED				Imbo, T		
+12817	CNF	ARRANGED				Keung, W		
+12806	CNF	ARRANGED				Khalili Araghi, F		
+25906	CNF	ARRANGED				Klie, R		
+42524	CNF	ARRANGED				Mills, C		
+12822	CNF	ARRANGED				Morr, D		
+12823	CNF	ARRANGED				Ogut, S		
+12824	CNF	ARRANGED				Park, H		
+12818	CNF	ARRANGED				Perez-Salas, U		
+12825	CNF	ARRANGED				Schlossman, M		
+12826	CNF	ARRANGED				Schroeder, W		
+12827	CNF	ARRANGED				Sivananthan, S		
+12828	CNF	ARRANGED				Stephanov, M		
+37735	CNF	ARRANGED				Ugalde, C		
+12829	CNF	ARRANGED				Varelas, N		
+12821	CNF	ARRANGED				Ye, Z		
+12814	CNF	ARRANGED				Yee, H		
+PHYS 599
+Thesis Research
+0 TO 16 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+12831	CNF	ARRANGED				Ansari, A		
+12835	CNF	ARRANGED				Campuzano, J		
+29147	CNF	ARRANGED				Cavanaugh, R		
+12838	CNF	ARRANGED				Crabtree, G		
+25446	CNF	ARRANGED				Evdokimov, O		
+12836	CNF	ARRANGED				Gerber, C		
+12837	CNF	ARRANGED				Grein, C		
+12839	CNF	ARRANGED				Hofman, D		
+12840	CNF	ARRANGED				Imbo, T		
+12841	CNF	ARRANGED				Keung, W		
+12830	CNF	ARRANGED				Khalili Araghi, F		
+25907	CNF	ARRANGED				Klie, R		
+42525	CNF	ARRANGED				Mills, C		
+12846	CNF	ARRANGED				Morr, D		
+12847	CNF	ARRANGED				Ogut, S		
+12848	CNF	ARRANGED				Park, H		
+29977	CNF	ARRANGED				Perez-Salas, U		
+12849	CNF	ARRANGED				Schlossman, M		
+12850	CNF	ARRANGED				Schroeder, W		
+12851	CNF	ARRANGED				Sivananthan, S		
+12852	CNF	ARRANGED				Stephanov, M		
+37717	CNF	ARRANGED				Ugalde, C		
+26049	CNF	ARRANGED				Unwin, J		
+12853	CNF	ARRANGED				Varelas, N		
+26038	CNF	ARRANGED				Ye, Z		
+12845	CNF	ARRANGED				Yee, H		
+12832	CNF	ARRANGED				Zhou, H		

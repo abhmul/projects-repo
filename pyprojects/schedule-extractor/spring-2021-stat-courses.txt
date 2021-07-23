@@ -1,0 +1,155 @@
+STAT 401
+Introduction to Probability
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 210; or approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+27300	LCD	10:00 AM - 10:50 AM	MWF	ARR	2ONL	Doyle, T		Online Synchronous
+3 hours Restricted to Undergrad - Chicago.
+27301	LCD	10:00 AM - 10:50 AM	MWF	ARR	2ONL	Doyle, T		Online Synchronous
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+42470	LCD	02:00 PM - 02:50 PM	MWF	ARR	2ONL	Doyle, T		Online Synchronous
+3 hours Restricted to Undergrad - Chicago.
+42471	LCD	02:00 PM - 02:50 PM	MWF	ARR	2ONL	Doyle, T		Online Synchronous
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+STAT 411
+Statistical Theory
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in STAT 401.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+18086	LCD	09:00 AM - 09:50 AM	MWF	ARR	2ONL	Han, K		Online Synchronous
+3 hours Restricted to Undergrad - Chicago.
+19360	LCD	09:00 AM - 09:50 AM	MWF	ARR	2ONL	Han, K		Online Synchronous
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+STAT 451
+Computational Statistics
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Extensive computer use required. Prerequisite(s): STAT 411.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+37112	LCD	11:00 AM - 11:50 AM	MWF	ARR	2ONL	Zhong, P		Online Synchronous
+3 hours Restricted to Undergrad - Chicago.
+37113	LCD	11:00 AM - 11:50 AM	MWF	ARR	2ONL	Zhong, P		Online Synchronous
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+STAT 473
+Game Theory
+3 OR 4 hours. Same as ECON 473. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): STAT 381; or ECON 270; or equivalents.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+37894	LEC	09:30 AM - 10:45 AM	TR	ARR	2ONL	Reyzin, L		Online Synchronous
+3 hours
+37895	LEC	09:30 AM - 10:45 AM	TR	ARR	2ONL	Reyzin, L		Online Synchronous
+4 hours
+STAT 481
+Applied Statistical Methods II
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in STAT 381.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+18089	LCD	11:00 AM - 11:50 AM	MWF	250	2SES	Yang, M		On Campus
+3 hours Restricted to Undergrad - Chicago.
+19363	LCD	11:00 AM - 11:50 AM	MWF	250	2SES	Yang, M		On Campus
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+STAT 494
+Special Topics in Statistics, Probability and Operations Research
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+41214	LCD	02:00 PM - 02:50 PM	MWF	ARR	2ONL	Yang, J		Online Synchronous
+3 hours Restricted to Undergrad - Chicago.
+41215	LCD	02:00 PM - 02:50 PM	MWF	ARR	2ONL	Yang, J		Online Synchronous
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+STAT 496
+Independent Study
+1 TO 4 hours. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the instructor and approval of the department. Instructor Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+36469	CNF	ARRANGED						
+18092	CNF	ARRANGED				Pajda-De La O, J		
+37763	CNF	ARRANGED				Zhong, P		
+STAT 511
+Advanced Statistical Theory I
+4 hours. Prerequisite(s): STAT 411.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+31221	LCD	11:00 AM - 11:50 AM	MWF	ARR	2ONL	Han, K		Online Synchronous
+STAT 522
+Multivariate Statistical Analysis
+4 hours. Prerequisite(s): STAT 521.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+39531	LCD	10:00 AM - 10:50 AM	MWF	ARR	2ONL	Yang, J		Online Synchronous
+4 hours
+STAT 536
+Optimal Design Theory II
+4 hours. Prerequisite(s): STAT 535 or consent of the instructor.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+39532	LCD	01:00 PM - 01:50 PM	MWF	C003	2LCC	Yang, M		On Campus
+4 hours
+STAT 591
+Advanced Topics in Statistics, Probability and Operations Research
+4 hours. May be repeated. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+36872	LCD	12:00 PM - 12:50 PM	MWF	ARR	2ONL	Ouyang, C		Online Asynchronous
+4 hours
+STAT 593
+Graduate Student Seminar
+1 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+18094	CNF	ARRANGED				Han, K		
+STAT 595
+Research Seminar
+1 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+18095	CNF	ARRANGED				Han, K		
+STAT 596
+Independent Study
+1 TO 4 hours. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the instructor and the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+44628	C4	ARRANGED				Han, K		
+43438	C4	ARRANGED				Karabatsos, G		
+25714	CNF	ARRANGED						
+Instructor Approval Required
+12122	CNF	ARRANGED				Hedayat, S		
+Instructor Approval Required
+12121	CNF	ARRANGED				Majumdar, D		
+Instructor Approval Required
+36467	CNF	ARRANGED				Ouyang, C		
+Instructor Approval Required
+12124	CNF	ARRANGED				Raghavan, T		
+Instructor Approval Required
+22329	CNF	ARRANGED				Wang, J		
+Instructor Approval Required
+41489	CNF	ARRANGED				Wu, Y		
+Instructor Approval Required
+27257	CNF	ARRANGED				Yang, J		
+Instructor Approval Required
+35085	CNF	ARRANGED				Yang, M		
+Instructor Approval Required
+12123	CNF	ARRANGED				Zhong, P		
+Instructor Approval Required
+STAT 598
+Master's Thesis
+0 TO 16 hours. Satisfactory/Unsatisfactory grading only. Prerequisite(s): Approval of the department. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+18096	CNF	ARRANGED						
+STAT 599
+Doctoral Thesis Research
+0 TO 16 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+44629	C6	ARRANGED				Han, K		
+43439	C6	ARRANGED				Karabatsos, G		
+36629	CNF	ARRANGED						
+18097	CNF	ARRANGED				Hedayat, S		
+24931	CNF	ARRANGED				Majumdar, D		
+37320	CNF	ARRANGED				Ouyang, C		
+32724	CNF	ARRANGED				Raghavan, T		
+22576	CNF	ARRANGED				Wang, J		
+41490	CNF	ARRANGED				Wu, Y		
+22575	CNF	ARRANGED				Yang, J		
+37333	CNF	ARRANGED				Yang, M		
+37734	CNF	ARRANGED				Zhong, P		

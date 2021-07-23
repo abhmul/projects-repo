@@ -1,0 +1,182 @@
+STAT 401
+Introduction to Probability
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in MATH 210; or approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+43452	LCD	09:00 AM - 09:50 AM	MWF	312	2LH	Yang, J		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+43455	LCD	09:00 AM - 09:50 AM	MWF	312	2LH	Yang, J		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+13617	LCD	10:00 AM - 10:50 AM	MWF	312	2LH	Perkins, W		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+20466	LCD	10:00 AM - 10:50 AM	MWF	312	2LH	Perkins, W		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+STAT 411
+Statistical Theory
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in STAT 401. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+31576	LCD	10:00 AM - 10:50 AM	MWF	A002	2LCA	Yang, J		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago or Undergrad Non-Degree Chicago.
+31577	LCD	10:00 AM - 10:50 AM	MWF	A002	2LCA	Yang, J		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+STAT 431
+Introduction to Survey Sampling
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in STAT 411 or STAT 481.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+38335	LCD	10:00 AM - 10:50 AM	MWF	636	2SEO	Pajda-De La O, J		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+38336	LCD	10:00 AM - 10:50 AM	MWF	636	2SEO	Pajda-De La O, J		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+STAT 461
+Applied Probability Models I
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Grade of C or better in STAT 401.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+41008	LCD	01:00 PM - 01:50 PM	MWF	302	2AH	Perkins, W		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+41009	LCD	01:00 PM - 01:50 PM	MWF	302	2AH	Perkins, W		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+STAT 473
+Game Theory
+3 OR 4 hours. Same as ECON 473. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): STAT 381; or ECON 270; or equivalents.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+41010	LEC	09:30 AM - 10:45 AM	TR	207	2TH			Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+41011	LEC	09:30 AM - 10:45 AM	TR	207	2TH			Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+STAT 475
+Mathematics and Statistics for Actuarial Sciences I
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): Math 210.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+39236	LCD	03:00 PM - 03:50 PM	MWF	307	2AH			Mixed in-person & online instr
+3 hours
+39237	LCD	03:00 PM - 03:50 PM	MWF	307	2AH			Mixed in-person & online instr
+4 hours
+STAT 481
+Applied Statistical Methods II
+3 OR 4 hours. 3 undergraduate hours. 4 graduate hours. Prerequisite(s): STAT 381. Students in the BS in Data Science may satisfy the prerequisite with IE 342 or ECE 341 instead of STAT 381.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+41834	LCD	11:00 AM - 11:50 AM	MWF	312	2LH	Wu, Y		Mixed in-person & online instr
+3 hours Restricted to Undergrad - Chicago.
+41835	LCD	11:00 AM - 11:50 AM	MWF	312	2LH	Wu, Y		Mixed in-person & online instr
+4 hours Restricted to Graduate - Chicago or Graduate Non-Degree Chicago.
+STAT 496
+Independent Study
+1 TO 4 hours. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the instructor and approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+14815	CNF	ARRANGED				Hedayat, S		
+Instructor Approval Required
+14817	CNF	ARRANGED				Liu, L		
+Departmental Approval Required
+14816	CNF	ARRANGED				Majumdar, D		
+Instructor Approval Required
+14814	CNF	ARRANGED				Pajda-De La O, J		
+Instructor Approval Required
+14818	CNF	ARRANGED				Raghavan, T		
+Instructor Approval Required
+40155	CNF	ARRANGED				Shvydkoy, R		
+Instructor Approval Required
+45566	CNF	ARRANGED				Takloo-Bighash, R		
+14812	CNF	ARRANGED				Wang, J		
+Instructor Approval Required
+14813	CNF	ARRANGED				Yang, J		
+Instructor Approval Required
+40237	CNF	ARRANGED				Yang, M		
+Instructor Approval Required
+45772	CNF	ARRANGED				Zhong, P		
+STAT 501
+Probability Theory I
+4 hours. Prerequisite(s): MATH 534 or consent of the instructor.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+22762	LCD	01:00 PM - 01:50 PM	MWF	303	2AH	Ouyang, C		Mixed in-person & online instr
+STAT 521
+Linear Statistical Inference
+4 hours. Prerequisite(s): STAT 411.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+37071	LCD	09:00 AM - 09:50 AM	MWF	303	2AH	Wang, J		Mixed in-person & online instr
+STAT 591
+Advanced Topics in Statistics, Probability and Operations Research
+4 hours. May be repeated. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+37945	LCD	01:00 PM - 01:50 PM	MWF	300	2LH	Wu, Y		Mixed in-person & online instr
+STAT 593
+Graduate Student Seminar
+1 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department. Instructor Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+13629	CNF	ARRANGED						
+STAT 595
+Research Seminar
+1 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department. Instructor Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+13632	CNF	ARRANGED						
+STAT 596
+Independent Study
+1 TO 4 hours. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the instructor and the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+14824	CNF	ARRANGED						
+Instructor Approval Required
+36907	CNF	ARRANGED						
+Instructor Approval Required
+14822	CNF	ARRANGED				Hedayat, S		
+Instructor Approval Required
+44247	CNF	ARRANGED				Karabatsos, G		
+14823	CNF	ARRANGED				Majumdar, D		
+Instructor Approval Required
+25875	CNF	ARRANGED				Ouyang, C		
+Instructor Approval Required
+14825	CNF	ARRANGED				Raghavan, T		
+Instructor Approval Required
+14821	CNF	ARRANGED				Wang, J		
+Instructor Approval Required
+41799	CNF	ARRANGED				Wu, Y		
+Instructor Approval Required
+14820	CNF	ARRANGED				Yang, J		
+Instructor Approval Required
+36908	CNF	ARRANGED				Yang, M		
+Instructor Approval Required
+38746	CNF	ARRANGED				Zhong, P		
+Instructor Approval Required
+STAT 598
+Master's Thesis
+0 TO 16 hours. Satisfactory/Unsatisfactory grading only. Prerequisite(s): Approval of the department. Departmental Approval Required
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+13633	CNF	ARRANGED						
+STAT 599
+Doctoral Thesis Research
+0 TO 16 hours. Satisfactory/Unsatisfactory grading only. May be repeated. Students may register in more than one section per term. Prerequisite(s): Approval of the department.
+
+CRN	Course Type	Start & End Time	Meeting Days	Room	Building Code	Instructor	Meets Between	Instructional Method
+39060	CNF	ARRANGED						
+Departmental Approval Required
+22842	CNF	ARRANGED				Hedayat, S		
+Departmental Approval Required
+44248	CNF	ARRANGED				Karabatsos, G		
+25835	CNF	ARRANGED				Majumdar, D		
+Departmental Approval Required
+38748	CNF	ARRANGED				Ouyang, C		
+Departmental Approval Required
+22845	CNF	ARRANGED				Raghavan, T		
+Departmental Approval Required
+34144	CNF	ARRANGED				Wang, J		
+Departmental Approval Required
+41800	CNF	ARRANGED				Wu, Y		
+Departmental Approval Required
+31043	CNF	ARRANGED				Yang, J		
+Departmental Approval Required
+38747	CNF	ARRANGED				Yang, M		
+Departmental Approval Required
+39061	CNF	ARRANGED				Zhong, P		
+Departmental Approval Required
