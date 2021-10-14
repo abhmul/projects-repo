@@ -10,10 +10,12 @@ parser.add_argument('-n', '--trials', type=int, default=1, help="How many trials
 # parser.add_argument('experiments', choices=list(EXPERIMENTS.keys()), type=int, nargs="+", help="Which experiment to run?")
 
 rng = np.random.default_rng()
-experiments = list(sorted(EXPERIMENTS.keys()))
+# experiments = list(sorted(EXPERIMENTS.keys()))
+# experiments = list(range(31, 51))
+experiments = [32]
 
 # Experiment 0 is a test experiment
-experiments.remove(0)
+# experiments.remove(0)
 
 if __name__ == '__main__':
     args = parser.parse_args()

@@ -4,6 +4,7 @@ import tensorflow as tf
 
 from models import mlp
 from data import load_mnist, flatten_data, mix_datasets, sample_train, mnist_mlp_connector
+from utils import model_extra_summary
 
 EXPERIMENTS = {}
 
@@ -49,9 +50,12 @@ def experiment0(rng):
 def mlp_mnist_sgd_experiment(rng, sample_size, hidden_size, depth, initializer, learning_rate, momentum, nesterov, epochs, batch_size):
     X, Y = mix_datasets(*mnist_mlp_connector(load_mnist()))
     x_train, y_train = sample_train((X, Y), sample_size, rng)
+    assert len(x_train) == len(y_train)
+    print(f"Sampled {len(x_train)} datapoints iid")
+
     model = mlp(Y.shape[1], depth=depth, hidden=hidden_size, initializer=initializer)
     opt = tf.keras.optimizers.SGD(learning_rate=learning_rate, momentum=momentum, nesterov=nesterov)
-    loss = tf.keras.losses.CategoricalCrossentropy(from_logits=True, label_smoothing=0, name="cce")
+    loss = tf.keras.losses.CategoricalCrossentropy(from_logits=True, label_smoothing=0)
     model.compile(
         optimizer=opt,
         loss=loss,
@@ -62,6 +66,9 @@ def mlp_mnist_sgd_experiment(rng, sample_size, hidden_size, depth, initializer, 
         steps_per_execution=None
     )
 
+    model_extra_summary(model)
+
+    print(f"Training model for {epochs} epochs and with {batch_size} batch size.")
     model.fit(
         x=x_train, y=y_train,
         batch_size=batch_size,
@@ -546,3 +553,291 @@ def experiment29(rng):
 )
 def experiment30(rng):
     return mlp_mnist_sgd_experiment(rng, sample_size=1000, hidden_size=1024, depth=5, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    31,
+    """
+    MNIST 5k
+    MLP 1 N/A HeNormal
+    Vanilla SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment31(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=5000, hidden_size=1, depth=1, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+
+@experiment(
+    32,
+    """
+    MNIST 5k
+    MLP 2 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment32(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=5000, hidden_size=1024, depth=2, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    33,
+    """
+    MNIST 5k
+    MLP 3 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment33(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=5000, hidden_size=1024, depth=3, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    34,
+    """
+    MNIST 5k
+    MLP 4 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment34(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=5000, hidden_size=1024, depth=4, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    35,
+    """
+    MNIST 5k
+    MLP 5 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment35(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=5000, hidden_size=1024, depth=5, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+
+@experiment(
+    36,
+    """
+    MNIST 10k
+    MLP 1 NA HeNormal
+    Vanilla SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment36(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=10000, hidden_size=1, depth=1, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+
+@experiment(
+    37,
+    """
+    MNIST 10k
+    MLP 2 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment37(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=10000, hidden_size=1024, depth=2, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+
+@experiment(
+    38,
+    """
+    MNIST 10k
+    MLP 3 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment38(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=10000, hidden_size=1024, depth=3, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    39,
+    """
+    MNIST 10k
+    MLP 4 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment39(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=10000, hidden_size=1024, depth=4, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    40,
+    """
+    MNIST 10k
+    MLP 5 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment40(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=10000, hidden_size=1024, depth=5, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    41,
+    """
+    MNIST 5k
+    MLP 1 N/A HeNormal
+    Vanilla SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment41(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=15000, hidden_size=1, depth=1, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+
+@experiment(
+    42,
+    """
+    MNIST 5k
+    MLP 2 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment42(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=15000, hidden_size=1024, depth=2, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    43,
+    """
+    MNIST 5k
+    MLP 3 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment43(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=15000, hidden_size=1024, depth=3, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    44,
+    """
+    MNIST 5k
+    MLP 4 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment44(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=15000, hidden_size=1024, depth=4, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    45,
+    """
+    MNIST 5k
+    MLP 5 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment45(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=15000, hidden_size=1024, depth=5, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+
+@experiment(
+    46,
+    """
+    MNIST 20k
+    MLP 1 NA HeNormal
+    Vanilla SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment46(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=20000, hidden_size=1, depth=1, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+
+@experiment(
+    47,
+    """
+    MNIST 20k
+    MLP 2 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment47(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=20000, hidden_size=1024, depth=2, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+
+@experiment(
+    48,
+    """
+    MNIST 20k
+    MLP 3 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment48(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=20000, hidden_size=1024, depth=3, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    49,
+    """
+    MNIST 20k
+    MLP 4 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment49(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=20000, hidden_size=1024, depth=4, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
+
+@experiment(
+    50,
+    """
+    MNIST 20k
+    MLP 5 1024 HeNormal
+    SGD 1e3
+    CCE
+    ep 30
+    batch_size 32
+    """
+)
+def experiment50(rng):
+    return mlp_mnist_sgd_experiment(rng, sample_size=20000, hidden_size=1024, depth=5, initializer="he_normal", learning_rate=1e-3, momentum=0.0, nesterov=False, epochs=30, batch_size=32)
