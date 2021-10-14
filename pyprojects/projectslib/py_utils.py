@@ -1,6 +1,7 @@
 import datetime
 import functools
 
+
 def range2(start, end=None, step=1):
     """1-index inclusive range"""
     if end is None:
@@ -18,5 +19,6 @@ def print_items(iterable):
     for item in iterable:
         print(item)
 
-def union(args): 
-    return functools.reduce(lambda x,y: x | y, args, set())
+
+def union(args):
+    return functools.reduce(lambda x, y: x | y, args, set())

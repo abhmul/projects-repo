@@ -10,7 +10,7 @@ class Primes(object):
         self.sieve = {1}
         self.i = -1
         self.n = 2
-    
+
     def _extend_sieve(self):
         old_n = self.n
         self.n *= 2
@@ -64,4 +64,3 @@ class Primes(object):
                     break
         prime_factors.append(dividend)
         return sorted(prime_factors)
-

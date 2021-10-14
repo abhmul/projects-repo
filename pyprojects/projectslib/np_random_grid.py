@@ -1,6 +1,7 @@
 import numpy as np
 from . import np_utils
 
+
 def random_grid_point(pvals, samples=1, rng=np.random.default_rng()):
     num_points = np.product(pvals.shape)
     flat_points = rng.choice(num_points, size=samples, p=pvals.flatten())
