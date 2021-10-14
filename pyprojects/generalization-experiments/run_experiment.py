@@ -12,6 +12,9 @@ parser.add_argument('-n', '--trials', type=int, default=1, help="How many trials
 rng = np.random.default_rng()
 experiments = list(sorted(EXPERIMENTS.keys()))
 
+# Experiment 0 is a test experiment
+experiments.remove(0)
+
 if __name__ == '__main__':
     args = parser.parse_args()
     print(f"Running {args.trials} trial(s) of experiments {experiments}.")

@@ -1,0 +1,2 @@
+{'train_risk': 0.009999990463256836, 'expected_risk': 0.49805712699890137, 'generalization': 0.48805713653564453}
+{'train_risk': 0.0, 'expected_risk': 0.5418714284896851, 'generalization': 0.5418714284896851}
