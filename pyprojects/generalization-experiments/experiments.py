@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 
 from models import mlp
-from data import load_mnist, flatten_data, mix_datasets, sample_train, mnist_mlp_connector
+from data import load_mnist, flatten_data, mix_datasets, sample_train, mnist_mlp_connector, retrieve_split
 from utils import model_extra_summary
 
 EXPERIMENTS = {}
@@ -26,30 +26,12 @@ def experiment(exp_number, description):
    0, "TEST"
 )
 def experiment0(rng):
-    X, Y = mix_datasets(*mnist_mlp_connector(load_mnist()))
-    x_train, y_train = sample_train((X, Y), 100, rng)
-    model = mlp(Y.shape[1], 3, 64, "he_normal")
-    loss = tf.keras.losses.CategoricalCrossentropy(from_logits=True)
-    model.compile(optimizer="adam", loss=loss, metrics="accuracy")
-    model.fit(x=x_train, y=y_train, epochs=10, verbose=0)
-    # measure generalization error
-    train_results = model.evaluate(x=x_train, y=y_train, return_dict=True, verbose=0)
-    expected_results = model.evaluate(x=X, y=Y, return_dict=True, verbose=0)
-
-    train_risk = 1 - train_results["accuracy"]
-    expected_risk = 1 - expected_results["accuracy"]
-    generalization = expected_risk - train_risk
-
-    return {
-        "train_risk": train_risk,
-        "expected_risk": expected_risk,
-        "generalization": generalization
-    }
+    return mlp_mnist_sgd_experiment(rng, 1000, 128, 3, "he_normal", 1e-3, 0, False, 20, 64)
 
 
 def mlp_mnist_sgd_experiment(rng, sample_size, hidden_size, depth, initializer, learning_rate, momentum, nesterov, epochs, batch_size):
     X, Y = mix_datasets(*mnist_mlp_connector(load_mnist()))
-    x_train, y_train = sample_train((X, Y), sample_size, rng)
+    x_train, y_train, inds = sample_train((X, Y), sample_size, rng)
     assert len(x_train) == len(y_train)
     print(f"Sampled {len(x_train)} datapoints iid")
 
@@ -119,15 +101,35 @@ def mlp_mnist_sgd_experiment(rng, sample_size, hidden_size, depth, initializer, 
         use_multiprocessing=False,
         return_dict=True
     )
+    
+    (Xtr_uniq, Ytr_uniq), (Xtest, Ytest) = retrieve_split((X, Y), inds)
+    train_unique_results = model.evaluate(
+        x=Xtr_uniq,
+        y=Ytr_uniq,
+        batch_size=None,
+        verbose=0,
+        sample_weight=None,
+        steps=None,
+        callbacks=None,
+        max_queue_size=10,
+        workers=1,
+        use_multiprocessing=False,
+        return_dict=True
+    )
+
 
     train_risk = 1 - train_results["accuracy"]
     expected_risk = 1 - expected_results["accuracy"]
+    train_unique_risk = 1 - train_unique_results["accuracy"]
+    test_risk = 1. / len(Ytest) * (len(Y) * expected_risk - len(Ytr_uniq) * train_unique_risk)
     generalization = expected_risk - train_risk
 
     return {
         "train_risk": train_risk,
         "expected_risk": expected_risk,
-        "generalization": generalization
+        "generalization": generalization,
+        "test_risk": test_risk,
+        "train_unique_risk": train_unique_risk
     }
 
 

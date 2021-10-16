@@ -11,7 +11,14 @@ def mix_datasets(train, test):
 def sample_train(dataset, m, rng):
     X, Y = dataset
     inds = rng.integers(len(Y), size=m)
-    return X[inds], Y[inds]
+    return X[inds], Y[inds], inds
+
+
+def retrieve_split(dataset, inds):
+    X, Y = dataset
+    bool_arr = np.zeros(len(Y), dtype=bool)
+    bool_arr[inds] = 1
+    return (X[bool_arr], Y[bool_arr]), (X[~bool_arr], Y[~bool_arr])
 
 
 def flatten_data(X):
