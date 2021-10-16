@@ -3,4 +3,4 @@ For experiments >50
 - Fit different models such as logistic regression, SVM, and relu networks and measure Bayes risk, training risk, test risk, and generalization
 - Try to compute directly bounds on probability of some deviation from the bayes risk.
 
-Perhaps what you want is a class of functions which will a.s. converge to Bayes minimizer. Even better is if the expectation of the learned function is the Bayes minimizer over all the drawn samples 
+Perhaps what you want is a class of functions which will a.s. converge to Bayes minimizer. Even better is if the expectation of the learned function is the Bayes minimizer over all the drawn samples. 
