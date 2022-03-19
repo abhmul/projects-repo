@@ -208,3 +208,13 @@
 {'train_risk': 0.0, 'expected_risk': 0.049014270305633545, 'generalization': 0.049014270305633545, 'test_risk': 0.06071274988311064, 'train_unique_risk': 0.0}
 {'train_risk': 0.0, 'expected_risk': 0.05038571357727051, 'generalization': 0.05038571357727051, 'test_risk': 0.062443566213001, 'train_unique_risk': 0.0}
 {'train_risk': 0.0, 'expected_risk': 0.05169999599456787, 'generalization': 0.05169999599456787, 'test_risk': 0.06407463960658896, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.046571433544158936, 'generalization': 0.046571433544158936, 'test_risk': 0.05771546540774601, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.04995715618133545, 'generalization': 0.04995715618133545, 'test_risk': 0.061913546487261106, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.04898571968078613, 'generalization': 0.04898571968078613, 'test_risk': 0.060661283592885334, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.0496143102645874, 'generalization': 0.0496143102645874, 'test_risk': 0.061509337416026745, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.050371408462524414, 'generalization': 0.050371408462524414, 'test_risk': 0.06242473253269438, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.048200011253356934, 'generalization': 0.048200011253356934, 'test_risk': 0.05976125239532016, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.04947143793106079, 'generalization': 0.04947143793106079, 'test_risk': 0.06126602248910649, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.04768574237823486, 'generalization': 0.04768574237823486, 'test_risk': 0.05915716099805835, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.04795712232589722, 'generalization': 0.04795712232589722, 'test_risk': 0.059410646187289716, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05168569087982178, 'generalization': 0.05168569087982178, 'test_risk': 0.06402403754357679, 'train_unique_risk': 0.0}

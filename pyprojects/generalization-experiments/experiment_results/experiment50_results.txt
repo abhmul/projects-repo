@@ -198,3 +198,23 @@
 {'train_risk': 0.0, 'expected_risk': 0.053071439266204834, 'generalization': 0.053071439266204834}
 {'train_risk': 0.0, 'expected_risk': 0.05434286594390869, 'generalization': 0.05434286594390869}
 {'train_risk': 0.0, 'expected_risk': 0.05355715751647949, 'generalization': 0.05355715751647949}
+{'train_risk': 0.0, 'expected_risk': 0.05127143859863281, 'generalization': 0.05127143859863281, 'test_risk': 0.06825401178906294, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.0551142692565918, 'generalization': 0.0551142692565918, 'test_risk': 0.0734311434926707, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.04971426725387573, 'generalization': 0.04971426725387573, 'test_risk': 0.06604039676954743, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05298572778701782, 'generalization': 0.05298572778701782, 'test_risk': 0.07043833456949346, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05162858963012695, 'generalization': 0.05162858963012695, 'test_risk': 0.06861854017826549, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.053014278411865234, 'generalization': 0.053014278411865234, 'test_risk': 0.07059695409258011, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05405712127685547, 'generalization': 0.05405712127685547, 'test_risk': 0.07196786719754812, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05311429500579834, 'generalization': 0.05311429500579834, 'test_risk': 0.07071937935873024, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.051599979400634766, 'generalization': 0.051599979400634766, 'test_risk': 0.06865742663887231, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.054814279079437256, 'generalization': 0.054814279079437256, 'test_risk': 0.07288579012918106, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.053157150745391846, 'generalization': 0.053157150745391846, 'test_risk': 0.0707226318504092, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.054657161235809326, 'generalization': 0.054657161235809326, 'test_risk': 0.07275426497502573, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05251431465148926, 'generalization': 0.05251431465148926, 'test_risk': 0.06991787175905828, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.051514267921447754, 'generalization': 0.051514267921447754, 'test_risk': 0.06863209216614345, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05699998140335083, 'generalization': 0.05699998140335083, 'test_risk': 0.07583530425807881, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05140000581741333, 'generalization': 0.05140000581741333, 'test_risk': 0.06847595172082317, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05434286594390869, 'generalization': 0.05434286594390869, 'test_risk': 0.07227131406998401, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.04932856559753418, 'generalization': 0.04932856559753418, 'test_risk': 0.0655641133146127, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.052442848682403564, 'generalization': 0.052442848682403564, 'test_risk': 0.0698679039200687, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.052742838859558105, 'generalization': 0.052742838859558105, 'test_risk': 0.07020343639796668, 'train_unique_risk': 0.0}

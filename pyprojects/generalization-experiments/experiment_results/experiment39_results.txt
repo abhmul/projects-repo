@@ -208,3 +208,13 @@
 {'train_risk': 0.0, 'expected_risk': 0.066428542137146, 'generalization': 0.066428542137146, 'test_risk': 0.07662011154575327, 'train_unique_risk': 0.0}
 {'train_risk': 0.0, 'expected_risk': 0.06994283199310303, 'generalization': 0.06994283199310303, 'test_risk': 0.08070016383189457, 'train_unique_risk': 0.0}
 {'train_risk': 0.0, 'expected_risk': 0.06730002164840698, 'generalization': 0.06730002164840698, 'test_risk': 0.07763296994856038, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.06618571281433105, 'generalization': 0.06618571281433105, 'test_risk': 0.07640801347411848, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.06931430101394653, 'generalization': 0.06931430101394653, 'test_risk': 0.07996441931829618, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.0633285641670227, 'generalization': 0.0633285641670227, 'test_risk': 0.07299401445211817, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.07192856073379517, 'generalization': 0.07192856073379517, 'test_risk': 0.08301730010495732, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.06761425733566284, 'generalization': 0.06761425733566284, 'test_risk': 0.07801216438925991, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.06958574056625366, 'generalization': 0.06958574056625366, 'test_risk': 0.08025375796421051, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.0648999810218811, 'generalization': 0.0648999810218811, 'test_risk': 0.07488294770771539, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.06548571586608887, 'generalization': 0.06548571586608887, 'test_risk': 0.07549158642051021, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.06405717134475708, 'generalization': 0.06405717134475708, 'test_risk': 0.07382288432882772, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.06577140092849731, 'generalization': 0.06577140092849731, 'test_risk': 0.07586465083122929, 'train_unique_risk': 0.0}

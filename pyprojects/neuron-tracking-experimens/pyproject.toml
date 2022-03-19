@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "neuron-tracking-experiments"
+version = "0.1.0"
+description = "Tracking the evolution of neurons during training"
+authors = ["jetm <abhmul@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+numpy = "^1.22.3"
+tensorflow = "^2.8.0"
+tqdm = "^4.63.0"
+matplotlib = "^3.5.1"
+
+[tool.poetry.dev-dependencies]
+projectslib = {path = "../projectslib", develop = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

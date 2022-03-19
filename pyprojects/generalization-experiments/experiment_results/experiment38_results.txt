@@ -208,3 +208,13 @@
 {'train_risk': 0.0, 'expected_risk': 0.05582857131958008, 'generalization': 0.05582857131958008, 'test_risk': 0.06437690457739241, 'train_unique_risk': 0.0}
 {'train_risk': 0.0, 'expected_risk': 0.06018573045730591, 'generalization': 0.06018573045730591, 'test_risk': 0.0694069379244055, 'train_unique_risk': 0.0}
 {'train_risk': 0.0, 'expected_risk': 0.06279999017715454, 'generalization': 0.06279999017715454, 'test_risk': 0.07242412126265803, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05961430072784424, 'generalization': 0.05961430072784424, 'test_risk': 0.06877175053888655, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05949997901916504, 'generalization': 0.05949997901916504, 'test_risk': 0.06863986768637508, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.06019997596740723, 'generalization': 0.06019997596740723, 'test_risk': 0.06946914470356917, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.06160002946853638, 'generalization': 0.06160002946853638, 'test_risk': 0.071068366397428, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05741429328918457, 'generalization': 0.05741429328918457, 'test_risk': 0.06623270484909229, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05894285440444946, 'generalization': 0.05894285440444946, 'test_risk': 0.06799492111717774, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.06144285202026367, 'generalization': 0.06144285202026367, 'test_risk': 0.07085199725583911, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.05775713920593262, 'generalization': 0.05775713920593262, 'test_risk': 0.06663699473258311, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.062485694885253906, 'generalization': 0.062485694885253906, 'test_risk': 0.07208778828478761, 'train_unique_risk': 0.0}
+{'train_risk': 0.0, 'expected_risk': 0.060742855072021484, 'generalization': 0.060742855072021484, 'test_risk': 0.07008290377678798, 'train_unique_risk': 0.0}

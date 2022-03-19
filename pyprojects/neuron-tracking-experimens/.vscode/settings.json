@@ -1,0 +1,4 @@
+{
+    "python.linting.mypyEnabled": true,
+    "python.defaultInterpreterPath": "/home/abhijeet/anaconda3/envs/neuron-tracking-experiments/bin/python"
+}
