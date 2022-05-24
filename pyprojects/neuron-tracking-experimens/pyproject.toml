@@ -7,7 +7,7 @@ authors = ["jetm <abhmul@gmail.com>"]
 [tool.poetry.dependencies]
 python = "~3.9"
 numpy = "^1.22.3"
-tensorflow = "^2.8.0"
+tensorflow = "^2.8.1"
 tqdm = "^4.63.0"
 matplotlib = "^3.5.1"
 
