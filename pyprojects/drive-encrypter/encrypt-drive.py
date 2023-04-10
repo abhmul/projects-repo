@@ -5,24 +5,37 @@ from os.path import isfile, join, exists
 import subprocess
 from termcolor import colored
 import sys
+import functools
 
-from pyprojects.projectslib.py_utils import union
+from tqdm import tqdm
 
 parser = argparse.ArgumentParser()
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument("-e", "--encrypt", action="store_true")
 group.add_argument("-d", "--decrypt", action="store_true")
 parser.add_argument("-p", "--password", default="", type=str)
-parser.add_argument("--delete", dest="run_aescrypt", action="store_false", help="No encryption or decryption, just delete")
-parser.add_argument("--no_ignore", action="store_true", help="Don't use .aesignore file")
+parser.add_argument(
+    "--delete",
+    dest="run_aescrypt",
+    action="store_false",
+    help="No encryption or decryption, just delete",
+)
+parser.add_argument(
+    "--no_ignore", action="store_true", help="Don't use .aesignore file"
+)
 
 IGNORE_FILENAME = ".aesignore"
 EXTENSION_GLOB = "*.aes"
 
 
+def union(args):
+    return functools.reduce(lambda x, y: x | y, args, set())
+
+
 def accept_name(filename: str, exclude_patterns: list, include_patterns: list) -> bool:
-    return not any(fnmatch(filename, p) for p in exclude_patterns) and \
-        all(fnmatch(filename, p) for p in include_patterns)
+    return not any(fnmatch(filename, p) for p in exclude_patterns) and all(
+        fnmatch(filename, p) for p in include_patterns
+    )
 
 
 def filter_files(root: str, excludes: list, filename_includes: list) -> set:
@@ -30,11 +43,15 @@ def filter_files(root: str, excludes: list, filename_includes: list) -> set:
     filenames = [n for n in items if isfile(join(root, n))]
     dirnames = [n for n in items if not isfile(join(root, n))]
 
-    accepted_fnames = set(join(root, n) for n in filenames if accept_name(n, excludes, filename_includes))
+    accepted_fnames = set(
+        join(root, n) for n in filenames if accept_name(n, excludes, filename_includes)
+    )
     # We only check filenames for includes rules
     accepted_dirs = set(join(root, d) for d in dirnames if accept_name(d, excludes, []))
 
-    return accepted_fnames | union(filter_files(d, excludes, filename_includes) for d in accepted_dirs)
+    return accepted_fnames | union(
+        filter_files(d, excludes, filename_includes) for d in accepted_dirs
+    )
 
 
 def generate_message(filenames: list, remove: bool) -> str:
@@ -57,7 +74,13 @@ def delete_encrypted_files(filenames: list):
 
 
 def build_command(encrypt: bool, decrypt: bool, filenames: list, password) -> list:
-    command = ['aescrypt'] + (['-e'] if encrypt else []) + (['-d'] if decrypt else []) + (['-p', password] if password else []) + filenames
+    command = (
+        ["aescrypt"]
+        + (["-e"] if encrypt else [])
+        + (["-d"] if decrypt else [])
+        + (["-p", password] if password else [])
+        + filenames
+    )
     return command
 
 
@@ -65,7 +88,7 @@ def run_aescrypt(encrypt: bool, decrypt: bool, filenames: list, password="") -> 
     # This should be guaranteed by our argument parser
     assert encrypt ^ decrypt
 
-    operation = 'encrypt' if encrypt else 'decrypt'
+    operation = "encrypt" if encrypt else "decrypt"
     print(f"We will {operation} these files:")
     print(generate_message(filenames, remove=False))
     response = input(f"Are you sure you want to {operation} [Y/n]: ")
@@ -73,8 +96,8 @@ def run_aescrypt(encrypt: bool, decrypt: bool, filenames: list, password="") -> 
         # DEBUGGING
         print("DEBUGGING")
         BAD = []
-        for fname in filenames:
-            process = subprocess.run(build_command(encrypt, decrypt, filenames, password))
+        for fname in tqdm(filenames):
+            process = subprocess.run(build_command(encrypt, decrypt, [fname], password))
             if process.returncode != 0:
                 BAD.append(fname)
         print("Files we were unable to decrypt")
@@ -88,12 +111,13 @@ def run_aescrypt(encrypt: bool, decrypt: bool, filenames: list, password="") -> 
 if __name__ == "__main__":
     args = parser.parse_args()
     # DEBUGGING
-    assert args.decrypt
+    # assert args.decrypt
     print(args.password)
-    assert false
+    # assert False
 
     excludes = [IGNORE_FILENAME]
     if not args.no_ignore and exists(IGNORE_FILENAME):
+        print("Found an ignore file")
         with open(IGNORE_FILENAME) as ignore_file:
             excludes += list(ignore_file.read().splitlines())
 

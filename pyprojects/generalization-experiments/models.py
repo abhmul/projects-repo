@@ -28,5 +28,4 @@ def mlp(outputs, depth, hidden, initializer):
             )
         ]
     )
-
     return model

@@ -10,7 +10,7 @@ setup(
     author_email="abhmul@gmail.com",
     url="https://github.com/abhmul/projects-repo",
     license="MIT",
-    install_requires=["numpy", "scipy", "matplotlib"],
+    install_requires=[],
     extras_require={
         "tests": [
             "pytest",
